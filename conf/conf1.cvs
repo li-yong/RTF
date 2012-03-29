@@ -1,0 +1,3 @@
+EmailTo,Subject,ContentFile,CronString
+Li_Ryan@mail.corp.emc.com,TEST SUBJECT,testMailToRyan.txt,30 18 * * *
+lir2@mail.corp.emc.com lir3@mail.corp.emc.com,TEST SUBJECT,testMailToRyan.txt,31 18 * * *
