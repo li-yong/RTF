@@ -7,8 +7,10 @@ This Test framework wrote in Ruby, RTF means 'Ruby Test Framework', also I like 
    then the framework will generate combination of Pa&Pb then feed to commands.
    
  . LogLevel ()
- 
- . TestSuites (TestSet someone calls) are physically a Folder in Filesystem.
+   Controll log in color and different loglevel.
+   
+ . TestSuites (TestSets)
+   are physically a Folder in Filesystem.
  
  . _global.conf
    the configuation in global namespace, any testcase can access variable in side without any preparation.
