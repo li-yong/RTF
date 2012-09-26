@@ -1,1 +1,32 @@
+This Test framework wrote in Ruby, RTF means 'Ruby Test Framework', also I like it as 'Ryan Test Framework'.
+
+
+ Features:
+ . Intelligent Data Driven:
+   setup parms Pa Pb in CSV file, then give validValue for Pa and Pb separately in their row,
+   then the framework will generate combination of Pa&Pb then feed to commands.
+   
+ . LogLevel ()
  
+ . TestSuites (TestSet someone calls) are physically a Folder in Filesystem.
+ 
+ . _global.conf
+   the configuation in global namespace, any testcase can access variable in side without any preparation.
+   
+ . Testcase
+   in CSV format: "Object", "Action", "Data"
+   means "Do 'Action' with 'Data' against 'Object'"
+   
+   example: "ANIP", "ssh", "rcfstest null srv=SNIP"
+   equal "ssh 1.1.1.1  'rcfTest null svr=10.10.10.10'"
+   
+ . TurnOn Pcap
+   when run IO against storage, turn the Package Capture on,
+   
+ . Capture Stdout, RegEx get expected value then save to _global.conf
+ 
+ . TestSuite, TestCase list
+   testSuite, testCase are stored in filesystem directory structure,
+   the list switch scan the dir then list testSuite, testCase available.
+   
+   
