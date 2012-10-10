@@ -1,0 +1,2 @@
+Action,Object,Data
+rsh,#{ANIP},utcli fedfsRcfsOpen srv=#{SNIP} fhfsid=#{FHFSID} fhfid1=#{FHFID1} fhfid2=#{FHFID2} mode=15,has(PASS)

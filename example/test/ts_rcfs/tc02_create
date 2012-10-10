@@ -1,0 +1,3 @@
+Action,Object,Data
+rsh,#{ANIP},utcli fedfsRcfsCreate srv=#{SNIP} fhfsid=#{FHFSID} fhfid1=#{FHFID1} fhfid2=#{FHFID2} name=#{TESTFILE} mode=256,has(PASS)
+saveGlobal,#{LOCALHOST},"""FILEINODE"", /fid1 = \d*/",RTFnotVerify

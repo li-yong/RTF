@@ -1,0 +1,5 @@
+Action,Object,Data,Assert,DDCSV
+lcmd,#{LOCALHOST},cd /tmp/; rm -rf ./pynfs;
+
+
+

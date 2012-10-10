@@ -1,0 +1,50 @@
+Action,Object,Data
+
+
+#turnonlog
+rsh,#{ANIP},logsys set defaultSeverity FEDFS=LOG_DBG3,has(succeed)
+rsh,#{ANIP},logsys set defaultSeverity CFS=LOG_DBG3,!has(succeeded)
+rsh,#{ANIP},logsys set defaultSeverity SMB=LOG_DBG3,has(LOG_DBG3)
+rsh,#{ANIP},logsys set defaultSeverity NFS=LOG_DBG3,has(succeeded)
+
+
+
+
+#delete ns
+rsh,#{ANIP},fnstest ns unexport fqdn=#{NSFQDN},RTFnotVerify
+rsh,#{ANIP},fnstest ns delete fqdn=#{NSFQDN},RTFnotVerify
+
+
+#delete jp
+rsh,#{ANIP},fnstest jp delete fqdn=#{NSFQDN} path=#{JUNPATH} name=#{JUNNAME},RTFnotVerify
+
+
+
+
+#create ns
+rsh,#{ANIP},fnstest ns create fqdn=#{NSFQDN},has(FEDFS_OK)
+rsh,#{ANIP},fnstest ns export fqdn=#{NSFQDN}  cfg='anon=0',has(FEDFS_OK)
+
+#add cache
+rsh,#{ANIP},fsn2fslcache add fsnUuid=#{FSNUUID} fslUuid=#{FSLUUID} fslHost=#{SNIP} fslPath=#{TARGETPATH},has(FEDFS_OK)
+
+#create Junction
+rsh,#{ANIP},fnstest jp create fsid=#{TARGETFSID} fqdn=#{NSFQDN} path=#{JUNPATH} name=#{JUNNAME} uuid=#{FSNUUID},has(FEDFS_OK)
+
+#show mount
+rsh,#{ANIP},file mountdisplay,RTFnotVerify
+
+#show junctioni
+rsh,#{ANIP},ls /.domainroot-ns1/#{JUNNAME},RTFnotVerify
+
+#show namespace
+rsh,#{ANIP},ls /.domainroot-ns1/,RTFnotVerify
+
+
+#umount AN
+lcmd,#{LOCALHOST},umount #{LOCAL_AN_MNT_PNT},RTFnotVerify
+lcmd,#{LOCALHOST},mount #{ANIP}:/ #{LOCAL_AN_MNT_PNT},RTFnotVerify
+
+#mount SN
+lcmd,#{LOCALHOST},umount #{LOCAL_SN_MNT_PNT},RTFnotVerify
+lcmd,#{LOCALHOST},mount #{SNIP}:/ #{LOCAL_SN_MNT_PNT},RTFnotVerify

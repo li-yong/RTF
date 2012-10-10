@@ -1,0 +1,39 @@
+quick start:
+
+1. copy attached tar.gz file to a linux client, extract it.
+
+2.  check if you has ruby installed,   ruby -v , if no ruby install, install one.  ruby 1.9 is preferred. but 1.8 should also work.
+
+3. vim utfme/test/_global.conf 
+ edit  following entries:
+ANIP=10.32.191.114     sade access node ip
+SNIP=10.32.191.115     sade storage node ip
+LOGDIR=/root/utfme/log/   directory to put log
+LOCAL_MNTPOINT=/mnt     local mount point which will be used in run test
+TESTDIR=testdir5        dir name which will be used in test
+TESTFILE=testfile2      file name which will be used in test
+ 
+4. then try list all existed testsuite and testcase.   ts_2 is a stub suite which should be ignored.
+./run.rb  -s
+./run.rb  -c
+
+5. after that, you can try a existed test case ( case suite is  ts_rcfs,   test case name is  tc01_null, which implemented in utfme/test/ts_rcfs/ tc01_null.rb )
+
+-bash-3.2# ./run.rb  -v verbose   -g ts_rcfs -t tc01_null
+Will Run Suite: ts_rcfs
+        tc01_null
+ENV[LOGLEVEL]:verbose , ENV[UTFROOT]: /root/utfme
+[ === tc01_null  start=== ]
+        rsh 10.32.191.114  rcfstest null  srv=10.32.191.115     [ passed ]
+        rsh 10.32.191.114  rcfstest mount  srv=10.32.191.115 dir=/fs3   [ passed ]
+[ === tc01_null , PASSED === ]
+-bash-3.2#
+
+6. run whole test suite:
+./run.rb  -v verbose   -g ts_rcfs 
+
+
+7. enable pcap when run tests, pcap file will be saved to utfme/log directory.
+./run.rb  -v verbose   -g ts_rcfs  -p 
+
+

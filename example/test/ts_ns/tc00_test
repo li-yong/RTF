@@ -1,0 +1,57 @@
+Action,Object,Data,assert,ddcsvfile
+
+#lcmd_dd,#{LOCALHOST},mkdir -p /root/TE/del/#{CVSDD_par1}/#{CVSDD_par2}/,cmdExitCode=0,/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+#lcmd_dd,#{LOCALHOST},echo /root/TE/del/#{CVSDD_par1}/#{CVSDD_par2}/,has(#{CVSDD_par1}),/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+#lcmd_dd,#{LOCALHOST},mkdir -p /root/TE/del/#{CVSDD_par1}/#{CVSDD_par2}/,cmdExitCode=0,/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+#lcmd_dd,#{LOCALHOST},mkdir /root/TE/del/#{CVSDD_par1}/#{CVSDD_par2}/,cmdExitCode!=0,/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+#lcmd_dd,#{LOCALHOST},mkdir /root/TE/del/#{CVSDD_par1}/#{CVSDD_par2}/,cmdExitCode=1,/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+#lcmd_dd,#{LOCALHOST},mkdir /root/TE/del/#{CVSDD_par1}/#{CVSDD_par2}/,cmdExitCode=2,/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+#lcmd_dd,#{LOCALHOST},mkdir /root/TE/del/#{CVSDD_par1}/#{CVSDD_par2}/,RTFnotVerify,/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+
+lcmd,#{LOCALHOST},date,cmdExitCode=0
+lcmd,#{LOCALHOST},date,RTFnotVerify
+
+lcmd,#{LOCALHOST},date,cmdExitCode=0
+lcmd,#{LOCALHOST},mkdir /root,cmdExitCode!=0
+lcmd,#{LOCALHOST},date,has(2011)
+lcmd,#{LOCALHOST},date,"has(2010""))"
+lcmd,#{LOCALHOST},date,!has(2010)
+lcmd,#{LOCALHOST},date,RTFnotVerify
+lcmd,#{LOCALHOST},date,RTFnotsVerify
+
+#rsh_dd,#{LOCALHOST},echo cs=#{CVSDD_par1} bs=#{CVSDD_par2} ds=#{CVSDD_par3},has(#{CVSDD_par1}),/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+#rsh_dd,#{LOCALHOST},echo cs=#{CVSDD_par1} bs=#{CVSDD_par2} ds=#{CVSDD_par3},!has(#{CVSDD_par1}),/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+rsh_dd,#{LOCALHOST},echo cs=#{CVSDD_par1} bs=#{CVSDD_par2} ds=#{CVSDD_par3},!has(ERROR),/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+rsh_dd,#{LOCALHOST},echo cs=#{CVSDD_par1} bs=#{CVSDD_par2};,cmdExitCode=0,/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+#rsh_dd,#{LOCALHOST},echo cs=#{CVSDD_par1} bs=#{CVSDD_par2},cmdExitCode=0,/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+#rsh_dd,#{LOCALHOST},echo cs='#{CVSDD_par1}',cmdExitCode=0,/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+#rsh_dd,#{LOCALHOST},mkdir /root/TE/del/#{CVSDD_par1}/#{CVSDD_par2}/,cmdExitCode=0,/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+#rsh_dd,#{LOCALHOST},echo cs=#{CVSDD_par1} bs=#{CVSDD_par2} ds=#{CVSDD_par3};,!has(#{CVSDD_par1}),/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+#rsh_dd,#{LOCALHOST},mkdir -p /root/TE/del/#{CVSDD_par1}/#{CVSDD_par2}/,cmdExitCode,/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+#rsh,#{LOCALHOST}, mkdir /root/TE/del/ ,cmdExitCode
+#rsh,#{LOCALHOST}, mkdir /root/TE/del/ ,RTFnotVerify
+
+#rsh,#{LOCALHOST},date,cmdExitCode
+#rsh,#{LOCALHOST},date,RTFnotVerify
+
+
+
+
+
+#saveGlobal,self,
+
+#lcmd,local,ls,RTFnotVerify
+#PASSED lcmd,local,echo #{TESTDIR},#{TESTDIR}
+#lcmd,local,date,cmdExistCode
+#lcmd,local,date,TESTDIR
+#lcmd,local,date,RTFgeneralVerify
+
+
+
+
+#rsh,localhost,ls
+#rsh,LOCALHOST,ls
+#saveGlobal,local,"""FHFSID"", /fsid = \d*/"
+
+#local,local,mkdir -p TESTFILE
+#local,local,ps -ef 

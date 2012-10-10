@@ -1,0 +1,4 @@
+Action,Object,Data
+rsh,#{ANIP},utcli fedfsRcfsMkdir srv=#{SNIP} fhfsid=#{FHFSID} fhfid1=#{FHFID1} fhfid2=#{FHFID2} name=#{TESTDIR} hasattr=0 sdtype=#{TESTDIRSDTYPE},RTFnotVerify
+rsh,#{ANIP},utcli fedfsRcfsRmdir srv=#{SNIP} fhfsid=#{FHFSID} fhfid1=#{FHFID1} fhfid2=#{FHFID2} name=#{TESTDIR},has(PASS)
+rsh,#{ANIP},utcli fedfsRcfsMkdir srv=#{SNIP} fhfsid=#{FHFSID} fhfid1=#{FHFID1} fhfid2=#{FHFID2} name=#{TESTDIR} hasattr=0 sdtype=#{TESTDIRSDTYPE},RTFnotVerify

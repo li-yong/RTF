@@ -1,0 +1,136 @@
+[32m	cd /root/git/mako_nsn_fns/src/dart/Dart/server/TE/test/ts_ns; ls tc*_*.rb  [0m[32m
+	===cmd output start===[0m
+[37m	 tc01_createns.rb
+[0m
+[32m
+	===cmd output end===[0m
+Will Run Suite: [32mts_ns[0m
+	tc01_createns
+[32mENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /root/git/mako_nsn_fns/src/dart/Dart/server/TE[0m
+[32m[ === tc01_createns  start=== ][0m
+[32m	rsh 10.32.191.114 fnstest ns unexport fqdn=ns1 [0m[32m
+	===cmd output start===[0m
+[37m	 connect to address 10.32.191.114 port 544: Connection refused
+connect to address 10.32.191.114 port 544: Connection refused
+trying normal rsh (/usr/bin/rsh)
+Command failed:  fnstest ns unexport fqdn=ns1
+[0m
+[32m
+	===cmd output end===[0m
+[31m	[ failed ][0m
+[31m	Reason: ["connect to address 10.32.191.114 port 544: Connection refused\n", "connect to address 10.32.191.114 port 544: Connection refused\n", "trying normal rsh (/usr/bin/rsh)\n", "Command failed:  fnstest ns unexport fqdn=ns1\n"][0m
+[32m	rsh 10.32.191.114 fnstest ns delete fqdn=ns1[0m[32m
+	===cmd output start===[0m
+[37m	 connect to address 10.32.191.114 port 544: Connection refused
+connect to address 10.32.191.114 port 544: Connection refused
+trying normal rsh (/usr/bin/rsh)
+Command failed:  fnstest ns delete fqdn=ns1
+[0m
+[32m
+	===cmd output end===[0m
+[31m	[ failed ][0m
+[31m	Reason: ["connect to address 10.32.191.114 port 544: Connection refused\n", "connect to address 10.32.191.114 port 544: Connection refused\n", "trying normal rsh (/usr/bin/rsh)\n", "Command failed:  fnstest ns delete fqdn=ns1\n"][0m
+[32m	rsh 10.32.191.114 fnstest ns create fqdn=ns1[0m[32m
+	===cmd output start===[0m
+[37m	 connect to address 10.32.191.114 port 544: Connection refused
+connect to address 10.32.191.114 port 544: Connection refused
+trying normal rsh (/usr/bin/rsh)
+Command succeeded:  fnstest ns create fqdn=ns1
+[0m
+[32m
+	===cmd output end===[0m
+[32m	[ passed ][0m
+[37m	Reason:["connect to address 10.32.191.114 port 544: Connection refused\n", "connect to address 10.32.191.114 port 544: Connection refused\n", "trying normal rsh (/usr/bin/rsh)\n", "Command succeeded:  fnstest ns create fqdn=ns1\n"][0m
+[32m	rsh 10.32.191.114 fnstest ns export fqdn=ns1 config='anon=0'[0m[32m
+	===cmd output start===[0m
+[37m	 connect to address 10.32.191.114 port 544: Connection refused
+connect to address 10.32.191.114 port 544: Connection refused
+trying normal rsh (/usr/bin/rsh)
+Command failed:  fnstest ns export fqdn=ns1 config=anon=0
+[0m
+[32m
+	===cmd output end===[0m
+[31m	[ failed ][0m
+[31m	Reason: ["connect to address 10.32.191.114 port 544: Connection refused\n", "connect to address 10.32.191.114 port 544: Connection refused\n", "trying normal rsh (/usr/bin/rsh)\n", "Command failed:  fnstest ns export fqdn=ns1 config=anon=0\n"][0m
+[32m	rsh 10.32.191.114 fsn2fslcache add fsnUuid=550e8400-e29b-41d4-a716-446655440000 fslUuid=550e8400-e29b-41d4-a716-446655440000 fslHost=10.32.191.115 fslPath=/fs4[0m[32m
+	===cmd output start===[0m
+[37m	 connect to address 10.32.191.114 port 544: Connection refused
+connect to address 10.32.191.114 port 544: Connection refused
+trying normal rsh (/usr/bin/rsh)
+res=FEDFS_OK
+Command succeeded:  fsn2fslcache add fsnUuid=550e8400-e29b-41d4-a716-446655440000 fslUuid=550e8400-e29b-41d4-a716-446655440000 fslHost=10.32.191.115 fslPath=/fs4
+[0m
+[32m
+	===cmd output end===[0m
+[32m	[ passed ][0m
+[37m	Reason:["connect to address 10.32.191.114 port 544: Connection refused\n", "connect to address 10.32.191.114 port 544: Connection refused\n", "trying normal rsh (/usr/bin/rsh)\n", "res=FEDFS_OK\n", "Command succeeded:  fsn2fslcache add fsnUuid=550e8400-e29b-41d4-a716-446655440000 fslUuid=550e8400-e29b-41d4-a716-446655440000 fslHost=10.32.191.115 fslPath=/fs4\n"][0m
+[32m	rsh 10.32.191.114 fnstest jp create fsid=65 fqdn=ns1 path="" name=jp1 uuid=550e8400-e29b-41d4-a716-446655440000[0m[32m
+	===cmd output start===[0m
+[37m	 connect to address 10.32.191.114 port 544: Connection refused
+connect to address 10.32.191.114 port 544: Connection refused
+trying normal rsh (/usr/bin/rsh)
+Command succeeded:  fnstest jp create fsid=65 fqdn=ns1 path= name=jp1 uuid=550e8400-e29b-41d4-a716-446655440000
+[0m
+[32m
+	===cmd output end===[0m
+[32m	[ passed ][0m
+[37m	Reason:["connect to address 10.32.191.114 port 544: Connection refused\n", "connect to address 10.32.191.114 port 544: Connection refused\n", "trying normal rsh (/usr/bin/rsh)\n", "Command succeeded:  fnstest jp create fsid=65 fqdn=ns1 path= name=jp1 uuid=550e8400-e29b-41d4-a716-446655440000\n"][0m
+[32m	rsh 10.32.191.114 file mountdisplay[0m[32m
+	===cmd output start===[0m
+[37m	 connect to address 10.32.191.114 port 544: Connection refused
+connect to address 10.32.191.114 port 544: Connection refused
+trying normal rsh (/usr/bin/rsh)
+
+Current Mounted File Systems are:
+
+uxfs64 rw /fs3 50=45 rw
+uxfs64 rw / root_disk=15 rw,log
+
+
+Total number of file systems is: 2
+
+Command succeeded:  file mountdisplay
+[0m
+[32m
+	===cmd output end===[0m
+[32m	[ passed ][0m
+[37m	Reason:["connect to address 10.32.191.114 port 544: Connection refused\n", "connect to address 10.32.191.114 port 544: Connection refused\n", "trying normal rsh (/usr/bin/rsh)\n", "Current Mounted File Systems are:\n", "uxfs64 rw /fs3 50=45 rw\n", "uxfs64 rw / root_disk=15 rw,log\n", "Total number of file systems is: 2\n", "Command succeeded:  file mountdisplay\n"][0m
+[32m	rsh 10.32.191.114 ls /.domainroot-ns/jp1[0m[32m
+	===cmd output start===[0m
+[37m	 connect to address 10.32.191.114 port 544: Connection refused
+connect to address 10.32.191.114 port 544: Connection refused
+trying normal rsh (/usr/bin/rsh)
+/.domainroot-ns/jp1: No such file or directory 
+Command succeeded:  ls /.domainroot-ns/jp1
+[0m
+[32m
+	===cmd output end===[0m
+[32m	[ passed ][0m
+[37m	Reason:["connect to address 10.32.191.114 port 544: Connection refused\n", "connect to address 10.32.191.114 port 544: Connection refused\n", "trying normal rsh (/usr/bin/rsh)\n", "domainroot-ns/jp1: No such file or directory \n", "Command succeeded:  ls /.domainroot-ns/jp1\n"][0m
+[32m	rsh 10.32.191.114 ls /.domainroot-ns/[0m[32m
+	===cmd output start===[0m
+[37m	 connect to address 10.32.191.114 port 544: Connection refused
+connect to address 10.32.191.114 port 544: Connection refused
+trying normal rsh (/usr/bin/rsh)
+/.domainroot-ns/: No such file or directory 
+Command succeeded:  ls /.domainroot-ns/
+[0m
+[32m
+	===cmd output end===[0m
+[32m	[ passed ][0m
+[37m	Reason:["connect to address 10.32.191.114 port 544: Connection refused\n", "connect to address 10.32.191.114 port 544: Connection refused\n", "trying normal rsh (/usr/bin/rsh)\n", "domainroot-ns/: No such file or directory \n", "Command succeeded:  ls /.domainroot-ns/\n"][0m
+[32m	umount /mnt/an[0m[32m
+	===cmd output start===[0m
+[37m	 umount: /mnt/an: not mounted
+[0m
+[32m
+	===cmd output end===[0m
+[32m	[ passX ][0m
+[32m	mount /mnt/an[0m[32m
+	===cmd output start===[0m
+[37m	 mount: can't find /mnt/an in /etc/fstab or /etc/mtab
+[0m
+[32m
+	===cmd output end===[0m
+[32m	[ passX ][0m
+[31m[ === tc01_createns , FAILED === ][0m

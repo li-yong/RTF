@@ -1,0 +1,5 @@
+Action,Object,Data
+rsh,#{ANIP},rcfstest mount srv=#{SNIP}   dir=#{DART_AN_WORKDIR}
+saveGlobal,#{LOCALHOST},"""FHFSID"", /fsid = \d*/"
+saveGlobal,#{LOCALHOST},"""FHFID1"", /fid1 = \d*/"
+saveGlobal,#{LOCALHOST},"""FHFID2"", /fid2 = \d*/"

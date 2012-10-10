@@ -1,0 +1,5 @@
+Action,Object,Data
+rsh,#{ANIP},utcli fedfsRcfsMount srv=#{SNIP} dir=#{DART_AN_WORKDIR},has(PASS)
+saveGlobal,#{LOCALHOST},"""FHFSID"", /fsid = \d*/",RTFnotVerify
+saveGlobal,#{LOCALHOST},"""FHFID1"", /fid1 = \d*/",RTFnotVerify
+saveGlobal,#{LOCALHOST},"""FHFID2"", /fid2 = \d*/",RTFnotVerify

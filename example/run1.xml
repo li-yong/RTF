@@ -1,0 +1,6 @@
+<testrun description="test run example">
+<testsuite name="ts_rcfs">
+ <testcases>tc01_null,tc02_mount</testcases>
+</testsuite>
+
+</testrun>

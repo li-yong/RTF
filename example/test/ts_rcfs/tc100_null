@@ -1,0 +1,2 @@
+Action,Object,Data,assert,ddcsvfile
+rsh,#{ANIP},utcli fedfsRcfsNull srv=#{SNIP},has(PASS)

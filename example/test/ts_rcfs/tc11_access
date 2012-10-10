@@ -1,0 +1,2 @@
+Action,Object,Data
+rsh,#{ANIP},utcli fedfsRcfsAccess srv=#{SNIP} fhfsid=#{FHFSID} fhfid1=#{FHFID1} fhfid2=#{FHFID2} access=755 override=1,has(PASS)

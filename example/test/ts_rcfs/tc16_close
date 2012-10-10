@@ -1,0 +1,3 @@
+Action,Object,Data
+rsh,#{ANIP},utcli null srv=#{SNIP}
+rsh,#{ANIP},help

@@ -1,0 +1,2 @@
+Action,Object,Data
+rsh,#{ANIP},utcli fedfsRcfsSetattr srv=#{SNIP} fhfsid=#{FHFSID} fhfid1=#{FHFID1} fhfid2=#{FHFID2} mode=0777 flags=0x10 uid=5 gid=5 size=1024 atime=520530 mtime=520530,has(PASS)

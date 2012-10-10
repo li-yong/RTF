@@ -1,0 +1,2 @@
+Action,Object,Data
+rsh,#{ANIP},utcli fedfsRcfsGetattr srv=#{SNIP} fhfsid=#{FHFSID} fhfid1=#{FHFID1} fhfid2=#{FHFID2}  $stateid mode=255 ,has(PASS)

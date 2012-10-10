@@ -1,0 +1,3 @@
+Action,Object,Data
+rsh,#{ANIP},utcli fedfsRcfsRename srv=#{SNIP} fhfsid=#{FHFSID} fhfid1=#{FHFID1} fhfid2=#{FHFID2} oldname=#{TESTFILE} newname=#{TESTFILE}.new,has(PASS)
+rsh,#{ANIP},utcli fedfsRcfsRename srv=#{SNIP} fhfsid=#{FHFSID} fhfid1=#{FHFID1} fhfid2=#{FHFID2} oldname=#{TESTFILE}.new newname=#{TESTFILE},has(PASS)
