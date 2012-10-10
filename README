@@ -19,8 +19,18 @@ This Test framework wrote in Ruby, RTF means 'Ruby Test Framework', also I like 
    in CSV format: "Object", "Action", "Data"
    means "Do 'Action' with 'Data' against 'Object'"
    
-   example: "ANIP", "ssh", "rcfstest null srv=SNIP"
+   example1: "ANIP", "ssh", "rcfstest null srv=SNIP"
    equal "ssh 1.1.1.1  'rcfTest null svr=10.10.10.10'"
+   
+   example2: 
+   Action,Object,Data,assert,ddcsvfile
+   lcmd,#{LOCALHOST},date,cmdExitCode=0
+       lcmd: local command
+	   cmdExitCode=0 : check cmd exexuted normally.
+   rsh_dd,#{LOCALHOST},echo cs=#{CVSDD_par1} bs=#{CVSDD_par2} ds=#{CVSDD_par3},!has(ERROR),/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
+       rshdd: rsh with data driven. 
+	   /root/.*csv: the data pool used by cmd.
+   
    
  . TurnOn Pcap
    when run IO against storage, turn the Package Capture on,
