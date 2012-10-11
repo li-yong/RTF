@@ -40,5 +40,3 @@ This Test framework wrote in Ruby, RTF means 'Ruby Test Framework', also I like 
  . TestSuite, TestCase list
    testSuite, testCase are stored in filesystem directory structure,
    the list switch scan the dir then list testSuite, testCase available.
-   
-   
