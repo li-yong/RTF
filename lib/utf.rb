@@ -148,7 +148,7 @@ end #def UTF.rsh2sade(ip,cmd)
 
 
 def UTF.ssh2sade(ip,cmd)
-  cmd2p="ssh #{ip} \'#{cmd}\'; echo $? "
+  cmd2p="ssh #{ip} \'#{cmd}\'"
   cmd=cmd.gsub(";",'\;'); 
   file="/tmp/testout.del"
   LOG.msg("verbose","\t#{cmd2p}","green", "print")

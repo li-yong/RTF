@@ -39777,3 +39777,2964 @@ veryverbose, MSG, 2013-04-29 11:11:09:
 	===cmd output end===
 verbose, WARN, 2013-04-29 11:11:09:	[fail]
 basic, WARN, 2013-04-29 11:11:09:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 11:26:06:ts_atl
+veryverbose, MSG, 2013-04-29 11:26:06:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:26:06:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 11:26:06:	ssh admin@9.115.245.190 'sainfo -h'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:08:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:08:	 The following actions are available with this command : 
+veryverbose, MSG, 2013-04-29 11:26:08:	 	lscmdstatus
+veryverbose, MSG, 2013-04-29 11:26:08:	 	lsfiles
+veryverbose, MSG, 2013-04-29 11:26:08:	 	lshardware
+veryverbose, MSG, 2013-04-29 11:26:08:	 	lsservicenodes
+veryverbose, MSG, 2013-04-29 11:26:08:	 	lsservicerecommendation
+veryverbose, MSG, 2013-04-29 11:26:08:	 	lsservicestatus
+veryverbose, MSG, 2013-04-29 11:26:08:	 0
+veryverbose, MSG, 2013-04-29 11:26:08:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:26:08:	[pass]
+verbose, MSG, 2013-04-29 11:26:08:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 1  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:09:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:09:	 1
+veryverbose, MSG, 2013-04-29 11:26:09:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:09:	[fail]
+verbose, MSG, 2013-04-29 11:26:09:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 1  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:11:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:11:	 1
+veryverbose, MSG, 2013-04-29 11:26:11:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:11:	[fail]
+verbose, MSG, 2013-04-29 11:26:11:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 1  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:12:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:12:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:12:	 1
+veryverbose, MSG, 2013-04-29 11:26:12:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:12:	[fail]
+verbose, MSG, 2013-04-29 11:26:12:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 1  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:14:	 1
+veryverbose, MSG, 2013-04-29 11:26:14:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:14:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:14:	[fail]
+verbose, MSG, 2013-04-29 11:26:14:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 2  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:15:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:15:	 1
+veryverbose, MSG, 2013-04-29 11:26:15:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 11:26:15:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:15:	[fail]
+verbose, MSG, 2013-04-29 11:26:15:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 2  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:17:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:17:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:17:	 1
+veryverbose, MSG, 2013-04-29 11:26:17:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:17:	[fail]
+verbose, MSG, 2013-04-29 11:26:17:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 2  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:18:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:18:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:18:	 1
+veryverbose, MSG, 2013-04-29 11:26:18:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:18:	[fail]
+verbose, MSG, 2013-04-29 11:26:18:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 2  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:20:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:20:	 1
+veryverbose, MSG, 2013-04-29 11:26:20:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:20:	[fail]
+verbose, MSG, 2013-04-29 11:26:20:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 3  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:21:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:21:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:21:	 1
+veryverbose, MSG, 2013-04-29 11:26:21:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:21:	[fail]
+verbose, MSG, 2013-04-29 11:26:21:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 3  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:23:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:23:	 1
+veryverbose, MSG, 2013-04-29 11:26:23:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:23:	[fail]
+verbose, MSG, 2013-04-29 11:26:23:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 3  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:25:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:25:	 1
+veryverbose, MSG, 2013-04-29 11:26:25:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:25:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:25:	[fail]
+verbose, MSG, 2013-04-29 11:26:25:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 3  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:26:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 11:26:26:	 1
+veryverbose, MSG, 2013-04-29 11:26:26:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:26:	[fail]
+verbose, MSG, 2013-04-29 11:26:26:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 4  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:28:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:28:	 1
+veryverbose, MSG, 2013-04-29 11:26:28:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:28:	[fail]
+verbose, MSG, 2013-04-29 11:26:28:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 4  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:29:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:29:	 1
+veryverbose, MSG, 2013-04-29 11:26:29:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:29:	[fail]
+verbose, MSG, 2013-04-29 11:26:29:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 4  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:31:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:31:	 1
+veryverbose, MSG, 2013-04-29 11:26:31:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:31:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:31:	[fail]
+verbose, MSG, 2013-04-29 11:26:31:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 4  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:32:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:32:	 1
+veryverbose, MSG, 2013-04-29 11:26:32:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:32:	[fail]
+basic, WARN, 2013-04-29 11:26:32:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 11:26:42:ts_atl
+veryverbose, MSG, 2013-04-29 11:26:42:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:26:42:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 11:26:42:	ssh #admin@9.115.245.190 'sainfo -h'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:42:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:42:	 1
+veryverbose, MSG, 2013-04-29 11:26:42:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:42:	[fail]
+verbose, MSG, 2013-04-29 11:26:42:	ssh #admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 1  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:42:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:42:	 1
+veryverbose, MSG, 2013-04-29 11:26:42:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:42:	[fail]
+verbose, MSG, 2013-04-29 11:26:42:	ssh #admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 1  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:42:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:42:	 1
+veryverbose, MSG, 2013-04-29 11:26:42:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:42:	[fail]
+verbose, MSG, 2013-04-29 11:26:42:	ssh #admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 1  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:42:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:42:	 1
+veryverbose, MSG, 2013-04-29 11:26:42:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:42:	[fail]
+verbose, MSG, 2013-04-29 11:26:42:	ssh #admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 1  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:42:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:42:	 1
+veryverbose, MSG, 2013-04-29 11:26:42:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:42:	[fail]
+verbose, MSG, 2013-04-29 11:26:42:	ssh #admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 2  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:42:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:42:	 1
+veryverbose, MSG, 2013-04-29 11:26:42:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:42:	[fail]
+verbose, MSG, 2013-04-29 11:26:42:	ssh #admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 2  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:43:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:43:	 1
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:43:	[fail]
+verbose, MSG, 2013-04-29 11:26:43:	ssh #admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 2  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:43:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:43:	 1
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:43:	[fail]
+verbose, MSG, 2013-04-29 11:26:43:	ssh #admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 2  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:43:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:43:	 1
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:43:	[fail]
+verbose, MSG, 2013-04-29 11:26:43:	ssh #admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 3  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:43:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:43:	 1
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:43:	[fail]
+verbose, MSG, 2013-04-29 11:26:43:	ssh #admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 3  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:43:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:43:	 1
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:43:	[fail]
+verbose, MSG, 2013-04-29 11:26:43:	ssh #admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 3  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:43:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:43:	 1
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:43:	[fail]
+verbose, MSG, 2013-04-29 11:26:43:	ssh #admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 3  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:43:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:43:	 1
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:43:	[fail]
+verbose, MSG, 2013-04-29 11:26:43:	ssh #admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 4  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:43:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:43:	 1
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:43:	[fail]
+verbose, MSG, 2013-04-29 11:26:43:	ssh #admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 4  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:43:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:43:	 1
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:43:	[fail]
+verbose, MSG, 2013-04-29 11:26:43:	ssh #admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 4  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:43:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:43:	 1
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:43:	[fail]
+verbose, MSG, 2013-04-29 11:26:43:	ssh #admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 4  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:26:43:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:26:43:	 1
+veryverbose, MSG, 2013-04-29 11:26:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:26:43:	[fail]
+basic, WARN, 2013-04-29 11:26:43:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 11:27:03:ts_atl
+veryverbose, MSG, 2013-04-29 11:27:03:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:27:03:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 11:27:35:ts_atl
+veryverbose, MSG, 2013-04-29 11:27:35:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:27:35:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 11:27:35:	ssh admin@9.115.245.190 'sainfo -h'; echo $? 
+veryverbose, MSG, 2013-04-29 11:27:37:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:27:37:	 The following actions are available with this command : 
+veryverbose, MSG, 2013-04-29 11:27:37:	 	lscmdstatus
+veryverbose, MSG, 2013-04-29 11:27:37:	 	lsfiles
+veryverbose, MSG, 2013-04-29 11:27:37:	 	lshardware
+veryverbose, MSG, 2013-04-29 11:27:37:	 	lsservicenodes
+veryverbose, MSG, 2013-04-29 11:27:37:	 	lsservicerecommendation
+veryverbose, MSG, 2013-04-29 11:27:37:	 	lsservicestatus
+veryverbose, MSG, 2013-04-29 11:27:37:	 0
+veryverbose, MSG, 2013-04-29 11:27:37:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:27:37:	[pass]
+verbose, MSG, 2013-04-29 11:27:37:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 1  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:27:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:27:38:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:27:38:	 1
+veryverbose, MSG, 2013-04-29 11:27:38:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:27:38:	[fail]
+verbose, MSG, 2013-04-29 11:27:38:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 1  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:27:40:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:27:40:	 1
+veryverbose, MSG, 2013-04-29 11:27:40:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:27:40:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:27:40:	[fail]
+verbose, MSG, 2013-04-29 11:27:40:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 1  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:27:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:27:42:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:27:42:	 1
+veryverbose, MSG, 2013-04-29 11:27:42:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:27:42:	[fail]
+verbose, MSG, 2013-04-29 11:27:42:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 1  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:27:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:27:43:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:27:43:	 1
+veryverbose, MSG, 2013-04-29 11:27:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:27:43:	[fail]
+verbose, MSG, 2013-04-29 11:27:43:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 2  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:27:45:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:27:45:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 11:27:45:	 1
+veryverbose, MSG, 2013-04-29 11:27:45:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:27:45:	[fail]
+verbose, MSG, 2013-04-29 11:27:45:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 2  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:27:46:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:27:46:	 1
+veryverbose, MSG, 2013-04-29 11:27:46:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:27:46:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:27:46:	[fail]
+verbose, MSG, 2013-04-29 11:27:46:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 2  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:27:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:27:48:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:27:48:	 1
+veryverbose, MSG, 2013-04-29 11:27:48:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:27:48:	[fail]
+verbose, MSG, 2013-04-29 11:27:48:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 2  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:27:49:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:27:49:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:27:49:	 1
+veryverbose, MSG, 2013-04-29 11:27:49:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:27:49:	[fail]
+verbose, MSG, 2013-04-29 11:27:49:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 3  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:27:51:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:27:51:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:27:51:	 1
+veryverbose, MSG, 2013-04-29 11:27:51:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:27:51:	[fail]
+verbose, MSG, 2013-04-29 11:27:51:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 3  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:27:52:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:27:52:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:27:52:	 1
+veryverbose, MSG, 2013-04-29 11:27:52:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:27:52:	[fail]
+verbose, MSG, 2013-04-29 11:27:52:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 3  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:27:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:27:54:	 1
+veryverbose, MSG, 2013-04-29 11:27:54:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:27:54:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:27:54:	[fail]
+verbose, MSG, 2013-04-29 11:27:54:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 3  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:27:55:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:27:55:	 1
+veryverbose, MSG, 2013-04-29 11:27:55:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 11:27:55:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:27:55:	[fail]
+verbose, MSG, 2013-04-29 11:27:55:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 4  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:27:57:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:27:57:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:27:57:	 1
+veryverbose, MSG, 2013-04-29 11:27:57:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:27:57:	[fail]
+verbose, MSG, 2013-04-29 11:27:57:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 4  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:27:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:27:58:	 1
+veryverbose, MSG, 2013-04-29 11:27:58:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:27:58:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:27:58:	[fail]
+verbose, MSG, 2013-04-29 11:27:58:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 4  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:28:00:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:28:00:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:28:00:	 1
+veryverbose, MSG, 2013-04-29 11:28:00:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:28:00:	[fail]
+verbose, MSG, 2013-04-29 11:28:00:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 4  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:28:02:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:28:02:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:28:02:	 1
+veryverbose, MSG, 2013-04-29 11:28:02:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:28:02:	[fail]
+basic, WARN, 2013-04-29 11:28:02:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 11:28:59:ts_atl
+veryverbose, MSG, 2013-04-29 11:28:59:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:28:59:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 11:28:59:	ssh admin@9.115.245.190 'chdrive -use candidate  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:00:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:00:	 1
+veryverbose, MSG, 2013-04-29 11:29:00:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:00:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:00:	[fail]
+verbose, MSG, 2013-04-29 11:29:00:	ssh admin@9.115.245.190 'chdrive -use candidate  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:02:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:02:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:02:	 1
+veryverbose, MSG, 2013-04-29 11:29:02:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:02:	[fail]
+verbose, MSG, 2013-04-29 11:29:02:	ssh admin@9.115.245.190 'chdrive -use candidate  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:03:	 1
+veryverbose, MSG, 2013-04-29 11:29:03:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:03:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:03:	[fail]
+verbose, MSG, 2013-04-29 11:29:03:	ssh admin@9.115.245.190 'chdrive -use candidate  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:05:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:05:	 1
+veryverbose, MSG, 2013-04-29 11:29:05:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:05:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:05:	[fail]
+verbose, MSG, 2013-04-29 11:29:05:	ssh admin@9.115.245.190 'chdrive -use candidate  5'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:06:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:06:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:06:	 1
+veryverbose, MSG, 2013-04-29 11:29:06:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:06:	[fail]
+verbose, MSG, 2013-04-29 11:29:06:	ssh admin@9.115.245.190 'chdrive -use candidate  6'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:07:	 1
+veryverbose, MSG, 2013-04-29 11:29:07:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:07:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:07:	[fail]
+verbose, MSG, 2013-04-29 11:29:07:	ssh admin@9.115.245.190 'chdrive -use candidate  7'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:09:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:09:	 1
+veryverbose, MSG, 2013-04-29 11:29:09:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:09:	[fail]
+verbose, MSG, 2013-04-29 11:29:09:	ssh admin@9.115.245.190 'chdrive -use candidate  8'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:11:	 CMMVC6537E The command cannot be initiated because the drive t1
+veryverbose, MSG, 2013-04-29 11:29:11:	 hat you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:11:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:11:	[fail]
+verbose, MSG, 2013-04-29 11:29:11:	ssh admin@9.115.245.190 'chdrive -use candidate  9'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:12:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:12:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:12:	 1
+veryverbose, MSG, 2013-04-29 11:29:12:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:12:	[fail]
+verbose, MSG, 2013-04-29 11:29:12:	ssh admin@9.115.245.190 'chdrive -use candidate  10'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:14:	 1
+veryverbose, MSG, 2013-04-29 11:29:14:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:14:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:14:	[fail]
+verbose, MSG, 2013-04-29 11:29:14:	ssh admin@9.115.245.190 'chdrive -use candidate  11'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:16:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:16:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:16:	 1
+veryverbose, MSG, 2013-04-29 11:29:16:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:16:	[fail]
+verbose, MSG, 2013-04-29 11:29:16:	ssh admin@9.115.245.190 'chdrive -use candidate  12'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:17:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:17:	 1
+veryverbose, MSG, 2013-04-29 11:29:17:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:17:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:17:	[fail]
+verbose, MSG, 2013-04-29 11:29:17:	ssh admin@9.115.245.190 'chdrive -use candidate  13'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:19:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:19:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:19:	 1
+veryverbose, MSG, 2013-04-29 11:29:19:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:19:	[fail]
+verbose, MSG, 2013-04-29 11:29:19:	ssh admin@9.115.245.190 'chdrive -use candidate  14'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:20:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:20:	 1
+veryverbose, MSG, 2013-04-29 11:29:20:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:20:	[fail]
+verbose, MSG, 2013-04-29 11:29:20:	ssh admin@9.115.245.190 'chdrive -use candidate  15'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:22:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:22:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:22:	 1
+veryverbose, MSG, 2013-04-29 11:29:22:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:22:	[fail]
+verbose, MSG, 2013-04-29 11:29:22:	ssh admin@9.115.245.190 'chdrive -use candidate  16'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:23:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:23:	 1
+veryverbose, MSG, 2013-04-29 11:29:23:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:23:	[fail]
+verbose, MSG, 2013-04-29 11:29:23:	ssh admin@9.115.245.190 'chdrive -use candidate  17'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:25:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:25:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:25:	 1
+veryverbose, MSG, 2013-04-29 11:29:25:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:25:	[fail]
+verbose, MSG, 2013-04-29 11:29:25:	ssh admin@9.115.245.190 'chdrive -use candidate  18'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:26:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:26:	 1
+veryverbose, MSG, 2013-04-29 11:29:26:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:26:	[fail]
+verbose, MSG, 2013-04-29 11:29:26:	ssh admin@9.115.245.190 'chdrive -use candidate  19'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:28:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:28:	 1
+veryverbose, MSG, 2013-04-29 11:29:28:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:28:	[fail]
+verbose, MSG, 2013-04-29 11:29:28:	ssh admin@9.115.245.190 'chdrive -use candidate  20'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:29:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:29:	 1
+veryverbose, MSG, 2013-04-29 11:29:29:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:29:	[fail]
+verbose, MSG, 2013-04-29 11:29:29:	ssh admin@9.115.245.190 'chdrive -use candidate  21'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:31:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:31:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:31:	 1
+veryverbose, MSG, 2013-04-29 11:29:31:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:31:	[fail]
+verbose, MSG, 2013-04-29 11:29:31:	ssh admin@9.115.245.190 'chdrive -use candidate  22'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:32:	 1
+veryverbose, MSG, 2013-04-29 11:29:32:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:32:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:33:	[fail]
+verbose, MSG, 2013-04-29 11:29:33:	ssh admin@9.115.245.190 'chdrive -use candidate  23'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:35:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:35:	 1
+veryverbose, MSG, 2013-04-29 11:29:35:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:35:	[fail]
+verbose, MSG, 2013-04-29 11:29:35:	ssh admin@9.115.245.190 'chdrive -use candidate  24'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:36:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:36:	 1
+veryverbose, MSG, 2013-04-29 11:29:36:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:36:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:36:	[fail]
+verbose, MSG, 2013-04-29 11:29:36:	ssh admin@9.115.245.190 'chdrive -use candidate  25'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:37:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:37:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:37:	 1
+veryverbose, MSG, 2013-04-29 11:29:37:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:37:	[fail]
+verbose, MSG, 2013-04-29 11:29:37:	ssh admin@9.115.245.190 'chdrive -use candidate  26'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:39:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:39:	 CMMVC6537E The command cannot be initiated beca1
+veryverbose, MSG, 2013-04-29 11:29:39:	 use the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:39:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:39:	[fail]
+verbose, MSG, 2013-04-29 11:29:39:	ssh admin@9.115.245.190 'chdrive -use candidate  27'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:40:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:40:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:40:	 1
+veryverbose, MSG, 2013-04-29 11:29:40:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:40:	[fail]
+verbose, MSG, 2013-04-29 11:29:40:	ssh admin@9.115.245.190 'chdrive -use candidate  28'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:42:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:42:	 1
+veryverbose, MSG, 2013-04-29 11:29:42:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:42:	[fail]
+verbose, MSG, 2013-04-29 11:29:42:	ssh admin@9.115.245.190 'chdrive -use candidate  29'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:43:	 CMMVC6537E The command cannot be initiated because1
+veryverbose, MSG, 2013-04-29 11:29:43:	  the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:43:	[fail]
+verbose, MSG, 2013-04-29 11:29:43:	ssh admin@9.115.245.190 'chdrive -use candidate  30'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:45:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:45:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:45:	 1
+veryverbose, MSG, 2013-04-29 11:29:45:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:45:	[fail]
+verbose, MSG, 2013-04-29 11:29:45:	ssh admin@9.115.245.190 'chdrive -use candidate  31'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:46:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:46:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:46:	 1
+veryverbose, MSG, 2013-04-29 11:29:46:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:46:	[fail]
+verbose, MSG, 2013-04-29 11:29:46:	ssh admin@9.115.245.190 'chdrive -use candidate  32'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:48:	 1
+veryverbose, MSG, 2013-04-29 11:29:48:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:48:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:48:	[fail]
+verbose, MSG, 2013-04-29 11:29:48:	ssh admin@9.115.245.190 'chdrive -use candidate  33'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:49:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:49:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:49:	 1
+veryverbose, MSG, 2013-04-29 11:29:49:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:49:	[fail]
+verbose, MSG, 2013-04-29 11:29:49:	ssh admin@9.115.245.190 'chdrive -use candidate  34'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:51:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:51:	 1
+veryverbose, MSG, 2013-04-29 11:29:51:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:51:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:51:	[fail]
+verbose, MSG, 2013-04-29 11:29:51:	ssh admin@9.115.245.190 'chdrive -use candidate  35'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:52:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:52:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:52:	 1
+veryverbose, MSG, 2013-04-29 11:29:52:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:52:	[fail]
+verbose, MSG, 2013-04-29 11:29:52:	ssh admin@9.115.245.190 'chdrive -use candidate  36'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:54:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:54:	 1
+veryverbose, MSG, 2013-04-29 11:29:54:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:54:	[fail]
+verbose, MSG, 2013-04-29 11:29:54:	ssh admin@9.115.245.190 'chdrive -use candidate  37'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:55:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:55:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:55:	 1
+veryverbose, MSG, 2013-04-29 11:29:55:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:55:	[fail]
+verbose, MSG, 2013-04-29 11:29:55:	ssh admin@9.115.245.190 'chdrive -use candidate  38'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:57:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:57:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:57:	 1
+veryverbose, MSG, 2013-04-29 11:29:57:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:57:	[fail]
+verbose, MSG, 2013-04-29 11:29:57:	ssh admin@9.115.245.190 'chdrive -use candidate  39'; echo $? 
+veryverbose, MSG, 2013-04-29 11:29:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:29:58:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:29:58:	 1
+veryverbose, MSG, 2013-04-29 11:29:58:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:29:58:	[fail]
+verbose, MSG, 2013-04-29 11:29:58:	ssh admin@9.115.245.190 'chdrive -use candidate  40'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:00:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:00:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:00:	 1
+veryverbose, MSG, 2013-04-29 11:30:00:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:00:	[fail]
+verbose, MSG, 2013-04-29 11:30:00:	ssh admin@9.115.245.190 'chdrive -use candidate  41'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:01:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:01:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:01:	 1
+veryverbose, MSG, 2013-04-29 11:30:01:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:01:	[fail]
+verbose, MSG, 2013-04-29 11:30:01:	ssh admin@9.115.245.190 'chdrive -use candidate  42'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:03:	 1
+veryverbose, MSG, 2013-04-29 11:30:03:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:03:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:03:	[fail]
+verbose, MSG, 2013-04-29 11:30:03:	ssh admin@9.115.245.190 'chdrive -use candidate  43'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:04:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:04:	 1
+veryverbose, MSG, 2013-04-29 11:30:04:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:04:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:04:	[fail]
+verbose, MSG, 2013-04-29 11:30:04:	ssh admin@9.115.245.190 'chdrive -use candidate  44'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:06:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:06:	 1
+veryverbose, MSG, 2013-04-29 11:30:06:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:06:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:06:	[fail]
+verbose, MSG, 2013-04-29 11:30:06:	ssh admin@9.115.245.190 'chdrive -use candidate  45'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:07:	 1
+veryverbose, MSG, 2013-04-29 11:30:07:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:07:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:07:	[fail]
+verbose, MSG, 2013-04-29 11:30:07:	ssh admin@9.115.245.190 'chdrive -use candidate  46'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:09:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:09:	 1
+veryverbose, MSG, 2013-04-29 11:30:09:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:09:	[fail]
+verbose, MSG, 2013-04-29 11:30:09:	ssh admin@9.115.245.190 'chdrive -use candidate  47'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:10:	 1
+veryverbose, MSG, 2013-04-29 11:30:10:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:10:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:10:	[fail]
+verbose, MSG, 2013-04-29 11:30:10:	ssh admin@9.115.245.190 'chdrive -use candidate  48'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:12:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:12:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:12:	 1
+veryverbose, MSG, 2013-04-29 11:30:12:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:12:	[fail]
+verbose, MSG, 2013-04-29 11:30:12:	ssh admin@9.115.245.190 'chdrive -use candidate  49'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:13:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:13:	 1
+veryverbose, MSG, 2013-04-29 11:30:13:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:13:	[fail]
+verbose, MSG, 2013-04-29 11:30:13:	ssh admin@9.115.245.190 'chdrive -use candidate  50'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:15:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:15:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:15:	 1
+veryverbose, MSG, 2013-04-29 11:30:15:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:15:	[fail]
+verbose, MSG, 2013-04-29 11:30:15:	ssh admin@9.115.245.190 'chdrive -use candidate  51'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:16:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:16:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:16:	 1
+veryverbose, MSG, 2013-04-29 11:30:16:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:16:	[fail]
+verbose, MSG, 2013-04-29 11:30:16:	ssh admin@9.115.245.190 'chdrive -use candidate  52'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:18:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:18:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:18:	 1
+veryverbose, MSG, 2013-04-29 11:30:18:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:18:	[fail]
+verbose, MSG, 2013-04-29 11:30:18:	ssh admin@9.115.245.190 'chdrive -use candidate  53'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:19:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:19:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:19:	 1
+veryverbose, MSG, 2013-04-29 11:30:19:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:19:	[fail]
+verbose, MSG, 2013-04-29 11:30:19:	ssh admin@9.115.245.190 'chdrive -use candidate  54'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:21:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:21:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:21:	 1
+veryverbose, MSG, 2013-04-29 11:30:21:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:21:	[fail]
+verbose, MSG, 2013-04-29 11:30:21:	ssh admin@9.115.245.190 'chdrive -use candidate  55'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:23:	 CMMVC6537E The command cannot be initiated becau1
+veryverbose, MSG, 2013-04-29 11:30:23:	 se the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:23:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:23:	[fail]
+verbose, MSG, 2013-04-29 11:30:23:	ssh admin@9.115.245.190 'chdrive -use candidate  56'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:25:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:25:	 1
+veryverbose, MSG, 2013-04-29 11:30:25:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:25:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:25:	[fail]
+verbose, MSG, 2013-04-29 11:30:25:	ssh admin@9.115.245.190 'chdrive -use candidate  57'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:26:	 1
+veryverbose, MSG, 2013-04-29 11:30:26:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:26:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:26:	[fail]
+verbose, MSG, 2013-04-29 11:30:26:	ssh admin@9.115.245.190 'chdrive -use candidate  58'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:28:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:28:	 1
+veryverbose, MSG, 2013-04-29 11:30:28:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:28:	[fail]
+verbose, MSG, 2013-04-29 11:30:28:	ssh admin@9.115.245.190 'chdrive -use candidate  59'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:29:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:29:	 1
+veryverbose, MSG, 2013-04-29 11:30:29:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:29:	[fail]
+verbose, MSG, 2013-04-29 11:30:29:	ssh admin@9.115.245.190 'chdrive -use candidate  60'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:31:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:31:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:31:	 1
+veryverbose, MSG, 2013-04-29 11:30:31:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:31:	[fail]
+verbose, MSG, 2013-04-29 11:30:31:	ssh admin@9.115.245.190 'chdrive -use candidate  61'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:32:	 1
+veryverbose, MSG, 2013-04-29 11:30:32:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:32:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:32:	[fail]
+verbose, MSG, 2013-04-29 11:30:32:	ssh admin@9.115.245.190 'chdrive -use candidate  62'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:34:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:34:	 1
+veryverbose, MSG, 2013-04-29 11:30:34:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:34:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:34:	[fail]
+verbose, MSG, 2013-04-29 11:30:34:	ssh admin@9.115.245.190 'chdrive -use candidate  63'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:35:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:35:	 1
+veryverbose, MSG, 2013-04-29 11:30:35:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:35:	[fail]
+verbose, MSG, 2013-04-29 11:30:35:	ssh admin@9.115.245.190 'chdrive -use candidate  64'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:37:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:37:	 1
+veryverbose, MSG, 2013-04-29 11:30:37:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:37:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:37:	[fail]
+verbose, MSG, 2013-04-29 11:30:37:	ssh admin@9.115.245.190 'chdrive -use candidate  65'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:38:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:38:	 1
+veryverbose, MSG, 2013-04-29 11:30:38:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:38:	[fail]
+verbose, MSG, 2013-04-29 11:30:38:	ssh admin@9.115.245.190 'chdrive -use candidate  66'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:40:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:40:	 1
+veryverbose, MSG, 2013-04-29 11:30:40:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:40:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:40:	[fail]
+verbose, MSG, 2013-04-29 11:30:40:	ssh admin@9.115.245.190 'chdrive -use candidate  67'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:41:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:41:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:41:	 1
+veryverbose, MSG, 2013-04-29 11:30:41:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:41:	[fail]
+verbose, MSG, 2013-04-29 11:30:41:	ssh admin@9.115.245.190 'chdrive -use candidate  68'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:43:	 1
+veryverbose, MSG, 2013-04-29 11:30:43:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:43:	[fail]
+verbose, MSG, 2013-04-29 11:30:43:	ssh admin@9.115.245.190 'chdrive -use candidate  69'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:44:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:44:	 1
+veryverbose, MSG, 2013-04-29 11:30:44:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:44:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:44:	[fail]
+verbose, MSG, 2013-04-29 11:30:44:	ssh admin@9.115.245.190 'chdrive -use candidate  70'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:46:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:46:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:46:	 1
+veryverbose, MSG, 2013-04-29 11:30:46:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:46:	[fail]
+verbose, MSG, 2013-04-29 11:30:46:	ssh admin@9.115.245.190 'chdrive -use candidate  71'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:47:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:47:	 CMMVC6537E The command cannot be initiate1
+veryverbose, MSG, 2013-04-29 11:30:47:	 d because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:47:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:47:	[fail]
+verbose, MSG, 2013-04-29 11:30:47:	ssh admin@9.115.245.190 'chdrive -use candidate  72'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:49:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:49:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:49:	 1
+veryverbose, MSG, 2013-04-29 11:30:49:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:49:	[fail]
+verbose, MSG, 2013-04-29 11:30:49:	ssh admin@9.115.245.190 'chdrive -use candidate  73'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:50:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:50:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:50:	 1
+veryverbose, MSG, 2013-04-29 11:30:50:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:50:	[fail]
+verbose, MSG, 2013-04-29 11:30:50:	ssh admin@9.115.245.190 'chdrive -use candidate  74'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:52:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:52:	 1
+veryverbose, MSG, 2013-04-29 11:30:52:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:52:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:52:	[fail]
+verbose, MSG, 2013-04-29 11:30:52:	ssh admin@9.115.245.190 'chdrive -use candidate  75'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:53:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:53:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:53:	 1
+veryverbose, MSG, 2013-04-29 11:30:53:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:53:	[fail]
+verbose, MSG, 2013-04-29 11:30:53:	ssh admin@9.115.245.190 'chdrive -use candidate  76'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:55:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:55:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:55:	 1
+veryverbose, MSG, 2013-04-29 11:30:55:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:55:	[fail]
+verbose, MSG, 2013-04-29 11:30:55:	ssh admin@9.115.245.190 'chdrive -use candidate  77'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:56:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:56:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:56:	 1
+veryverbose, MSG, 2013-04-29 11:30:56:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:56:	[fail]
+verbose, MSG, 2013-04-29 11:30:56:	ssh admin@9.115.245.190 'chdrive -use candidate  78'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:58:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:58:	 1
+veryverbose, MSG, 2013-04-29 11:30:58:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:58:	[fail]
+verbose, MSG, 2013-04-29 11:30:58:	ssh admin@9.115.245.190 'chdrive -use candidate  79'; echo $? 
+veryverbose, MSG, 2013-04-29 11:30:59:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:30:59:	 1
+veryverbose, MSG, 2013-04-29 11:30:59:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:30:59:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:30:59:	[fail]
+verbose, MSG, 2013-04-29 11:30:59:	ssh admin@9.115.245.190 'chdrive -use candidate  80'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:01:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:01:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:01:	 1
+veryverbose, MSG, 2013-04-29 11:31:01:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:01:	[fail]
+verbose, MSG, 2013-04-29 11:31:01:	ssh admin@9.115.245.190 'chdrive -use candidate  81'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:02:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:02:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:02:	 1
+veryverbose, MSG, 2013-04-29 11:31:02:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:02:	[fail]
+verbose, MSG, 2013-04-29 11:31:02:	ssh admin@9.115.245.190 'chdrive -use candidate  82'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:04:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:04:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:04:	 1
+veryverbose, MSG, 2013-04-29 11:31:04:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:04:	[fail]
+verbose, MSG, 2013-04-29 11:31:04:	ssh admin@9.115.245.190 'chdrive -use candidate  83'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:05:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:05:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:05:	 1
+veryverbose, MSG, 2013-04-29 11:31:05:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:05:	[fail]
+verbose, MSG, 2013-04-29 11:31:05:	ssh admin@9.115.245.190 'chdrive -use candidate  84'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:07:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:07:	 1
+veryverbose, MSG, 2013-04-29 11:31:07:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:07:	[fail]
+verbose, MSG, 2013-04-29 11:31:07:	ssh admin@9.115.245.190 'chdrive -use candidate  85'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:08:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:08:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:08:	 1
+veryverbose, MSG, 2013-04-29 11:31:08:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:08:	[fail]
+verbose, MSG, 2013-04-29 11:31:08:	ssh admin@9.115.245.190 'chdrive -use candidate  86'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:10:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:10:	 1
+veryverbose, MSG, 2013-04-29 11:31:10:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:10:	[fail]
+verbose, MSG, 2013-04-29 11:31:10:	ssh admin@9.115.245.190 'chdrive -use candidate  87'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:11:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:11:	 1
+veryverbose, MSG, 2013-04-29 11:31:11:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:11:	[fail]
+verbose, MSG, 2013-04-29 11:31:11:	ssh admin@9.115.245.190 'chdrive -use candidate  88'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:13:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:13:	 1
+veryverbose, MSG, 2013-04-29 11:31:13:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:13:	[fail]
+verbose, MSG, 2013-04-29 11:31:13:	ssh admin@9.115.245.190 'chdrive -use candidate  89'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:14:	 1
+veryverbose, MSG, 2013-04-29 11:31:14:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:14:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:14:	[fail]
+verbose, MSG, 2013-04-29 11:31:14:	ssh admin@9.115.245.190 'chdrive -use candidate  90'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:16:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:16:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:16:	 1
+veryverbose, MSG, 2013-04-29 11:31:16:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:16:	[fail]
+verbose, MSG, 2013-04-29 11:31:16:	ssh admin@9.115.245.190 'chdrive -use candidate  91'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:17:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:17:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:17:	 1
+veryverbose, MSG, 2013-04-29 11:31:17:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:17:	[fail]
+verbose, MSG, 2013-04-29 11:31:17:	ssh admin@9.115.245.190 'chdrive -use candidate  92'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:19:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:19:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:19:	 1
+veryverbose, MSG, 2013-04-29 11:31:19:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:19:	[fail]
+verbose, MSG, 2013-04-29 11:31:19:	ssh admin@9.115.245.190 'chdrive -use candidate  93'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:20:	 0
+veryverbose, MSG, 2013-04-29 11:31:20:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:31:20:	[pass]
+verbose, MSG, 2013-04-29 11:31:20:	ssh admin@9.115.245.190 'chdrive -use candidate  94'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:22:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:22:	 1
+veryverbose, MSG, 2013-04-29 11:31:22:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:22:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:22:	[fail]
+verbose, MSG, 2013-04-29 11:31:22:	ssh admin@9.115.245.190 'chdrive -use candidate  95'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:23:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:23:	 1
+veryverbose, MSG, 2013-04-29 11:31:23:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:23:	[fail]
+verbose, MSG, 2013-04-29 11:31:23:	ssh admin@9.115.245.190 'chdrive -use candidate  96'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:25:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:25:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:25:	 1
+veryverbose, MSG, 2013-04-29 11:31:25:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:25:	[fail]
+verbose, MSG, 2013-04-29 11:31:25:	ssh admin@9.115.245.190 'chdrive -use candidate  97'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:26:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:26:	 1
+veryverbose, MSG, 2013-04-29 11:31:26:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:26:	[fail]
+verbose, MSG, 2013-04-29 11:31:26:	ssh admin@9.115.245.190 'chdrive -use candidate  98'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:28:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:28:	 1
+veryverbose, MSG, 2013-04-29 11:31:28:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:28:	[fail]
+verbose, MSG, 2013-04-29 11:31:28:	ssh admin@9.115.245.190 'chdrive -use candidate  99'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:29:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:29:	 1
+veryverbose, MSG, 2013-04-29 11:31:29:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:29:	[fail]
+verbose, MSG, 2013-04-29 11:31:29:	ssh admin@9.115.245.190 'chdrive -use candidate  100'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:31:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:31:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:31:	 1
+veryverbose, MSG, 2013-04-29 11:31:31:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:31:	[fail]
+verbose, MSG, 2013-04-29 11:31:31:	ssh admin@9.115.245.190 'chdrive -use candidate  101'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:33:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:33:	 1
+veryverbose, MSG, 2013-04-29 11:31:33:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:33:	[fail]
+verbose, MSG, 2013-04-29 11:31:33:	ssh admin@9.115.245.190 'chdrive -use candidate  102'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:35:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:35:	 1
+veryverbose, MSG, 2013-04-29 11:31:35:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:35:	[fail]
+verbose, MSG, 2013-04-29 11:31:35:	ssh admin@9.115.245.190 'chdrive -use candidate  103'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:36:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:36:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:36:	 1
+veryverbose, MSG, 2013-04-29 11:31:36:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:36:	[fail]
+verbose, MSG, 2013-04-29 11:31:36:	ssh admin@9.115.245.190 'chdrive -use candidate  104'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:38:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:38:	 1
+veryverbose, MSG, 2013-04-29 11:31:38:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:38:	[fail]
+verbose, MSG, 2013-04-29 11:31:38:	ssh admin@9.115.245.190 'chdrive -use candidate  105'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:39:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:39:	 1
+veryverbose, MSG, 2013-04-29 11:31:39:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:39:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:39:	[fail]
+verbose, MSG, 2013-04-29 11:31:39:	ssh admin@9.115.245.190 'chdrive -use candidate  106'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:41:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:41:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:41:	 1
+veryverbose, MSG, 2013-04-29 11:31:41:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:41:	[fail]
+verbose, MSG, 2013-04-29 11:31:41:	ssh admin@9.115.245.190 'chdrive -use candidate  107'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:42:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:42:	 1
+veryverbose, MSG, 2013-04-29 11:31:42:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:42:	[fail]
+verbose, MSG, 2013-04-29 11:31:42:	ssh admin@9.115.245.190 'chdrive -use candidate  108'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:44:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:44:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:44:	 1
+veryverbose, MSG, 2013-04-29 11:31:44:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:44:	[fail]
+verbose, MSG, 2013-04-29 11:31:44:	ssh admin@9.115.245.190 'chdrive -use candidate  109'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:45:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:45:	 CMMVC6537E The command cannot be initiated because the 1
+veryverbose, MSG, 2013-04-29 11:31:45:	 drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:45:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:45:	[fail]
+verbose, MSG, 2013-04-29 11:31:45:	ssh admin@9.115.245.190 'chdrive -use candidate  110'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:47:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:47:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:47:	 1
+veryverbose, MSG, 2013-04-29 11:31:47:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:47:	[fail]
+verbose, MSG, 2013-04-29 11:31:47:	ssh admin@9.115.245.190 'chdrive -use candidate  111'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:48:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:31:48:	 1
+veryverbose, MSG, 2013-04-29 11:31:48:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:31:48:	[fail]
+verbose, MSG, 2013-04-29 11:31:48:	ssh admin@9.115.245.190 'chdrive -use candidate  112'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:50:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:50:	 0
+veryverbose, MSG, 2013-04-29 11:31:50:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:31:50:	[pass]
+verbose, MSG, 2013-04-29 11:31:50:	ssh admin@9.115.245.190 'chdrive -use candidate  113'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:52:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:52:	 0
+veryverbose, MSG, 2013-04-29 11:31:52:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:31:52:	[pass]
+verbose, MSG, 2013-04-29 11:31:52:	ssh admin@9.115.245.190 'chdrive -use candidate  114'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:53:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:53:	 0
+veryverbose, MSG, 2013-04-29 11:31:53:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:31:53:	[pass]
+verbose, MSG, 2013-04-29 11:31:53:	ssh admin@9.115.245.190 'chdrive -use candidate  115'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:55:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:55:	 0
+veryverbose, MSG, 2013-04-29 11:31:55:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:31:55:	[pass]
+verbose, MSG, 2013-04-29 11:31:55:	ssh admin@9.115.245.190 'chdrive -use candidate  116'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:56:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:56:	 0
+veryverbose, MSG, 2013-04-29 11:31:56:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:31:56:	[pass]
+verbose, MSG, 2013-04-29 11:31:56:	ssh admin@9.115.245.190 'chdrive -use candidate  117'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:58:	 0
+veryverbose, MSG, 2013-04-29 11:31:58:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:31:58:	[pass]
+verbose, MSG, 2013-04-29 11:31:58:	ssh admin@9.115.245.190 'chdrive -use candidate  118'; echo $? 
+veryverbose, MSG, 2013-04-29 11:31:59:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:31:59:	 0
+veryverbose, MSG, 2013-04-29 11:31:59:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:31:59:	[pass]
+verbose, MSG, 2013-04-29 11:31:59:	ssh admin@9.115.245.190 'chdrive -use candidate  119'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:01:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:01:	 0
+veryverbose, MSG, 2013-04-29 11:32:01:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:01:	[pass]
+verbose, MSG, 2013-04-29 11:32:01:	ssh admin@9.115.245.190 'chdrive -use candidate  120'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:02:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:02:	 0
+veryverbose, MSG, 2013-04-29 11:32:02:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:02:	[pass]
+verbose, MSG, 2013-04-29 11:32:02:	ssh admin@9.115.245.190 'chdrive -use candidate  121'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:04:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:04:	 0
+veryverbose, MSG, 2013-04-29 11:32:04:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:04:	[pass]
+verbose, MSG, 2013-04-29 11:32:04:	ssh admin@9.115.245.190 'chdrive -use candidate  122'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:06:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:06:	 0
+veryverbose, MSG, 2013-04-29 11:32:06:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:06:	[pass]
+verbose, MSG, 2013-04-29 11:32:06:	ssh admin@9.115.245.190 'chdrive -use candidate  123'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:07:	 0
+veryverbose, MSG, 2013-04-29 11:32:07:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:07:	[pass]
+verbose, MSG, 2013-04-29 11:32:07:	ssh admin@9.115.245.190 'chdrive -use candidate  124'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:09:	 0
+veryverbose, MSG, 2013-04-29 11:32:09:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:09:	[pass]
+verbose, MSG, 2013-04-29 11:32:09:	ssh admin@9.115.245.190 'chdrive -use candidate  125'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:10:	 0
+veryverbose, MSG, 2013-04-29 11:32:10:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:10:	[pass]
+verbose, MSG, 2013-04-29 11:32:10:	ssh admin@9.115.245.190 'chdrive -use candidate  126'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:12:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:12:	 0
+veryverbose, MSG, 2013-04-29 11:32:12:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:12:	[pass]
+verbose, MSG, 2013-04-29 11:32:12:	ssh admin@9.115.245.190 'chdrive -use candidate  127'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:13:	 0
+veryverbose, MSG, 2013-04-29 11:32:13:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:13:	[pass]
+verbose, MSG, 2013-04-29 11:32:13:	ssh admin@9.115.245.190 'chdrive -use candidate  128'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:15:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:15:	 0
+veryverbose, MSG, 2013-04-29 11:32:15:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:15:	[pass]
+verbose, MSG, 2013-04-29 11:32:15:	ssh admin@9.115.245.190 'chdrive -use candidate  129'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:16:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:16:	 0
+veryverbose, MSG, 2013-04-29 11:32:16:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:16:	[pass]
+verbose, MSG, 2013-04-29 11:32:16:	ssh admin@9.115.245.190 'chdrive -use candidate  130'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:18:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:18:	 0
+veryverbose, MSG, 2013-04-29 11:32:18:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:18:	[pass]
+verbose, MSG, 2013-04-29 11:32:18:	ssh admin@9.115.245.190 'chdrive -use candidate  131'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:20:	 0
+veryverbose, MSG, 2013-04-29 11:32:20:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:20:	[pass]
+verbose, MSG, 2013-04-29 11:32:20:	ssh admin@9.115.245.190 'chdrive -use candidate  132'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:21:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:21:	 0
+veryverbose, MSG, 2013-04-29 11:32:21:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:21:	[pass]
+verbose, MSG, 2013-04-29 11:32:21:	ssh admin@9.115.245.190 'chdrive -use candidate  133'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:23:	 0
+veryverbose, MSG, 2013-04-29 11:32:23:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:23:	[pass]
+verbose, MSG, 2013-04-29 11:32:23:	ssh admin@9.115.245.190 'chdrive -use candidate  134'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:24:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:24:	 0
+veryverbose, MSG, 2013-04-29 11:32:24:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:24:	[pass]
+verbose, MSG, 2013-04-29 11:32:24:	ssh admin@9.115.245.190 'chdrive -use candidate  135'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:26:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:32:26:	 1
+veryverbose, MSG, 2013-04-29 11:32:26:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:26:	[fail]
+verbose, MSG, 2013-04-29 11:32:26:	ssh admin@9.115.245.190 'chdrive -use candidate  136'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:28:	 0
+veryverbose, MSG, 2013-04-29 11:32:28:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:32:28:	[pass]
+verbose, MSG, 2013-04-29 11:32:28:	ssh admin@9.115.245.190 'chdrive -use candidate  137'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:29:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for th1
+veryverbose, MSG, 2013-04-29 11:32:29:	 e task.
+veryverbose, MSG, 2013-04-29 11:32:29:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:29:	[fail]
+verbose, MSG, 2013-04-29 11:32:29:	ssh admin@9.115.245.190 'chdrive -use candidate  138'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:30:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:30:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:32:30:	 1
+veryverbose, MSG, 2013-04-29 11:32:31:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:31:	[fail]
+verbose, MSG, 2013-04-29 11:32:31:	ssh admin@9.115.245.190 'chdrive -use candidate  139'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:32:	 1
+veryverbose, MSG, 2013-04-29 11:32:32:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:32:32:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:32:	[fail]
+verbose, MSG, 2013-04-29 11:32:32:	ssh admin@9.115.245.190 'chdrive -use candidate  140'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:33:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:32:33:	 1
+veryverbose, MSG, 2013-04-29 11:32:33:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:33:	[fail]
+verbose, MSG, 2013-04-29 11:32:33:	ssh admin@9.115.245.190 'chdrive -use candidate  141'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:35:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:32:35:	 1
+veryverbose, MSG, 2013-04-29 11:32:35:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:35:	[fail]
+verbose, MSG, 2013-04-29 11:32:35:	ssh admin@9.115.245.190 'chdrive -use candidate  142'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:36:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:36:	 1
+veryverbose, MSG, 2013-04-29 11:32:36:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:32:36:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:36:	[fail]
+verbose, MSG, 2013-04-29 11:32:36:	ssh admin@9.115.245.190 'chdrive -use candidate  143'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:38:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:32:38:	 1
+veryverbose, MSG, 2013-04-29 11:32:38:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:38:	[fail]
+verbose, MSG, 2013-04-29 11:32:38:	ssh admin@9.115.245.190 'chdrive -use candidate  144'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:39:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:39:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:32:39:	 1
+veryverbose, MSG, 2013-04-29 11:32:39:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:39:	[fail]
+verbose, MSG, 2013-04-29 11:32:39:	ssh admin@9.115.245.190 'chdrive -use candidate  145'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:41:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:41:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 11:32:41:	 1
+veryverbose, MSG, 2013-04-29 11:32:41:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:41:	[fail]
+verbose, MSG, 2013-04-29 11:32:41:	ssh admin@9.115.245.190 'chdrive -use candidate  146'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:43:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:32:43:	 1
+veryverbose, MSG, 2013-04-29 11:32:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:43:	[fail]
+verbose, MSG, 2013-04-29 11:32:43:	ssh admin@9.115.245.190 'chdrive -use candidate  147'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:45:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:45:	 CMMVC5753E The specified object does not exist or 1
+veryverbose, MSG, 2013-04-29 11:32:45:	 is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:32:45:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:45:	[fail]
+verbose, MSG, 2013-04-29 11:32:45:	ssh admin@9.115.245.190 'chdrive -use candidate  148'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:47:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:47:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:32:47:	 1
+veryverbose, MSG, 2013-04-29 11:32:47:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:47:	[fail]
+verbose, MSG, 2013-04-29 11:32:47:	ssh admin@9.115.245.190 'chdrive -use candidate  149'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:48:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:32:48:	 1
+veryverbose, MSG, 2013-04-29 11:32:48:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:48:	[fail]
+verbose, MSG, 2013-04-29 11:32:48:	ssh admin@9.115.245.190 'chdrive -use candidate  150'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:50:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:50:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:32:50:	 1
+veryverbose, MSG, 2013-04-29 11:32:50:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:50:	[fail]
+verbose, MSG, 2013-04-29 11:32:50:	ssh admin@9.115.245.190 'chdrive -use candidate  151'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:51:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:51:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:32:51:	 1
+veryverbose, MSG, 2013-04-29 11:32:51:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:51:	[fail]
+verbose, MSG, 2013-04-29 11:32:51:	ssh admin@9.115.245.190 'chdrive -use candidate  152'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:53:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:53:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:32:53:	 1
+veryverbose, MSG, 2013-04-29 11:32:53:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:53:	[fail]
+verbose, MSG, 2013-04-29 11:32:53:	ssh admin@9.115.245.190 'chdrive -use candidate  153'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:54:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:32:54:	 1
+veryverbose, MSG, 2013-04-29 11:32:54:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:54:	[fail]
+verbose, MSG, 2013-04-29 11:32:54:	ssh admin@9.115.245.190 'chdrive -use candidate  154'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:56:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:56:	 CMMVC5753E1
+veryverbose, MSG, 2013-04-29 11:32:56:	  The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:32:56:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:56:	[fail]
+verbose, MSG, 2013-04-29 11:32:56:	ssh admin@9.115.245.190 'chdrive -use candidate  155'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:57:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:57:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:32:57:	 1
+veryverbose, MSG, 2013-04-29 11:32:57:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:57:	[fail]
+verbose, MSG, 2013-04-29 11:32:57:	ssh admin@9.115.245.190 'chdrive -use candidate  156'; echo $? 
+veryverbose, MSG, 2013-04-29 11:32:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:32:58:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:32:58:	 1
+veryverbose, MSG, 2013-04-29 11:32:58:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:32:58:	[fail]
+verbose, MSG, 2013-04-29 11:32:58:	ssh admin@9.115.245.190 'chdrive -use candidate  157'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:00:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:00:	 1
+veryverbose, MSG, 2013-04-29 11:33:00:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:33:00:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:00:	[fail]
+verbose, MSG, 2013-04-29 11:33:00:	ssh admin@9.115.245.190 'chdrive -use candidate  158'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:01:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:01:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:33:01:	 1
+veryverbose, MSG, 2013-04-29 11:33:01:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:01:	[fail]
+verbose, MSG, 2013-04-29 11:33:01:	ssh admin@9.115.245.190 'chdrive -use candidate  159'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:03:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:33:03:	 1
+veryverbose, MSG, 2013-04-29 11:33:03:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:03:	[fail]
+verbose, MSG, 2013-04-29 11:33:03:	ssh admin@9.115.245.190 'chdrive -use candidate  160'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:04:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:04:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:33:04:	 1
+veryverbose, MSG, 2013-04-29 11:33:04:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:04:	[fail]
+verbose, MSG, 2013-04-29 11:33:04:	ssh admin@9.115.245.190 'chdrive -use candidate  161'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:06:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:06:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:33:06:	 1
+veryverbose, MSG, 2013-04-29 11:33:06:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:06:	[fail]
+verbose, MSG, 2013-04-29 11:33:06:	ssh admin@9.115.245.190 'chdrive -use candidate  162'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:07:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:33:07:	 1
+veryverbose, MSG, 2013-04-29 11:33:07:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:07:	[fail]
+verbose, MSG, 2013-04-29 11:33:07:	ssh admin@9.115.245.190 'chdrive -use candidate  163'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:09:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:33:09:	 1
+veryverbose, MSG, 2013-04-29 11:33:09:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:09:	[fail]
+verbose, MSG, 2013-04-29 11:33:09:	ssh admin@9.115.245.190 'chdrive -use candidate  164'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:10:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:33:10:	 1
+veryverbose, MSG, 2013-04-29 11:33:10:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:10:	[fail]
+verbose, MSG, 2013-04-29 11:33:10:	ssh admin@9.115.245.190 'chdrive -use candidate  165'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:11:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:33:11:	 1
+veryverbose, MSG, 2013-04-29 11:33:11:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:11:	[fail]
+verbose, MSG, 2013-04-29 11:33:11:	ssh admin@9.115.245.190 'chdrive -use candidate  166'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:13:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:33:13:	 1
+veryverbose, MSG, 2013-04-29 11:33:13:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:13:	[fail]
+verbose, MSG, 2013-04-29 11:33:13:	ssh admin@9.115.245.190 'chdrive -use candidate  167'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:14:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:33:14:	 1
+veryverbose, MSG, 2013-04-29 11:33:14:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:14:	[fail]
+verbose, MSG, 2013-04-29 11:33:14:	ssh admin@9.115.245.190 'chdrive -use candidate  168'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:16:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:16:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:33:16:	 1
+veryverbose, MSG, 2013-04-29 11:33:16:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:16:	[fail]
+verbose, MSG, 2013-04-29 11:33:16:	ssh admin@9.115.245.190 'chdrive -use candidate  169'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:17:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:17:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:33:17:	 1
+veryverbose, MSG, 2013-04-29 11:33:17:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:17:	[fail]
+verbose, MSG, 2013-04-29 11:33:17:	ssh admin@9.115.245.190 'chdrive -use candidate  170'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:19:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:19:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:33:19:	 1
+veryverbose, MSG, 2013-04-29 11:33:19:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:19:	[fail]
+verbose, MSG, 2013-04-29 11:33:19:	ssh admin@9.115.245.190 'chdrive -use candidate  171'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:20:	 CMMVC5753E1
+veryverbose, MSG, 2013-04-29 11:33:20:	  The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:33:20:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:20:	[fail]
+verbose, MSG, 2013-04-29 11:33:20:	ssh admin@9.115.245.190 'chdrive -use candidate  172'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:21:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:21:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:33:21:	 1
+veryverbose, MSG, 2013-04-29 11:33:21:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:21:	[fail]
+verbose, MSG, 2013-04-29 11:33:21:	ssh admin@9.115.245.190 'chdrive -use candidate  173'; echo $? 
+basic, MSG, 2013-04-29 11:33:24:ts_atl
+veryverbose, MSG, 2013-04-29 11:33:24:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:33:24:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 11:33:25:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:26:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:33:26:	 1
+veryverbose, MSG, 2013-04-29 11:33:26:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:26:	[fail]
+verbose, MSG, 2013-04-29 11:33:26:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:27:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:27:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:33:27:	 1
+veryverbose, MSG, 2013-04-29 11:33:27:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:27:	[fail]
+verbose, MSG, 2013-04-29 11:33:27:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:29:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:33:29:	 1
+veryverbose, MSG, 2013-04-29 11:33:29:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:29:	[fail]
+verbose, MSG, 2013-04-29 11:33:29:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:30:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:30:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:33:30:	 1
+veryverbose, MSG, 2013-04-29 11:33:30:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:30:	[fail]
+verbose, MSG, 2013-04-29 11:33:30:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 5'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:32:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:33:32:	 1
+veryverbose, MSG, 2013-04-29 11:33:32:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:32:	[fail]
+verbose, MSG, 2013-04-29 11:33:32:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 6'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:33:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:33:33:	 1
+veryverbose, MSG, 2013-04-29 11:33:33:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:33:	[fail]
+verbose, MSG, 2013-04-29 11:33:33:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 7'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:34:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:34:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:33:34:	 1
+veryverbose, MSG, 2013-04-29 11:33:34:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:34:	[fail]
+verbose, MSG, 2013-04-29 11:33:34:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 8'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:36:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:36:	 CMMVC5701E1
+veryverbose, MSG, 2013-04-29 11:33:36:	  No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:33:36:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:36:	[fail]
+verbose, MSG, 2013-04-29 11:33:36:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 9'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:37:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:37:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:33:37:	 1
+veryverbose, MSG, 2013-04-29 11:33:37:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:37:	[fail]
+verbose, MSG, 2013-04-29 11:33:37:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 10'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:39:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:39:	 1
+veryverbose, MSG, 2013-04-29 11:33:39:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:33:39:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:39:	[fail]
+verbose, MSG, 2013-04-29 11:33:39:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 11'; echo $? 
+veryverbose, MSG, 2013-04-29 11:33:40:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:33:40:	 CMMVC5701E1
+veryverbose, MSG, 2013-04-29 11:33:40:	  No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:33:40:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:33:40:	[fail]
+verbose, MSG, 2013-04-29 11:33:40:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 12'; echo $? 
+basic, MSG, 2013-04-29 11:34:30:ts_atl
+veryverbose, MSG, 2013-04-29 11:34:30:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:34:30:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 11:34:31:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 1 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:32:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:32:	 1
+veryverbose, MSG, 2013-04-29 11:34:32:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:32:	[fail]
+verbose, MSG, 2013-04-29 11:34:32:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 2 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:33:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:33:	 1
+veryverbose, MSG, 2013-04-29 11:34:33:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:34:	[fail]
+verbose, MSG, 2013-04-29 11:34:34:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 3 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:35:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:35:	 1
+veryverbose, MSG, 2013-04-29 11:34:35:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:35:	[fail]
+verbose, MSG, 2013-04-29 11:34:35:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 4 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:36:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:36:	 CMMVC6538E The command cannot be initiated because at 1
+veryverbose, MSG, 2013-04-29 11:34:36:	 least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:36:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:36:	[fail]
+verbose, MSG, 2013-04-29 11:34:36:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 5 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:38:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:38:	 1
+veryverbose, MSG, 2013-04-29 11:34:38:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:38:	[fail]
+verbose, MSG, 2013-04-29 11:34:38:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 6 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:39:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:39:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:39:	 1
+veryverbose, MSG, 2013-04-29 11:34:39:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:39:	[fail]
+verbose, MSG, 2013-04-29 11:34:39:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 7 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:41:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:41:	 1
+veryverbose, MSG, 2013-04-29 11:34:41:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:41:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:41:	[fail]
+verbose, MSG, 2013-04-29 11:34:41:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 8 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:42:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:42:	 1
+veryverbose, MSG, 2013-04-29 11:34:42:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:42:	[fail]
+verbose, MSG, 2013-04-29 11:34:42:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 9 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:44:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:44:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:44:	 1
+veryverbose, MSG, 2013-04-29 11:34:44:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:44:	[fail]
+verbose, MSG, 2013-04-29 11:34:44:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 10 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:45:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:45:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:45:	 1
+veryverbose, MSG, 2013-04-29 11:34:45:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:45:	[fail]
+verbose, MSG, 2013-04-29 11:34:45:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 11 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:47:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:47:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:47:	 1
+veryverbose, MSG, 2013-04-29 11:34:47:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:47:	[fail]
+verbose, MSG, 2013-04-29 11:34:47:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 12 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:48:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:48:	 1
+veryverbose, MSG, 2013-04-29 11:34:48:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:48:	[fail]
+verbose, MSG, 2013-04-29 11:34:48:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 13 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:50:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:50:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:50:	 1
+veryverbose, MSG, 2013-04-29 11:34:50:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:50:	[fail]
+verbose, MSG, 2013-04-29 11:34:50:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 14 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:51:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:51:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:51:	 1
+veryverbose, MSG, 2013-04-29 11:34:51:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:51:	[fail]
+verbose, MSG, 2013-04-29 11:34:51:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 15 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:53:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:53:	 1
+veryverbose, MSG, 2013-04-29 11:34:53:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:53:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:53:	[fail]
+verbose, MSG, 2013-04-29 11:34:53:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 16 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:54:	 1
+veryverbose, MSG, 2013-04-29 11:34:54:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:54:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:54:	[fail]
+verbose, MSG, 2013-04-29 11:34:54:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 17 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:55:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:55:	 1
+veryverbose, MSG, 2013-04-29 11:34:55:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:55:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:55:	[fail]
+verbose, MSG, 2013-04-29 11:34:55:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 18 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:57:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:57:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:57:	 1
+veryverbose, MSG, 2013-04-29 11:34:57:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:57:	[fail]
+verbose, MSG, 2013-04-29 11:34:57:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 19 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:34:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:34:58:	 CMMVC6538E The command cannot be initiated because at le1
+veryverbose, MSG, 2013-04-29 11:34:58:	 ast one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:34:58:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:34:58:	[fail]
+verbose, MSG, 2013-04-29 11:34:58:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 20 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:00:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:00:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candid1
+veryverbose, MSG, 2013-04-29 11:35:00:	 ate.
+veryverbose, MSG, 2013-04-29 11:35:00:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:00:	[fail]
+verbose, MSG, 2013-04-29 11:35:00:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 21 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:02:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:02:	 CMMVC6538E The command cannot be initiated becau1
+veryverbose, MSG, 2013-04-29 11:35:02:	 se at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:02:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:02:	[fail]
+verbose, MSG, 2013-04-29 11:35:02:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 22 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:03:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:03:	 1
+veryverbose, MSG, 2013-04-29 11:35:03:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:03:	[fail]
+verbose, MSG, 2013-04-29 11:35:03:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 23 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:05:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:05:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:05:	 1
+veryverbose, MSG, 2013-04-29 11:35:05:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:05:	[fail]
+verbose, MSG, 2013-04-29 11:35:05:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 24 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:07:	 1
+veryverbose, MSG, 2013-04-29 11:35:07:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:07:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:07:	[fail]
+verbose, MSG, 2013-04-29 11:35:07:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 25 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:08:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:08:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:08:	 1
+veryverbose, MSG, 2013-04-29 11:35:08:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:08:	[fail]
+verbose, MSG, 2013-04-29 11:35:08:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 26 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:10:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:10:	 1
+veryverbose, MSG, 2013-04-29 11:35:10:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:10:	[fail]
+verbose, MSG, 2013-04-29 11:35:10:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 27 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:11:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:11:	 1
+veryverbose, MSG, 2013-04-29 11:35:11:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:11:	[fail]
+verbose, MSG, 2013-04-29 11:35:11:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 28 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:13:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:13:	 1
+veryverbose, MSG, 2013-04-29 11:35:13:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:13:	[fail]
+verbose, MSG, 2013-04-29 11:35:13:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 29 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:14:	 1
+veryverbose, MSG, 2013-04-29 11:35:14:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:14:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:14:	[fail]
+verbose, MSG, 2013-04-29 11:35:14:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 30 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:16:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:16:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:16:	 1
+veryverbose, MSG, 2013-04-29 11:35:16:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:16:	[fail]
+verbose, MSG, 2013-04-29 11:35:16:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 31 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:17:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:17:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:17:	 1
+veryverbose, MSG, 2013-04-29 11:35:17:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:17:	[fail]
+verbose, MSG, 2013-04-29 11:35:17:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 32 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:19:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:19:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:19:	 1
+veryverbose, MSG, 2013-04-29 11:35:19:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:19:	[fail]
+verbose, MSG, 2013-04-29 11:35:19:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 33 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:20:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:20:	 1
+veryverbose, MSG, 2013-04-29 11:35:20:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:20:	[fail]
+verbose, MSG, 2013-04-29 11:35:20:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 34 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:21:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:21:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:21:	 1
+veryverbose, MSG, 2013-04-29 11:35:21:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:21:	[fail]
+verbose, MSG, 2013-04-29 11:35:21:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 35 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:23:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:23:	 1
+veryverbose, MSG, 2013-04-29 11:35:23:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:23:	[fail]
+verbose, MSG, 2013-04-29 11:35:23:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 36 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:24:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:24:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:24:	 1
+veryverbose, MSG, 2013-04-29 11:35:24:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:24:	[fail]
+verbose, MSG, 2013-04-29 11:35:24:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 37 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:26:	 1
+veryverbose, MSG, 2013-04-29 11:35:26:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:26:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:26:	[fail]
+verbose, MSG, 2013-04-29 11:35:26:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 38 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:27:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:27:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:27:	 1
+veryverbose, MSG, 2013-04-29 11:35:27:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:27:	[fail]
+verbose, MSG, 2013-04-29 11:35:27:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 39 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:29:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:29:	 1
+veryverbose, MSG, 2013-04-29 11:35:29:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:29:	[fail]
+verbose, MSG, 2013-04-29 11:35:29:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 40 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:30:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:30:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:30:	 1
+veryverbose, MSG, 2013-04-29 11:35:30:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:30:	[fail]
+verbose, MSG, 2013-04-29 11:35:30:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 41 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:32:	 1
+veryverbose, MSG, 2013-04-29 11:35:32:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:32:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:32:	[fail]
+verbose, MSG, 2013-04-29 11:35:32:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 42 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:33:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:33:	 1
+veryverbose, MSG, 2013-04-29 11:35:34:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:34:	[fail]
+verbose, MSG, 2013-04-29 11:35:34:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 43 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:35:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:35:	 1
+veryverbose, MSG, 2013-04-29 11:35:35:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:35:	[fail]
+verbose, MSG, 2013-04-29 11:35:35:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 44 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:36:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:36:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:36:	 1
+veryverbose, MSG, 2013-04-29 11:35:36:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:36:	[fail]
+verbose, MSG, 2013-04-29 11:35:36:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 45 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:38:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:38:	 1
+veryverbose, MSG, 2013-04-29 11:35:38:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:38:	[fail]
+verbose, MSG, 2013-04-29 11:35:38:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 46 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:39:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:39:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:39:	 1
+veryverbose, MSG, 2013-04-29 11:35:39:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:39:	[fail]
+verbose, MSG, 2013-04-29 11:35:39:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 47 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:41:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:41:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:41:	 1
+veryverbose, MSG, 2013-04-29 11:35:41:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:41:	[fail]
+verbose, MSG, 2013-04-29 11:35:41:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 48 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:42:	 1
+veryverbose, MSG, 2013-04-29 11:35:42:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:42:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:42:	[fail]
+verbose, MSG, 2013-04-29 11:35:42:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 49 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:35:44:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:35:44:	 1
+veryverbose, MSG, 2013-04-29 11:35:44:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:35:44:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:35:44:	[fail]
+verbose, MSG, 2013-04-29 11:35:44:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 50 mdiskgrp0'; echo $? 
+basic, MSG, 2013-04-29 11:37:16:ts_atl
+veryverbose, MSG, 2013-04-29 11:37:16:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:37:16:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 11:37:16:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 113 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:18:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:18:	 MDisk, id [25], successfully created
+veryverbose, MSG, 2013-04-29 11:37:18:	 0
+veryverbose, MSG, 2013-04-29 11:37:18:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:18:	[pass]
+verbose, MSG, 2013-04-29 11:37:18:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 114 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:20:	 MDisk, id [26], successfully created
+veryverbose, MSG, 2013-04-29 11:37:20:	 0
+veryverbose, MSG, 2013-04-29 11:37:20:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:20:	[pass]
+verbose, MSG, 2013-04-29 11:37:20:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 115 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:22:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:22:	 MDisk, id [27], successfully created
+veryverbose, MSG, 2013-04-29 11:37:22:	 0
+veryverbose, MSG, 2013-04-29 11:37:22:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:22:	[pass]
+verbose, MSG, 2013-04-29 11:37:22:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 116 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:24:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:24:	 MDisk, id [28], successfully created
+veryverbose, MSG, 2013-04-29 11:37:24:	 0
+veryverbose, MSG, 2013-04-29 11:37:24:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:24:	[pass]
+verbose, MSG, 2013-04-29 11:37:24:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 117 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:25:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:25:	 MDisk, id [29], successfully created
+veryverbose, MSG, 2013-04-29 11:37:25:	 0
+veryverbose, MSG, 2013-04-29 11:37:25:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:25:	[pass]
+verbose, MSG, 2013-04-29 11:37:25:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 118 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:27:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:27:	 MDisk, id [30], successfully created
+veryverbose, MSG, 2013-04-29 11:37:27:	 0
+veryverbose, MSG, 2013-04-29 11:37:27:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:27:	[pass]
+verbose, MSG, 2013-04-29 11:37:27:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 119 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:29:	 MDisk, id [31], successfully created
+veryverbose, MSG, 2013-04-29 11:37:29:	 0
+veryverbose, MSG, 2013-04-29 11:37:29:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:29:	[pass]
+verbose, MSG, 2013-04-29 11:37:29:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 120 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:30:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:30:	 MDisk, id [32], successfully created
+veryverbose, MSG, 2013-04-29 11:37:30:	 0
+veryverbose, MSG, 2013-04-29 11:37:30:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:30:	[pass]
+verbose, MSG, 2013-04-29 11:37:30:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 121 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:32:	 MDisk, id [33], successfully created
+veryverbose, MSG, 2013-04-29 11:37:32:	 0
+veryverbose, MSG, 2013-04-29 11:37:32:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:32:	[pass]
+verbose, MSG, 2013-04-29 11:37:32:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 122 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:33:	 MDisk, id [34], successfully created
+veryverbose, MSG, 2013-04-29 11:37:33:	 0
+veryverbose, MSG, 2013-04-29 11:37:33:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:33:	[pass]
+verbose, MSG, 2013-04-29 11:37:33:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 123 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:35:	 MDisk, id [35], successfully created
+veryverbose, MSG, 2013-04-29 11:37:35:	 0
+veryverbose, MSG, 2013-04-29 11:37:35:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:35:	[pass]
+verbose, MSG, 2013-04-29 11:37:35:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 124 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:36:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:36:	 MDisk, id [36], successfully created
+veryverbose, MSG, 2013-04-29 11:37:36:	 0
+veryverbose, MSG, 2013-04-29 11:37:36:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:36:	[pass]
+verbose, MSG, 2013-04-29 11:37:36:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 125 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:38:	 MDisk, id [37], successfully created
+veryverbose, MSG, 2013-04-29 11:37:38:	 0
+veryverbose, MSG, 2013-04-29 11:37:38:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:38:	[pass]
+verbose, MSG, 2013-04-29 11:37:38:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 126 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:40:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:40:	 MDisk, id [38], successfully created
+veryverbose, MSG, 2013-04-29 11:37:40:	 0
+veryverbose, MSG, 2013-04-29 11:37:40:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:40:	[pass]
+verbose, MSG, 2013-04-29 11:37:40:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 127 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:42:	 MDisk, id [39], successfully created
+veryverbose, MSG, 2013-04-29 11:37:42:	 0
+veryverbose, MSG, 2013-04-29 11:37:42:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:42:	[pass]
+verbose, MSG, 2013-04-29 11:37:42:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 128 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:43:	 MDisk, id [40], successfully created
+veryverbose, MSG, 2013-04-29 11:37:43:	 0
+veryverbose, MSG, 2013-04-29 11:37:43:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:43:	[pass]
+verbose, MSG, 2013-04-29 11:37:43:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 129 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:45:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:45:	 MDisk, id [41], successfully created
+veryverbose, MSG, 2013-04-29 11:37:45:	 0
+veryverbose, MSG, 2013-04-29 11:37:45:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:45:	[pass]
+verbose, MSG, 2013-04-29 11:37:45:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 130 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:47:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:47:	 MDisk, id [42], successfully created
+veryverbose, MSG, 2013-04-29 11:37:47:	 0
+veryverbose, MSG, 2013-04-29 11:37:47:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:47:	[pass]
+verbose, MSG, 2013-04-29 11:37:47:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 131 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:48:	 MDisk, id [43], successfully created
+veryverbose, MSG, 2013-04-29 11:37:48:	 0
+veryverbose, MSG, 2013-04-29 11:37:48:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:48:	[pass]
+verbose, MSG, 2013-04-29 11:37:48:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 132 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:50:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:50:	 MDisk, id [44], successfully created
+veryverbose, MSG, 2013-04-29 11:37:50:	 0
+veryverbose, MSG, 2013-04-29 11:37:50:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:50:	[pass]
+verbose, MSG, 2013-04-29 11:37:50:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 133 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:52:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:52:	 MDisk, id [45], successfully created
+veryverbose, MSG, 2013-04-29 11:37:52:	 0
+veryverbose, MSG, 2013-04-29 11:37:52:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:52:	[pass]
+verbose, MSG, 2013-04-29 11:37:52:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 134 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:54:	 MDisk, id [46], successfully created
+veryverbose, MSG, 2013-04-29 11:37:54:	 0
+veryverbose, MSG, 2013-04-29 11:37:54:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:54:	[pass]
+verbose, MSG, 2013-04-29 11:37:54:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 135 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:55:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:55:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 11:37:55:	 1
+veryverbose, MSG, 2013-04-29 11:37:55:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:37:55:	[fail]
+verbose, MSG, 2013-04-29 11:37:55:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 136 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:57:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:57:	 MDisk, id [47], successfully created
+veryverbose, MSG, 2013-04-29 11:37:57:	 0
+veryverbose, MSG, 2013-04-29 11:37:57:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:37:57:	[pass]
+verbose, MSG, 2013-04-29 11:37:57:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 137 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:37:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:37:58:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:37:58:	 1
+veryverbose, MSG, 2013-04-29 11:37:58:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:37:58:	[fail]
+verbose, MSG, 2013-04-29 11:37:58:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 138 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:38:00:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:38:00:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 11:38:00:	 1
+veryverbose, MSG, 2013-04-29 11:38:00:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:38:00:	[fail]
+verbose, MSG, 2013-04-29 11:38:00:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 139 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:38:01:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:38:01:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:38:01:	 1
+veryverbose, MSG, 2013-04-29 11:38:01:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:38:01:	[fail]
+verbose, MSG, 2013-04-29 11:38:01:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 140 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:38:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:38:03:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:38:03:	 1
+veryverbose, MSG, 2013-04-29 11:38:03:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:38:03:	[fail]
+verbose, MSG, 2013-04-29 11:38:03:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 141 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:38:04:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:38:04:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:38:04:	 1
+veryverbose, MSG, 2013-04-29 11:38:04:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:38:04:	[fail]
+verbose, MSG, 2013-04-29 11:38:04:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 142 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:38:06:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:38:06:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:38:06:	 1
+veryverbose, MSG, 2013-04-29 11:38:06:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:38:06:	[fail]
+verbose, MSG, 2013-04-29 11:38:06:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 143 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:38:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:38:07:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:38:07:	 1
+veryverbose, MSG, 2013-04-29 11:38:07:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:38:07:	[fail]
+verbose, MSG, 2013-04-29 11:38:07:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 144 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:38:08:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:38:08:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:38:08:	 1
+veryverbose, MSG, 2013-04-29 11:38:08:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:38:08:	[fail]
+verbose, MSG, 2013-04-29 11:38:08:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 145 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:38:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:38:10:	 CMMVC6538E The command cannot be initiated because at l1
+veryverbose, MSG, 2013-04-29 11:38:10:	 east one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:38:10:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:38:10:	[fail]
+basic, WARN, 2013-04-29 11:38:10:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 11:38:53:ts_atl
+veryverbose, MSG, 2013-04-29 11:38:53:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:38:53:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 11:38:53:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 93 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:38:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:38:54:	 MDisk, id [48], successfully created
+veryverbose, MSG, 2013-04-29 11:38:54:	 0
+veryverbose, MSG, 2013-04-29 11:38:54:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:38:54:	[pass]
+verbose, MSG, 2013-04-29 11:38:54:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 112 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:38:56:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:38:56:	 MDisk, id [49], successfully created
+veryverbose, MSG, 2013-04-29 11:38:56:	 0
+veryverbose, MSG, 2013-04-29 11:38:56:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:38:56:	[pass]
+verbose, MSG, 2013-04-29 11:38:56:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 115 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:38:57:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:38:57:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:38:57:	 1
+veryverbose, MSG, 2013-04-29 11:38:57:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:38:57:	[fail]
+verbose, MSG, 2013-04-29 11:38:57:	ssh admin@9.115.245.190 'svctask  mkarray -level raid0 -drive 116 mdiskgrp0'; echo $? 
+basic, MSG, 2013-04-29 11:51:06:ts_atl
+veryverbose, MSG, 2013-04-29 11:51:06:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:51:06:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 11:51:06:	ssh admin@9.115.245.190 'svctask  mkhost -name lnx9_115_245_64 -hbawwpn 21000024FF2DC5C6:21000024FF2DC5C7  -iogrp 0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:07:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:51:07:	 1
+veryverbose, MSG, 2013-04-29 11:51:07:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:07:	[fail]
+verbose, MSG, 2013-04-29 11:51:07:	ssh admin@9.115.245.190 'svctask  mkhost -name win9_115_245_65 -hbawwpn 21000024FF2DC496  -iogrp 0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:09:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:51:09:	 1
+veryverbose, MSG, 2013-04-29 11:51:09:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:09:	[fail]
+verbose, MSG, 2013-04-29 11:51:09:	ssh admin@9.115.245.190 'svctask  mkhost -name lnx9_115_245_63 -hbawwpn 21000024FF2DC423  -iogrp 0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:10:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:51:10:	 1
+veryverbose, MSG, 2013-04-29 11:51:10:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:10:	[fail]
+verbose, MSG, 2013-04-29 11:51:10:	ssh admin@9.115.245.190 'svctask  mkhost -name  lnx_iscsi_9_115_245_69  -iscsiname iqn.1994-05.com.redhat:d0919cbc230'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:12:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:12:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:51:12:	 1
+veryverbose, MSG, 2013-04-29 11:51:12:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:12:	[fail]
+verbose, MSG, 2013-04-29 11:51:12:	ssh admin@9.115.245.190 'svctask  mkhost -name  lnx_iscsi_9_115_245_70  -iscsiname iqn.2013-03.com.suse:01:99c01e8e555'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:13:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:51:13:	 1
+veryverbose, MSG, 2013-04-29 11:51:13:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:13:	[fail]
+verbose, MSG, 2013-04-29 11:51:13:	ssh admin@9.115.245.190 'svctask  mkhost -name  win_iscsi_9_115_245_62  -iscsiname iqn.1991-05.com.microsoft:win-nl9hte62q8e'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:15:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:15:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:51:15:	 1
+veryverbose, MSG, 2013-04-29 11:51:15:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:15:	[fail]
+verbose, MSG, 2013-04-29 11:51:15:	ssh admin@9.115.245.190 '  svctask mkvdiskhostmap -force -host h188_p2  fullyAllocatedVdisk'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:16:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:16:	 CMMVC5754E The specified object does not exist, or the name supplied does not meet the naming rules.
+veryverbose, MSG, 2013-04-29 11:51:16:	 1
+veryverbose, MSG, 2013-04-29 11:51:16:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:16:	[fail]
+verbose, MSG, 2013-04-29 11:51:16:	ssh admin@9.115.245.190 '  svctask mkvdiskhostmap -force -host h189_p2  fullyAllocatedVdisk'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:18:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:18:	 CMMVC5754E The specified object does not exist, or the name supplied does not meet the naming rules.
+veryverbose, MSG, 2013-04-29 11:51:18:	 1
+veryverbose, MSG, 2013-04-29 11:51:18:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:18:	[fail]
+verbose, MSG, 2013-04-29 11:51:18:	ssh admin@9.115.245.190 '  svctask mkvdiskhostmap -force -host h191_p2  fullyAllocatedVdisk'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:19:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:19:	 CMMVC5754E The specified object does not exist, or the name supplied does not meet the naming rules.
+veryverbose, MSG, 2013-04-29 11:51:19:	 1
+veryverbose, MSG, 2013-04-29 11:51:19:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:19:	[fail]
+verbose, MSG, 2013-04-29 11:51:19:	ssh admin@9.115.245.190 '  svctask mkvdiskhostmap -force -host h192_p2  fullyAllocatedVdisk'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:21:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:21:	 CMMVC5754E The specified object does not exist, or the name supplied does not meet the naming rules.
+veryverbose, MSG, 2013-04-29 11:51:21:	 1
+veryverbose, MSG, 2013-04-29 11:51:21:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:21:	[fail]
+verbose, MSG, 2013-04-29 11:51:21:	ssh admin@9.115.245.190 ' svctask  mkhost -name h188_p1 -hbawwpn 50050768030426fc'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:22:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:22:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 11:51:22:	 1
+veryverbose, MSG, 2013-04-29 11:51:22:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:22:	[fail]
+verbose, MSG, 2013-04-29 11:51:22:	ssh admin@9.115.245.190 ' svctask  mkhost -name h188_p2 -hbawwpn 50050768030826fc'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:24:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:24:	 1
+veryverbose, MSG, 2013-04-29 11:51:24:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 11:51:24:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:24:	[fail]
+verbose, MSG, 2013-04-29 11:51:24:	ssh admin@9.115.245.190 ' svctask  mkhost -name h189_p1 -hbawwpn 50050768030426FD'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:26:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 11:51:26:	 1
+veryverbose, MSG, 2013-04-29 11:51:26:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:26:	[fail]
+verbose, MSG, 2013-04-29 11:51:26:	ssh admin@9.115.245.190 ' svctask  mkhost -name h189_p2 -hbawwpn 50050768030826FD'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:28:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 11:51:28:	 1
+veryverbose, MSG, 2013-04-29 11:51:28:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:28:	[fail]
+verbose, MSG, 2013-04-29 11:51:28:	ssh admin@9.115.245.190 ' svctask  mkhost -name h191_p1 -hbawwpn 500507680304270A'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:29:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 11:51:29:	 1
+veryverbose, MSG, 2013-04-29 11:51:29:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:29:	[fail]
+verbose, MSG, 2013-04-29 11:51:29:	ssh admin@9.115.245.190 ' svctask  mkhost -name h191_p2 -hbawwpn 500507680308270A'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:30:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:30:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 11:51:30:	 1
+veryverbose, MSG, 2013-04-29 11:51:30:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:30:	[fail]
+verbose, MSG, 2013-04-29 11:51:30:	ssh admin@9.115.245.190 ' svctask  mkhost -name h192_p1 -hbawwpn 500507680304270B'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:32:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 11:51:32:	 1
+veryverbose, MSG, 2013-04-29 11:51:32:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:32:	[fail]
+verbose, MSG, 2013-04-29 11:51:32:	ssh admin@9.115.245.190 ' svctask  mkhost -name h192_p2 -hbawwpn 500507680308270B'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:33:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 11:51:33:	 1
+veryverbose, MSG, 2013-04-29 11:51:33:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:33:	[fail]
+verbose, MSG, 2013-04-29 11:51:33:	ssh admin@9.115.245.190 ' svctask mkmdiskgrp  -ext 512 '; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:35:	 MDisk Group, id [3], successfully created
+veryverbose, MSG, 2013-04-29 11:51:35:	 0
+veryverbose, MSG, 2013-04-29 11:51:35:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:51:35:	[pass]
+verbose, MSG, 2013-04-29 11:51:35:	ssh admin@9.115.245.190 ' svctask  mkarray -level raid10 -drive 0:1:2:3 -strip 256 -name mdisk_rd10 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:36:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:36:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:51:36:	 1
+veryverbose, MSG, 2013-04-29 11:51:36:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:36:	[fail]
+verbose, MSG, 2013-04-29 11:51:36:	ssh admin@9.115.245.190 ' svctask  mkarray -level raid5 -drive 4:5:6:7 -strip 256 -name mdisk_rd5 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:38:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:51:38:	 1
+veryverbose, MSG, 2013-04-29 11:51:38:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:38:	[fail]
+verbose, MSG, 2013-04-29 11:51:38:	ssh admin@9.115.245.190 ' svctask  mkarray -level raid0 -drive 8:9 -strip 256 -name mdisk_rd0 mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:39:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:39:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:51:39:	 1
+veryverbose, MSG, 2013-04-29 11:51:39:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:39:	[fail]
+verbose, MSG, 2013-04-29 11:51:39:	ssh admin@9.115.245.190 '  svctask  mkarray -level raid0 -drive 11  -strip 256 -name  emptyMdisk mdiskgrp0'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:41:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:41:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:51:41:	 1
+veryverbose, MSG, 2013-04-29 11:51:41:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:41:	[fail]
+verbose, MSG, 2013-04-29 11:51:41:	ssh admin@9.115.245.190 '  svctask mkarray  -level raid0 -drive 48:49:50 -strip 256 -name TwoT_Mdisk  mdiskgrp0  '; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:42:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 11:51:42:	 1
+veryverbose, MSG, 2013-04-29 11:51:42:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:42:	[fail]
+verbose, MSG, 2013-04-29 11:51:42:	ssh admin@9.115.245.190 '  svctask  mkarray -level raid0 -drive 111:112 -strip 256 -name fak_mdisk_0 poolName0320'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:44:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:44:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:51:44:	 1
+veryverbose, MSG, 2013-04-29 11:51:44:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:44:	[fail]
+verbose, MSG, 2013-04-29 11:51:44:	ssh admin@9.115.245.190 '  svctask  mkarray -level raid0 -drive 141:142:143 -strip 256 -name fak_mdisk_1 poolName0320'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:45:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:45:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 11:51:45:	 1
+veryverbose, MSG, 2013-04-29 11:51:45:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:45:	[fail]
+verbose, MSG, 2013-04-29 11:51:45:	ssh admin@9.115.245.190 'svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullyAllocatedVdisk'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:47:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:47:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:51:47:	 1
+veryverbose, MSG, 2013-04-29 11:51:47:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:47:	[fail]
+verbose, MSG, 2013-04-29 11:51:47:	ssh admin@9.115.245.190 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullyAllocatedVdisk_9_115_245_69'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:48:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:51:48:	 1
+veryverbose, MSG, 2013-04-29 11:51:48:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:48:	[fail]
+verbose, MSG, 2013-04-29 11:51:48:	ssh admin@9.115.245.190 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name spaceEfficientVdisk   -rsize 20% -autoexpand -grainsize 32 '; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:50:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:50:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:51:50:	 1
+veryverbose, MSG, 2013-04-29 11:51:50:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:50:	[fail]
+verbose, MSG, 2013-04-29 11:51:50:	ssh admin@9.115.245.190 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 3000000 -name twoTigarVdisk  '; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:51:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:51:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:51:51:	 1
+veryverbose, MSG, 2013-04-29 11:51:51:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:51:	[fail]
+verbose, MSG, 2013-04-29 11:51:51:	ssh admin@9.115.245.190 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullAllocatedVdisk_9_115_245_70   '; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:52:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:52:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:51:52:	 1
+veryverbose, MSG, 2013-04-29 11:51:52:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:52:	[fail]
+verbose, MSG, 2013-04-29 11:51:52:	ssh admin@9.115.245.190 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Source'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:54:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:51:54:	 1
+veryverbose, MSG, 2013-04-29 11:51:54:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:54:	[fail]
+verbose, MSG, 2013-04-29 11:51:54:	ssh admin@9.115.245.190 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Target'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:55:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:55:	 1
+veryverbose, MSG, 2013-04-29 11:51:55:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:51:55:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:55:	[fail]
+verbose, MSG, 2013-04-29 11:51:55:	ssh admin@9.115.245.190 ' mkfcmap -source DB_Source -target DB_Target -name DB_Map1 -consistgrp FCCG1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:57:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:57:	 1
+veryverbose, MSG, 2013-04-29 11:51:57:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:51:57:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:51:57:	[fail]
+verbose, MSG, 2013-04-29 11:51:57:	ssh admin@9.115.245.190 ' prestartfcconsistgrp FCCG1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:51:59:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:51:59:	 0
+veryverbose, MSG, 2013-04-29 11:51:59:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:51:59:	[pass]
+verbose, MSG, 2013-04-29 11:51:59:	ssh admin@9.115.245.190 ' startfcconsistgrp FCCG1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:52:01:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:52:01:	 0
+veryverbose, MSG, 2013-04-29 11:52:01:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:52:01:	[pass]
+verbose, MSG, 2013-04-29 11:52:01:	ssh admin@9.115.245.190 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name noCacheVdisk -cache none   '; echo $? 
+veryverbose, MSG, 2013-04-29 11:52:02:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:52:02:	 1
+veryverbose, MSG, 2013-04-29 11:52:02:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:52:02:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:52:02:	[fail]
+verbose, MSG, 2013-04-29 11:52:02:	ssh admin@9.115.245.190 ' '; echo $? 
+veryverbose, MSG, 2013-04-29 11:52:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:52:03:	 rbash: -c: line 0: syntax error near unexpected token `;'
+veryverbose, MSG, 2013-04-29 11:52:03:	 rbash: -c: line 0: ` ;echo $? '
+veryverbose, MSG, 2013-04-29 11:52:03:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:52:03:	[fail]
+verbose, MSG, 2013-04-29 11:52:03:	ssh admin@9.115.245.190 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Master    '; echo $? 
+veryverbose, MSG, 2013-04-29 11:52:05:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:52:05:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:52:05:	 1
+veryverbose, MSG, 2013-04-29 11:52:05:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:52:05:	[fail]
+verbose, MSG, 2013-04-29 11:52:05:	ssh admin@9.115.245.190 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Aux '; echo $? 
+veryverbose, MSG, 2013-04-29 11:52:06:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:52:06:	 1
+veryverbose, MSG, 2013-04-29 11:52:06:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:52:06:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:52:06:	[fail]
+verbose, MSG, 2013-04-29 11:52:06:	ssh admin@9.115.245.190 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fc_Master    '; echo $? 
+veryverbose, MSG, 2013-04-29 11:52:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:52:07:	 1
+veryverbose, MSG, 2013-04-29 11:52:07:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:52:07:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:52:07:	[fail]
+verbose, MSG, 2013-04-29 11:52:07:	ssh admin@9.115.245.190 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fc_Aux  '; echo $? 
+veryverbose, MSG, 2013-04-29 11:52:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:52:09:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:52:09:	 1
+veryverbose, MSG, 2013-04-29 11:52:09:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:52:09:	[fail]
+verbose, MSG, 2013-04-29 11:52:09:	ssh admin@9.115.245.190 '  mkfcmap -source fc_Master -target fc_Aux -name fcMap1 '; echo $? 
+veryverbose, MSG, 2013-04-29 11:52:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:52:10:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 11:52:10:	 1
+veryverbose, MSG, 2013-04-29 11:52:10:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:52:10:	[fail]
+verbose, MSG, 2013-04-29 11:52:10:	ssh admin@9.115.245.190 '  prestartfcmap fcMap1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:52:12:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:52:12:	 0
+veryverbose, MSG, 2013-04-29 11:52:12:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:52:12:	[pass]
+verbose, MSG, 2013-04-29 11:52:12:	ssh admin@9.115.245.190 '  startfcmap fcMap1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:52:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:52:13:	 CMMVC5906E The FlashCopy mapping or consistency group was not started because the mapping or consistency group is in the preparing state.
+veryverbose, MSG, 2013-04-29 11:52:13:	 1
+veryverbose, MSG, 2013-04-29 11:52:13:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:52:13:	[fail]
+basic, WARN, 2013-04-29 11:52:13:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 11:52:31:ts_atl
+veryverbose, MSG, 2013-04-29 11:52:31:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:52:31:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 11:52:31:	ssh admin@9.115.245.190 'svctask  mkhost -name lnx9_115_245_64 -hbawwpn 21000024FF2DC5C6:21000024FF2DC5C7  -iogrp 0'
