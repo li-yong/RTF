@@ -42738,3 +42738,652 @@ verbose, MSG, 2013-04-29 11:52:31:
 
 === tc00_addHost  start===
 verbose, MSG, 2013-04-29 11:52:31:	ssh admin@9.115.245.190 'svctask  mkhost -name lnx9_115_245_64 -hbawwpn 21000024FF2DC5C6:21000024FF2DC5C7  -iogrp 0'
+basic, MSG, 2013-04-29 12:08:56:ts_atl
+veryverbose, MSG, 2013-04-29 12:08:56:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:08:56:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 12:09:23:ts_atl
+veryverbose, MSG, 2013-04-29 12:09:23:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:09:23:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 12:12:48:ts_atl
+veryverbose, MSG, 2013-04-29 12:12:48:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:12:48:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 12:12:58:ts_atl
+veryverbose, MSG, 2013-04-29 12:12:58:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:12:58:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 12:16:38:ts_atl
+veryverbose, MSG, 2013-04-29 12:16:38:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:16:38:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 12:16:40:ts_atl
+veryverbose, MSG, 2013-04-29 12:16:40:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:16:40:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 12:16:42:ts_atl
+veryverbose, MSG, 2013-04-29 12:16:42:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:16:42:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 12:17:00:ts_atl
+veryverbose, MSG, 2013-04-29 12:17:00:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:17:00:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 12:26:45:ts_atl
+veryverbose, MSG, 2013-04-29 12:26:45:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:26:45:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 12:27:50:ts_atl
+veryverbose, MSG, 2013-04-29 12:27:50:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:27:50:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 12:28:21:ts_atl
+veryverbose, MSG, 2013-04-29 12:28:21:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:28:21:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 12:28:38:ts_atl
+veryverbose, MSG, 2013-04-29 12:28:38:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:28:38:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 12:29:42:ts_atl
+veryverbose, MSG, 2013-04-29 12:29:42:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:29:42:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 12:32:19:ts_atl
+veryverbose, MSG, 2013-04-29 12:32:19:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:32:19:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 12:32:57:ts_atl
+veryverbose, MSG, 2013-04-29 12:32:57:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:32:57:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 12:32:57:	ssh admin@9.115.244.167 'svctask  mkhost -name lnx9_115_245_64 -hbawwpn 21000024FF2DC5C6:21000024FF2DC5C7  -iogrp 0'
+veryverbose, MSG, 2013-04-29 12:33:02:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:02:	 Warning: Permanently added '9.115.244.167' (RSA) to the list of known hosts.
+veryverbose, MSG, 2013-04-29 12:33:02:	 CMMVC5732E The command cannot be initiated because it was not run on the configuration node.
+veryverbose, MSG, 2013-04-29 12:33:02:	 1
+veryverbose, MSG, 2013-04-29 12:33:02:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:02:	[fail]
+verbose, MSG, 2013-04-29 12:33:02:	ssh admin@9.115.244.167 'svctask  mkhost -name win9_115_245_65 -hbawwpn 21000024FF2DC496  -iogrp 0'
+veryverbose, MSG, 2013-04-29 12:33:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:03:	 CMMVC5732E The command cannot be initiated because it was not run on the configuration node.
+veryverbose, MSG, 2013-04-29 12:33:03:	 1
+veryverbose, MSG, 2013-04-29 12:33:03:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:03:	[fail]
+verbose, MSG, 2013-04-29 12:33:03:	ssh admin@9.115.244.167 'svctask  mkhost -name lnx9_115_245_63 -hbawwpn 21000024FF2DC423  -iogrp 0'
+veryverbose, MSG, 2013-04-29 12:33:04:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:04:	 1
+veryverbose, MSG, 2013-04-29 12:33:04:	 CMMVC5732E The command cannot be initiated because it was not run on the configuration node.
+veryverbose, MSG, 2013-04-29 12:33:04:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:04:	[fail]
+verbose, MSG, 2013-04-29 12:33:04:	ssh admin@9.115.244.167 'svctask  mkhost -name  lnx_iscsi_9_115_245_69  -iscsiname iqn.1994-05.com.redhat:d0919cbc230'
+veryverbose, MSG, 2013-04-29 12:33:05:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:05:	 CMMVC5732E The command cannot be initiated because it was not run on the configuration node.
+veryverbose, MSG, 2013-04-29 12:33:05:	 1
+veryverbose, MSG, 2013-04-29 12:33:05:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:05:	[fail]
+verbose, MSG, 2013-04-29 12:33:05:	ssh admin@9.115.244.167 'svctask  mkhost -name  lnx_iscsi_9_115_245_70  -iscsiname iqn.2013-03.com.suse:01:99c01e8e555'
+veryverbose, MSG, 2013-04-29 12:33:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:07:	 CMMVC5732E The command cannot be initiated because it was not run on the configuration node.
+veryverbose, MSG, 2013-04-29 12:33:07:	 1
+veryverbose, MSG, 2013-04-29 12:33:07:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:07:	[fail]
+verbose, MSG, 2013-04-29 12:33:07:	ssh admin@9.115.244.167 'svctask  mkhost -name  win_iscsi_9_115_245_62  -iscsiname iqn.1991-05.com.microsoft:win-nl9hte62q8e'
+veryverbose, MSG, 2013-04-29 12:33:08:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:08:	 CMMVC5732E The command cannot be initia1
+veryverbose, MSG, 2013-04-29 12:33:08:	 ted because it was not run on the configuration node.
+veryverbose, MSG, 2013-04-29 12:33:08:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:08:	[fail]
+verbose, MSG, 2013-04-29 12:33:08:	ssh admin@9.115.244.167 '  svctask mkvdiskhostmap -force -host h188_p2  fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 12:33:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:09:	 CMMVC5732E1
+veryverbose, MSG, 2013-04-29 12:33:09:	  The command cannot be initiated because it was not run on the configuration node.
+veryverbose, MSG, 2013-04-29 12:33:09:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:09:	[fail]
+verbose, MSG, 2013-04-29 12:33:09:	ssh admin@9.115.244.167 '  svctask mkvdiskhostmap -force -host h189_p2  fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 12:33:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:10:	 CMMVC5732E The command cannot be initiated because it was not run on the configuration node.
+veryverbose, MSG, 2013-04-29 12:33:10:	 1
+veryverbose, MSG, 2013-04-29 12:33:10:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:10:	[fail]
+verbose, MSG, 2013-04-29 12:33:10:	ssh admin@9.115.244.167 '  svctask mkvdiskhostmap -force -host h191_p2  fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 12:33:12:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:12:	 CMMVC5732E The command cannot be initiated because it was not run on the configuration node.
+veryverbose, MSG, 2013-04-29 12:33:12:	 1
+veryverbose, MSG, 2013-04-29 12:33:12:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:12:	[fail]
+verbose, MSG, 2013-04-29 12:33:12:	ssh admin@9.115.244.167 '  svctask mkvdiskhostmap -force -host h192_p2  fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 12:33:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:13:	 CMMVC5732E The command cannot be initiated because it was not run on the configuration node.
+veryverbose, MSG, 2013-04-29 12:33:13:	 1
+veryverbose, MSG, 2013-04-29 12:33:13:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:13:	[fail]
+verbose, MSG, 2013-04-29 12:33:13:	ssh admin@9.115.244.167 ' svctask  mkhost -name h188_p1 -hbawwpn 50050768030426fc'
+veryverbose, MSG, 2013-04-29 12:33:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:14:	 CMMVC5732E The command cannot be initiated because it was not run on the configuration node.
+veryverbose, MSG, 2013-04-29 12:33:14:	 1
+veryverbose, MSG, 2013-04-29 12:33:14:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:14:	[fail]
+verbose, MSG, 2013-04-29 12:33:14:	ssh admin@9.115.244.167 ' svctask  mkhost -name h188_p2 -hbawwpn 50050768030826fc'
+veryverbose, MSG, 2013-04-29 12:33:15:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:15:	 CMMVC5732E The command cannot be initiated because it was not run on the configuration node.
+veryverbose, MSG, 2013-04-29 12:33:15:	 1
+veryverbose, MSG, 2013-04-29 12:33:15:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:15:	[fail]
+verbose, MSG, 2013-04-29 12:33:15:	ssh admin@9.115.244.167 ' svctask  mkhost -name h189_p1 -hbawwpn 50050768030426FD'
+veryverbose, MSG, 2013-04-29 12:33:16:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:18:	 CMMVC5732E The command cannot be initiated because it was not run on the configuration node.
+veryverbose, MSG, 2013-04-29 12:33:18:	 1
+veryverbose, MSG, 2013-04-29 12:33:18:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:18:	[fail]
+verbose, MSG, 2013-04-29 12:33:18:	ssh admin@9.115.244.167 ' svctask  mkhost -name h189_p2 -hbawwpn 50050768030826FD'
+veryverbose, MSG, 2013-04-29 12:33:19:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:19:	 CMMVC5732E The command cannot be initiated because it was not run on the configuration node.
+veryverbose, MSG, 2013-04-29 12:33:19:	 1
+veryverbose, MSG, 2013-04-29 12:33:19:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:19:	[fail]
+verbose, MSG, 2013-04-29 12:33:19:	ssh admin@9.115.244.167 ' svctask  mkhost -name h191_p1 -hbawwpn 500507680304270A'
+veryverbose, MSG, 2013-04-29 12:33:21:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:21:	 CMMVC5732E The command cannot be initiated because it was not run on the configuration node.
+veryverbose, MSG, 2013-04-29 12:33:21:	 1
+veryverbose, MSG, 2013-04-29 12:33:21:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:21:	[fail]
+verbose, MSG, 2013-04-29 12:33:21:	ssh admin@9.115.244.167 ' svctask  mkhost -name h191_p2 -hbawwpn 500507680308270A'
+basic, MSG, 2013-04-29 12:33:43:ts_atl
+veryverbose, MSG, 2013-04-29 12:33:43:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:33:43:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 12:33:43:	ssh admin@9.115.244.169 'svctask  mkhost -name lnx9_115_245_64 -hbawwpn 21000024FF2DC5C6:21000024FF2DC5C7  -iogrp 0'
+veryverbose, MSG, 2013-04-29 12:33:47:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:47:	 Warning: Permanently added '9.115.244.169' (RSA) to the list of known hosts.
+veryverbose, MSG, 2013-04-29 12:33:47:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 12:33:47:	 1
+veryverbose, MSG, 2013-04-29 12:33:47:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:47:	[fail]
+verbose, MSG, 2013-04-29 12:33:47:	ssh admin@9.115.244.169 'svctask  mkhost -name win9_115_245_65 -hbawwpn 21000024FF2DC496  -iogrp 0'
+veryverbose, MSG, 2013-04-29 12:33:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:48:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 12:33:48:	 1
+veryverbose, MSG, 2013-04-29 12:33:48:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:48:	[fail]
+verbose, MSG, 2013-04-29 12:33:48:	ssh admin@9.115.244.169 'svctask  mkhost -name lnx9_115_245_63 -hbawwpn 21000024FF2DC423  -iogrp 0'
+veryverbose, MSG, 2013-04-29 12:33:49:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:49:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 12:33:49:	 1
+veryverbose, MSG, 2013-04-29 12:33:49:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:49:	[fail]
+verbose, MSG, 2013-04-29 12:33:49:	ssh admin@9.115.244.169 'svctask  mkhost -name  lnx_iscsi_9_115_245_69  -iscsiname iqn.1994-05.com.redhat:d0919cbc230'
+veryverbose, MSG, 2013-04-29 12:33:51:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:51:	 Host, id [1], successfully created
+veryverbose, MSG, 2013-04-29 12:33:51:	 0
+veryverbose, MSG, 2013-04-29 12:33:51:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:33:51:	[pass]
+verbose, MSG, 2013-04-29 12:33:51:	ssh admin@9.115.244.169 'svctask  mkhost -name  lnx_iscsi_9_115_245_70  -iscsiname iqn.2013-03.com.suse:01:99c01e8e555'
+veryverbose, MSG, 2013-04-29 12:33:52:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:52:	 Host, id [2], successfully created
+veryverbose, MSG, 2013-04-29 12:33:52:	 0
+veryverbose, MSG, 2013-04-29 12:33:52:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:33:52:	[pass]
+verbose, MSG, 2013-04-29 12:33:52:	ssh admin@9.115.244.169 'svctask  mkhost -name  win_iscsi_9_115_245_62  -iscsiname iqn.1991-05.com.microsoft:win-nl9hte62q8e'
+veryverbose, MSG, 2013-04-29 12:33:53:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:53:	 Host, id [3], successfully created
+veryverbose, MSG, 2013-04-29 12:33:53:	 0
+veryverbose, MSG, 2013-04-29 12:33:53:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:33:53:	[pass]
+verbose, MSG, 2013-04-29 12:33:53:	ssh admin@9.115.244.169 '  svctask mkvdiskhostmap -force -host h188_p2  fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 12:33:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:54:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 12:33:54:	 1
+veryverbose, MSG, 2013-04-29 12:33:54:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:54:	[fail]
+verbose, MSG, 2013-04-29 12:33:54:	ssh admin@9.115.244.169 '  svctask mkvdiskhostmap -force -host h189_p2  fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 12:33:56:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:56:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 12:33:56:	 1
+veryverbose, MSG, 2013-04-29 12:33:56:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:56:	[fail]
+verbose, MSG, 2013-04-29 12:33:56:	ssh admin@9.115.244.169 '  svctask mkvdiskhostmap -force -host h191_p2  fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 12:33:57:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:57:	 1
+veryverbose, MSG, 2013-04-29 12:33:57:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 12:33:57:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:57:	[fail]
+verbose, MSG, 2013-04-29 12:33:57:	ssh admin@9.115.244.169 '  svctask mkvdiskhostmap -force -host h192_p2  fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 12:33:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:58:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 12:33:58:	 1
+veryverbose, MSG, 2013-04-29 12:33:58:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:58:	[fail]
+verbose, MSG, 2013-04-29 12:33:58:	ssh admin@9.115.244.169 ' svctask  mkhost -name h188_p1 -hbawwpn 50050768030426fc'
+veryverbose, MSG, 2013-04-29 12:33:59:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:33:59:	 1
+veryverbose, MSG, 2013-04-29 12:33:59:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 12:33:59:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:33:59:	[fail]
+verbose, MSG, 2013-04-29 12:33:59:	ssh admin@9.115.244.169 ' svctask  mkhost -name h188_p2 -hbawwpn 50050768030826fc'
+veryverbose, MSG, 2013-04-29 12:34:00:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:00:	 1
+veryverbose, MSG, 2013-04-29 12:34:00:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 12:34:00:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:00:	[fail]
+verbose, MSG, 2013-04-29 12:34:00:	ssh admin@9.115.244.169 ' svctask  mkhost -name h189_p1 -hbawwpn 50050768030426FD'
+veryverbose, MSG, 2013-04-29 12:34:02:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:02:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 12:34:02:	 1
+veryverbose, MSG, 2013-04-29 12:34:02:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:02:	[fail]
+verbose, MSG, 2013-04-29 12:34:02:	ssh admin@9.115.244.169 ' svctask  mkhost -name h189_p2 -hbawwpn 50050768030826FD'
+veryverbose, MSG, 2013-04-29 12:34:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:03:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 12:34:03:	 1
+veryverbose, MSG, 2013-04-29 12:34:03:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:03:	[fail]
+verbose, MSG, 2013-04-29 12:34:03:	ssh admin@9.115.244.169 ' svctask  mkhost -name h191_p1 -hbawwpn 500507680304270A'
+veryverbose, MSG, 2013-04-29 12:34:05:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:05:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 12:34:05:	 1
+veryverbose, MSG, 2013-04-29 12:34:05:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:05:	[fail]
+verbose, MSG, 2013-04-29 12:34:05:	ssh admin@9.115.244.169 ' svctask  mkhost -name h191_p2 -hbawwpn 500507680308270A'
+veryverbose, MSG, 2013-04-29 12:34:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:07:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 12:34:07:	 1
+veryverbose, MSG, 2013-04-29 12:34:07:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:07:	[fail]
+verbose, MSG, 2013-04-29 12:34:07:	ssh admin@9.115.244.169 ' svctask  mkhost -name h192_p1 -hbawwpn 500507680304270B'
+veryverbose, MSG, 2013-04-29 12:34:08:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:08:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 12:34:08:	 1
+veryverbose, MSG, 2013-04-29 12:34:08:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:08:	[fail]
+verbose, MSG, 2013-04-29 12:34:08:	ssh admin@9.115.244.169 ' svctask  mkhost -name h192_p2 -hbawwpn 500507680308270B'
+veryverbose, MSG, 2013-04-29 12:34:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:09:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 12:34:09:	 1
+veryverbose, MSG, 2013-04-29 12:34:09:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:09:	[fail]
+verbose, MSG, 2013-04-29 12:34:09:	ssh admin@9.115.244.169 ' svctask mkmdiskgrp  -ext 512 '
+veryverbose, MSG, 2013-04-29 12:34:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:11:	 MDisk Group, id [1], successfully created
+veryverbose, MSG, 2013-04-29 12:34:11:	 0
+veryverbose, MSG, 2013-04-29 12:34:11:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:11:	[pass]
+verbose, MSG, 2013-04-29 12:34:11:	ssh admin@9.115.244.169 ' svctask  mkarray -level raid10 -drive 0:1:2:3 -strip 256 -name mdisk_rd10 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 12:34:12:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:12:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 12:34:12:	 1
+veryverbose, MSG, 2013-04-29 12:34:12:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:12:	[fail]
+verbose, MSG, 2013-04-29 12:34:12:	ssh admin@9.115.244.169 ' svctask  mkarray -level raid5 -drive 4:5:6:7 -strip 256 -name mdisk_rd5 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 12:34:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:13:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 12:34:13:	 1
+veryverbose, MSG, 2013-04-29 12:34:13:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:13:	[fail]
+verbose, MSG, 2013-04-29 12:34:13:	ssh admin@9.115.244.169 ' svctask  mkarray -level raid0 -drive 8:9 -strip 256 -name mdisk_rd0 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 12:34:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:14:	 1
+veryverbose, MSG, 2013-04-29 12:34:14:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 12:34:14:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:14:	[fail]
+verbose, MSG, 2013-04-29 12:34:14:	ssh admin@9.115.244.169 '  svctask  mkarray -level raid0 -drive 11  -strip 256 -name  emptyMdisk mdiskgrp0'
+veryverbose, MSG, 2013-04-29 12:34:16:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:16:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 12:34:16:	 1
+veryverbose, MSG, 2013-04-29 12:34:16:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:16:	[fail]
+verbose, MSG, 2013-04-29 12:34:16:	ssh admin@9.115.244.169 '  svctask mkarray  -level raid0 -drive 48:49:50 -strip 256 -name TwoT_Mdisk  mdiskgrp0  '
+veryverbose, MSG, 2013-04-29 12:34:17:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:17:	 1
+veryverbose, MSG, 2013-04-29 12:34:17:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 12:34:17:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:17:	[fail]
+verbose, MSG, 2013-04-29 12:34:17:	ssh admin@9.115.244.169 '  svctask  mkarray -level raid0 -drive 111:112 -strip 256 -name fak_mdisk_0 poolName0320'
+veryverbose, MSG, 2013-04-29 12:34:18:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:18:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 12:34:18:	 1
+veryverbose, MSG, 2013-04-29 12:34:18:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:18:	[fail]
+verbose, MSG, 2013-04-29 12:34:18:	ssh admin@9.115.244.169 '  svctask  mkarray -level raid0 -drive 141:142:143 -strip 256 -name fak_mdisk_1 poolName0320'
+veryverbose, MSG, 2013-04-29 12:34:19:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:19:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 12:34:19:	 1
+veryverbose, MSG, 2013-04-29 12:34:19:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:19:	[fail]
+verbose, MSG, 2013-04-29 12:34:19:	ssh admin@9.115.244.169 'svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 12:34:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:20:	 Virtual Disk, id [20], successfully created
+veryverbose, MSG, 2013-04-29 12:34:20:	 0
+veryverbose, MSG, 2013-04-29 12:34:20:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:20:	[pass]
+verbose, MSG, 2013-04-29 12:34:20:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullyAllocatedVdisk_9_115_245_69'
+veryverbose, MSG, 2013-04-29 12:34:22:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:22:	 Virtual Disk, id [21], successfully created
+veryverbose, MSG, 2013-04-29 12:34:22:	 0
+veryverbose, MSG, 2013-04-29 12:34:22:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:22:	[pass]
+verbose, MSG, 2013-04-29 12:34:22:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name spaceEfficientVdisk   -rsize 20% -autoexpand -grainsize 32 '
+veryverbose, MSG, 2013-04-29 12:34:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:23:	 Virtual Disk, id [22], successfully created
+veryverbose, MSG, 2013-04-29 12:34:23:	 0
+veryverbose, MSG, 2013-04-29 12:34:23:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:23:	[pass]
+verbose, MSG, 2013-04-29 12:34:23:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 3000000 -name twoTigarVdisk  '
+veryverbose, MSG, 2013-04-29 12:34:25:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:25:	 Virtual Disk, id [23], successfully created
+veryverbose, MSG, 2013-04-29 12:34:25:	 0
+veryverbose, MSG, 2013-04-29 12:34:25:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:25:	[pass]
+verbose, MSG, 2013-04-29 12:34:25:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullAllocatedVdisk_9_115_245_70   '
+veryverbose, MSG, 2013-04-29 12:34:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:26:	 Virtual Disk, id [24], successfully created
+veryverbose, MSG, 2013-04-29 12:34:26:	 0
+veryverbose, MSG, 2013-04-29 12:34:26:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:26:	[pass]
+verbose, MSG, 2013-04-29 12:34:26:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Source'
+veryverbose, MSG, 2013-04-29 12:34:27:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:27:	 Virtual Disk, id [25], successfully created
+veryverbose, MSG, 2013-04-29 12:34:27:	 0
+veryverbose, MSG, 2013-04-29 12:34:27:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:27:	[pass]
+verbose, MSG, 2013-04-29 12:34:27:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Target'
+veryverbose, MSG, 2013-04-29 12:34:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:29:	 Virtual Disk, id [26], successfully created
+veryverbose, MSG, 2013-04-29 12:34:29:	 0
+veryverbose, MSG, 2013-04-29 12:34:29:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:29:	[pass]
+verbose, MSG, 2013-04-29 12:34:29:	ssh admin@9.115.244.169 ' mkfcmap -source DB_Source -target DB_Target -name DB_Map1 -consistgrp FCCG1'
+veryverbose, MSG, 2013-04-29 12:34:30:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:30:	 CMMVC5754E The specified object does not exist, or the name supplied does not meet the naming rules.
+veryverbose, MSG, 2013-04-29 12:34:30:	 1
+veryverbose, MSG, 2013-04-29 12:34:30:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:30:	[fail]
+verbose, MSG, 2013-04-29 12:34:30:	ssh admin@9.115.244.169 ' prestartfcconsistgrp FCCG1'
+veryverbose, MSG, 2013-04-29 12:34:31:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:31:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 12:34:31:	 1
+veryverbose, MSG, 2013-04-29 12:34:31:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:31:	[fail]
+verbose, MSG, 2013-04-29 12:34:31:	ssh admin@9.115.244.169 ' startfcconsistgrp FCCG1'
+veryverbose, MSG, 2013-04-29 12:34:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:32:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 12:34:32:	 1
+veryverbose, MSG, 2013-04-29 12:34:32:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:32:	[fail]
+verbose, MSG, 2013-04-29 12:34:32:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name noCacheVdisk -cache none   '
+veryverbose, MSG, 2013-04-29 12:34:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:33:	 Virtual Disk, id [27], successfully created
+veryverbose, MSG, 2013-04-29 12:34:33:	 0
+veryverbose, MSG, 2013-04-29 12:34:33:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:33:	[pass]
+verbose, MSG, 2013-04-29 12:34:33:	ssh admin@9.115.244.169 ' '
+veryverbose, MSG, 2013-04-29 12:34:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:35:	 rbash: -c: line 0: syntax error near unexpected token `;'
+veryverbose, MSG, 2013-04-29 12:34:35:	 rbash: -c: line 0: ` ;echo $? '
+veryverbose, MSG, 2013-04-29 12:34:35:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:35:	[fail]
+verbose, MSG, 2013-04-29 12:34:35:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Master    '
+veryverbose, MSG, 2013-04-29 12:34:36:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:36:	 Virtual Disk, id [28], successfully created
+veryverbose, MSG, 2013-04-29 12:34:36:	 0
+veryverbose, MSG, 2013-04-29 12:34:36:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:36:	[pass]
+verbose, MSG, 2013-04-29 12:34:36:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Aux '
+veryverbose, MSG, 2013-04-29 12:34:37:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:37:	 Virtual Disk, id [29], successfully created
+veryverbose, MSG, 2013-04-29 12:34:37:	 0
+veryverbose, MSG, 2013-04-29 12:34:37:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:37:	[pass]
+verbose, MSG, 2013-04-29 12:34:37:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fc_Master    '
+veryverbose, MSG, 2013-04-29 12:34:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:38:	 Virtual Disk, id [30], successfully created
+veryverbose, MSG, 2013-04-29 12:34:38:	 0
+veryverbose, MSG, 2013-04-29 12:34:38:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:38:	[pass]
+verbose, MSG, 2013-04-29 12:34:38:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fc_Aux  '
+veryverbose, MSG, 2013-04-29 12:34:40:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:40:	 Virtual Disk, id [31], successfully created
+veryverbose, MSG, 2013-04-29 12:34:40:	 0
+veryverbose, MSG, 2013-04-29 12:34:40:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:40:	[pass]
+verbose, MSG, 2013-04-29 12:34:40:	ssh admin@9.115.244.169 '  mkfcmap -source fc_Master -target fc_Aux -name fcMap1 '
+veryverbose, MSG, 2013-04-29 12:34:41:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:41:	 FlashCopy Mapping, id [3], successfully created
+veryverbose, MSG, 2013-04-29 12:34:41:	 0
+veryverbose, MSG, 2013-04-29 12:34:41:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:41:	[pass]
+verbose, MSG, 2013-04-29 12:34:41:	ssh admin@9.115.244.169 '  prestartfcmap fcMap1'
+veryverbose, MSG, 2013-04-29 12:34:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:42:	 0
+veryverbose, MSG, 2013-04-29 12:34:42:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:42:	[pass]
+verbose, MSG, 2013-04-29 12:34:42:	ssh admin@9.115.244.169 '  startfcmap fcMap1'
+veryverbose, MSG, 2013-04-29 12:34:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:43:	 0
+veryverbose, MSG, 2013-04-29 12:34:43:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:43:	[pass]
+verbose, MSG, 2013-04-29 12:34:43:	ssh admin@9.115.244.169 'svctask chlicense -flash 10'
+veryverbose, MSG, 2013-04-29 12:34:45:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:45:	 0
+veryverbose, MSG, 2013-04-29 12:34:45:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:45:	[pass]
+verbose, MSG, 2013-04-29 12:34:45:	ssh admin@9.115.244.169 'svctask chlicense -easytier 10'
+veryverbose, MSG, 2013-04-29 12:34:46:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:46:	 0
+veryverbose, MSG, 2013-04-29 12:34:46:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:46:	[pass]
+verbose, MSG, 2013-04-29 12:34:46:	ssh admin@9.115.244.169 'svctask chlicense -virtualization 10'
+veryverbose, MSG, 2013-04-29 12:34:47:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:47:	 0
+veryverbose, MSG, 2013-04-29 12:34:47:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:47:	[pass]
+verbose, MSG, 2013-04-29 12:34:47:	ssh admin@9.115.244.169 'svctask chlicense -remote 10'
+veryverbose, MSG, 2013-04-29 12:34:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:48:	 0
+veryverbose, MSG, 2013-04-29 12:34:48:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:48:	[pass]
+verbose, MSG, 2013-04-29 12:34:48:	ssh admin@9.115.244.169 'svctask chsystem -ntpip 9.125.52.13'
+veryverbose, MSG, 2013-04-29 12:34:50:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:50:	 0
+veryverbose, MSG, 2013-04-29 12:34:50:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:50:	[pass]
+verbose, MSG, 2013-04-29 12:34:50:	ssh admin@9.115.244.169 'svctask settimezone -timezone 246'
+veryverbose, MSG, 2013-04-29 12:34:51:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:51:	 0
+veryverbose, MSG, 2013-04-29 12:34:51:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:51:	[pass]
+verbose, MSG, 2013-04-29 12:34:51:	ssh admin@9.115.244.169 'svctask chsystem -invemailinterval 7'
+veryverbose, MSG, 2013-04-29 12:34:52:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:52:	 0
+veryverbose, MSG, 2013-04-29 12:34:52:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:52:	[pass]
+verbose, MSG, 2013-04-29 12:34:52:	ssh admin@9.115.244.169 'svctask mkemailserver -ip 9.125.52.13 -port 25'
+veryverbose, MSG, 2013-04-29 12:34:53:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:53:	 Email Server id [1] successfully created
+veryverbose, MSG, 2013-04-29 12:34:53:	 0
+veryverbose, MSG, 2013-04-29 12:34:53:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:53:	[pass]
+verbose, MSG, 2013-04-29 12:34:53:	ssh admin@9.115.244.169 'svctask mkemailuser -address lyongsh@cn.ibm.com -error on -info off -inventory off -usertype local -warning on'
+veryverbose, MSG, 2013-04-29 12:34:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:54:	 CMMVC5758E Object name already exists.
+veryverbose, MSG, 2013-04-29 12:34:55:	 1
+veryverbose, MSG, 2013-04-29 12:34:55:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:55:	[fail]
+verbose, MSG, 2013-04-29 12:34:55:	ssh admin@9.115.244.169 'svctask mkemailuser -address callhome0@de.ibm.com -error on -info off -inventory on -usertype support -warning off'
+veryverbose, MSG, 2013-04-29 12:34:56:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:56:	 CMMVC5758E Object name already exists.
+veryverbose, MSG, 2013-04-29 12:34:56:	 1
+veryverbose, MSG, 2013-04-29 12:34:56:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:34:56:	[fail]
+verbose, MSG, 2013-04-29 12:34:56:	ssh admin@9.115.244.169 'svctask startemail'
+veryverbose, MSG, 2013-04-29 12:34:57:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:57:	 0
+veryverbose, MSG, 2013-04-29 12:34:57:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:57:	[pass]
+verbose, MSG, 2013-04-29 12:34:57:	ssh admin@9.115.244.169 'svctask chsystem -easysetup no'
+veryverbose, MSG, 2013-04-29 12:34:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:34:58:	 0
+veryverbose, MSG, 2013-04-29 12:34:58:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:34:58:	[pass]
+basic, WARN, 2013-04-29 12:34:58:=== tc00_addHost , FAILED ===

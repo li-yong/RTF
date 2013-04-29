@@ -94,6 +94,7 @@ def Parseconf.translateOneCMD(cmd)
 #substitude variable with _global file defined.
   
 hash={}
+  #print (cmd)
   varArr=cmd.scan(/#\{(.*?)}/)  #cmd  "abc\#{abc}efg/bcs\#{fff}", varArr=[["abc"], ["fff"]]
   varArr.each{|x| hash[x[0]]=self.envaluateSingleVar(x[0]) }
 
