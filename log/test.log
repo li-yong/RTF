@@ -44147,3 +44147,342 @@ veryverbose, MSG, 2013-04-29 13:21:18:
 	===cmd output end===
 verbose, WARN, 2013-04-29 13:21:18:	[fail]
 basic, WARN, 2013-04-29 13:21:18:=== tc03_mkHost , FAILED ===
+verbose, MSG, 2013-04-29 13:57:33:	cd /mnt/hgfs/jbso/RTF/test; ls -d ts_*/  
+veryverbose, MSG, 2013-04-29 13:57:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:57:33:	 ts_atl/
+veryverbose, MSG, 2013-04-29 13:57:33:	 ts_ns/
+veryverbose, MSG, 2013-04-29 13:57:33:	 ts_rcfs/
+veryverbose, MSG, 2013-04-29 13:57:33:	 0
+veryverbose, MSG, 2013-04-29 13:57:33:
+	===cmd output end===
+basic, MSG, 2013-04-29 13:57:33:
+testcase in testsuite 'ts_atl':
+verbose, MSG, 2013-04-29 13:57:33:	cd /mnt/hgfs/jbso/RTF/test/ts_atl; ls tc*_*  
+veryverbose, MSG, 2013-04-29 13:57:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc00_addHost - 副本 (3) - 副本.csv
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc00_addHost - 副本 (4) - 副本.csv
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc00_initSys.csv
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc01_addArray.csv
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc02_mkVdisk.csv
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc03_mkHost_Map.csv
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc04_fcMap.csv
+veryverbose, MSG, 2013-04-29 13:57:33:	 0
+veryverbose, MSG, 2013-04-29 13:57:33:
+	===cmd output end===
+basic, MSG, 2013-04-29 13:57:33:
+testcase in testsuite 'ts_ns':
+verbose, MSG, 2013-04-29 13:57:33:	cd /mnt/hgfs/jbso/RTF/test/ts_ns; ls tc*_*  
+veryverbose, MSG, 2013-04-29 13:57:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc00_test
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc00_test~
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc01_createns
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc02_iozone
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc03_pynfsJunction
+veryverbose, MSG, 2013-04-29 13:57:33:	 0
+veryverbose, MSG, 2013-04-29 13:57:33:
+	===cmd output end===
+basic, MSG, 2013-04-29 13:57:33:
+testcase in testsuite 'ts_rcfs':
+verbose, MSG, 2013-04-29 13:57:33:	cd /mnt/hgfs/jbso/RTF/test/ts_rcfs; ls tc*_*  
+veryverbose, MSG, 2013-04-29 13:57:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc01_mount
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc02_create
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc03_mkdir
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc04_getattr
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc05_remove
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc06_lookup
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc07_rename
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc09_open
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc100_null
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc10_setattr
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc11_access
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc13_getfh
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc14_getfsinfo
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc15_readdir
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc16_close
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc17_getsd
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc18_setsd
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc19_addmode
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc20_read
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc21_write
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc98_rename
+veryverbose, MSG, 2013-04-29 13:57:33:	 tc99_rmdir
+veryverbose, MSG, 2013-04-29 13:57:33:	 0
+veryverbose, MSG, 2013-04-29 13:57:33:
+	===cmd output end===
+verbose, MSG, 2013-04-29 13:58:13:	cd /mnt/hgfs/jbso/RTF/test; ls -d ts_*/  
+veryverbose, MSG, 2013-04-29 13:58:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:58:13:	 ts_atl/
+veryverbose, MSG, 2013-04-29 13:58:13:	 0
+veryverbose, MSG, 2013-04-29 13:58:13:
+	===cmd output end===
+basic, MSG, 2013-04-29 13:58:13:
+testcase in testsuite 'ts_atl':
+verbose, MSG, 2013-04-29 13:58:13:	cd /mnt/hgfs/jbso/RTF/test/ts_atl; ls tc*_*  
+veryverbose, MSG, 2013-04-29 13:58:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:58:14:	 tc00_addHost - 副本 (3) - 副本.csv
+veryverbose, MSG, 2013-04-29 13:58:14:	 tc00_addHost - 副本 (4) - 副本.csv
+veryverbose, MSG, 2013-04-29 13:58:14:	 tc00_initSys.csv
+veryverbose, MSG, 2013-04-29 13:58:14:	 tc01_addArray.csv
+veryverbose, MSG, 2013-04-29 13:58:14:	 tc02_mkVdisk.csv
+veryverbose, MSG, 2013-04-29 13:58:14:	 tc03_mkHost_Map.csv
+veryverbose, MSG, 2013-04-29 13:58:14:	 tc04_fcMap.csv
+veryverbose, MSG, 2013-04-29 13:58:14:	 0
+veryverbose, MSG, 2013-04-29 13:58:14:
+	===cmd output end===
+verbose, MSG, 2013-04-29 13:58:35:	cd /mnt/hgfs/jbso/RTF/test; ls -d ts_*/  
+veryverbose, MSG, 2013-04-29 13:58:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:58:35:	 ts_atl/
+veryverbose, MSG, 2013-04-29 13:58:35:	 0
+veryverbose, MSG, 2013-04-29 13:58:35:
+	===cmd output end===
+basic, MSG, 2013-04-29 13:58:35:
+testcase in testsuite 'ts_atl':
+verbose, MSG, 2013-04-29 13:58:35:	cd /mnt/hgfs/jbso/RTF/test/ts_atl; ls tc*_*  
+veryverbose, MSG, 2013-04-29 13:58:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:58:35:	 tc00_initSys.csv
+veryverbose, MSG, 2013-04-29 13:58:35:	 tc01_addArray.csv
+veryverbose, MSG, 2013-04-29 13:58:35:	 tc02_mkVdisk.csv
+veryverbose, MSG, 2013-04-29 13:58:35:	 tc03_mkHost_Map.csv
+veryverbose, MSG, 2013-04-29 13:58:35:	 tc04_fcMap.csv
+veryverbose, MSG, 2013-04-29 13:58:35:	 0
+veryverbose, MSG, 2013-04-29 13:58:35:
+	===cmd output end===
+basic, WARN, 2013-04-29 13:58:49:testcase /mnt/hgfs/jbso/RTF/test/ts_atl/tc04_fcMap not exist
+basic, MSG, 2013-04-29 13:58:49:
+testcase in testsuite 'ts_atl':
+verbose, MSG, 2013-04-29 13:58:49:	cd /mnt/hgfs/jbso/RTF/test/ts_atl; ls tc*_*  
+veryverbose, MSG, 2013-04-29 13:58:49:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:58:49:	 tc00_initSys.csv
+veryverbose, MSG, 2013-04-29 13:58:49:	 tc01_addArray.csv
+veryverbose, MSG, 2013-04-29 13:58:49:	 tc02_mkVdisk.csv
+veryverbose, MSG, 2013-04-29 13:58:49:	 tc03_mkHost_Map.csv
+veryverbose, MSG, 2013-04-29 13:58:49:	 tc04_fcMap.csv
+veryverbose, MSG, 2013-04-29 13:58:49:	 0
+veryverbose, MSG, 2013-04-29 13:58:49:
+	===cmd output end===
+basic, WARN, 2013-04-29 13:59:02:testcase /mnt/hgfs/jbso/RTF/test/ts_atl/tc04_fcMap not exist
+basic, MSG, 2013-04-29 13:59:02:
+testcase in testsuite 'ts_atl':
+verbose, MSG, 2013-04-29 13:59:02:	cd /mnt/hgfs/jbso/RTF/test/ts_atl; ls tc*_*  
+veryverbose, MSG, 2013-04-29 13:59:02:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:02:	 tc00_initSys.csv
+veryverbose, MSG, 2013-04-29 13:59:02:	 tc01_addArray.csv
+veryverbose, MSG, 2013-04-29 13:59:02:	 tc02_mkVdisk.csv
+veryverbose, MSG, 2013-04-29 13:59:02:	 tc03_mkHost_Map.csv
+veryverbose, MSG, 2013-04-29 13:59:02:	 tc04_fcMap.csv
+veryverbose, MSG, 2013-04-29 13:59:02:	 0
+veryverbose, MSG, 2013-04-29 13:59:02:
+	===cmd output end===
+basic, MSG, 2013-04-29 13:59:16:ts_atl
+veryverbose, MSG, 2013-04-29 13:59:16:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 13:59:16:
+
+=== tc04_fcMap  start===
+verbose, MSG, 2013-04-29 13:59:16:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Source'
+veryverbose, MSG, 2013-04-29 13:59:17:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:17:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:59:17:	 1
+veryverbose, MSG, 2013-04-29 13:59:17:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:17:	[fail]
+verbose, MSG, 2013-04-29 13:59:17:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Target'
+veryverbose, MSG, 2013-04-29 13:59:18:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:18:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:59:18:	 1
+veryverbose, MSG, 2013-04-29 13:59:18:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:18:	[fail]
+verbose, MSG, 2013-04-29 13:59:18:	ssh admin@9.115.244.169 ' mkfcmap -source DB_Source -target DB_Target -name DB_Map1 -consistgrp FCCG1'
+veryverbose, MSG, 2013-04-29 13:59:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:20:	 CMMVC5754E The specified object does not exist, or the name supplied does not meet the naming rules.
+veryverbose, MSG, 2013-04-29 13:59:20:	 1
+veryverbose, MSG, 2013-04-29 13:59:20:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:20:	[fail]
+verbose, MSG, 2013-04-29 13:59:20:	ssh admin@9.115.244.169 ' prestartfcconsistgrp FCCG1'
+veryverbose, MSG, 2013-04-29 13:59:22:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:22:	 CMMVC5753E The specified object does not e1
+veryverbose, MSG, 2013-04-29 13:59:22:	 xist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 13:59:22:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:22:	[fail]
+verbose, MSG, 2013-04-29 13:59:22:	ssh admin@9.115.244.169 ' startfcconsistgrp FCCG1'
+veryverbose, MSG, 2013-04-29 13:59:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:23:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 13:59:23:	 1
+veryverbose, MSG, 2013-04-29 13:59:23:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:23:	[fail]
+verbose, MSG, 2013-04-29 13:59:23:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Master    '
+veryverbose, MSG, 2013-04-29 13:59:25:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:25:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:59:25:	 1
+veryverbose, MSG, 2013-04-29 13:59:25:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:25:	[fail]
+verbose, MSG, 2013-04-29 13:59:25:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Aux '
+veryverbose, MSG, 2013-04-29 13:59:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:26:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:59:26:	 1
+veryverbose, MSG, 2013-04-29 13:59:26:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:26:	[fail]
+verbose, MSG, 2013-04-29 13:59:26:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fc_Master    '
+veryverbose, MSG, 2013-04-29 13:59:27:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:27:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:59:27:	 1
+veryverbose, MSG, 2013-04-29 13:59:27:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:27:	[fail]
+verbose, MSG, 2013-04-29 13:59:27:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fc_Aux  '
+veryverbose, MSG, 2013-04-29 13:59:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:28:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:59:28:	 1
+veryverbose, MSG, 2013-04-29 13:59:28:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:28:	[fail]
+verbose, MSG, 2013-04-29 13:59:28:	ssh admin@9.115.244.169 '  mkfcmap -source fc_Master -target fc_Aux -name fcMap1 '
+veryverbose, MSG, 2013-04-29 13:59:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:29:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:59:29:	 1
+veryverbose, MSG, 2013-04-29 13:59:29:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:29:	[fail]
+verbose, MSG, 2013-04-29 13:59:29:	ssh admin@9.115.244.169 '  prestartfcmap fcMap1'
+veryverbose, MSG, 2013-04-29 13:59:31:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:31:	 0
+veryverbose, MSG, 2013-04-29 13:59:31:
+	===cmd output end===
+verbose, MSG, 2013-04-29 13:59:31:	[pass]
+verbose, MSG, 2013-04-29 13:59:31:	ssh admin@9.115.244.169 '  startfcmap fcMap1'
+veryverbose, MSG, 2013-04-29 13:59:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:32:	 0
+veryverbose, MSG, 2013-04-29 13:59:32:
+	===cmd output end===
+verbose, MSG, 2013-04-29 13:59:32:	[pass]
+basic, WARN, 2013-04-29 13:59:32:=== tc04_fcMap , FAILED ===
+basic, MSG, 2013-04-29 13:59:45:ts_atl
+veryverbose, MSG, 2013-04-29 13:59:45:ENV[LOGLEVEL]:verbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 13:59:45:
+
+=== tc04_fcMap  start===
+verbose, MSG, 2013-04-29 13:59:45:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Source'
+veryverbose, MSG, 2013-04-29 13:59:46:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:46:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:59:46:	 1
+veryverbose, MSG, 2013-04-29 13:59:46:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:46:	[fail]
+verbose, MSG, 2013-04-29 13:59:46:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Target'
+veryverbose, MSG, 2013-04-29 13:59:47:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:47:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:59:47:	 1
+veryverbose, MSG, 2013-04-29 13:59:47:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:47:	[fail]
+verbose, MSG, 2013-04-29 13:59:47:	ssh admin@9.115.244.169 ' mkfcmap -source DB_Source -target DB_Target -name DB_Map1 -consistgrp FCCG1'
+veryverbose, MSG, 2013-04-29 13:59:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:48:	 CMMVC5754E The specified object does not exist,1
+veryverbose, MSG, 2013-04-29 13:59:48:	  or the name supplied does not meet the naming rules.
+veryverbose, MSG, 2013-04-29 13:59:48:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:48:	[fail]
+verbose, MSG, 2013-04-29 13:59:48:	ssh admin@9.115.244.169 ' prestartfcconsistgrp FCCG1'
+veryverbose, MSG, 2013-04-29 13:59:50:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:50:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 13:59:50:	 1
+veryverbose, MSG, 2013-04-29 13:59:50:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:50:	[fail]
+verbose, MSG, 2013-04-29 13:59:50:	ssh admin@9.115.244.169 ' startfcconsistgrp FCCG1'
+veryverbose, MSG, 2013-04-29 13:59:51:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:51:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 13:59:51:	 1
+veryverbose, MSG, 2013-04-29 13:59:51:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:51:	[fail]
+verbose, MSG, 2013-04-29 13:59:51:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Master    '
+veryverbose, MSG, 2013-04-29 13:59:52:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:52:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:59:52:	 1
+veryverbose, MSG, 2013-04-29 13:59:52:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:52:	[fail]
+verbose, MSG, 2013-04-29 13:59:52:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Aux '
+veryverbose, MSG, 2013-04-29 13:59:53:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:53:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:59:53:	 1
+veryverbose, MSG, 2013-04-29 13:59:53:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:53:	[fail]
+verbose, MSG, 2013-04-29 13:59:53:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fc_Master    '
+veryverbose, MSG, 2013-04-29 13:59:55:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:55:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:59:55:	 1
+veryverbose, MSG, 2013-04-29 13:59:55:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:55:	[fail]
+verbose, MSG, 2013-04-29 13:59:55:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fc_Aux  '
+veryverbose, MSG, 2013-04-29 13:59:56:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:56:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:59:56:	 1
+veryverbose, MSG, 2013-04-29 13:59:56:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:56:	[fail]
+verbose, MSG, 2013-04-29 13:59:56:	ssh admin@9.115.244.169 '  mkfcmap -source fc_Master -target fc_Aux -name fcMap1 '
+veryverbose, MSG, 2013-04-29 13:59:57:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:57:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:59:57:	 1
+veryverbose, MSG, 2013-04-29 13:59:57:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:57:	[fail]
+verbose, MSG, 2013-04-29 13:59:57:	ssh admin@9.115.244.169 '  prestartfcmap fcMap1'
+veryverbose, MSG, 2013-04-29 13:59:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:58:	 CMMVC5903E The FlashCopy mapping was not prepared because the mapping or consistency group is already in the copying state.
+veryverbose, MSG, 2013-04-29 13:59:58:	 1
+veryverbose, MSG, 2013-04-29 13:59:58:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:58:	[fail]
+verbose, MSG, 2013-04-29 13:59:58:	ssh admin@9.115.244.169 '  startfcmap fcMap1'
+veryverbose, MSG, 2013-04-29 13:59:59:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:59:59:	 CMMVC5907E The FlashCopy mapping or consistency group was not started because the mapping or consistency group is already in the copying state.
+veryverbose, MSG, 2013-04-29 13:59:59:	 1
+veryverbose, MSG, 2013-04-29 13:59:59:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:59:59:	[fail]
+basic, WARN, 2013-04-29 13:59:59:=== tc04_fcMap , FAILED ===
