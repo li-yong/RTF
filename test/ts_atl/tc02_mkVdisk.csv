@@ -1,0 +1,14 @@
+Action,Object,Data,assert,ddcsvfile
+ssh,#{SSHCONN},svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullyAllocatedVdisk,cmdExitCode=0,
+ssh,#{SSHCONN}, svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullyAllocatedVdisk_9_115_245_69,cmdExitCode=0,
+ssh,#{SSHCONN}, svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name spaceEfficientVdisk   -rsize 20% -autoexpand -grainsize 32 ,cmdExitCode=0,
+ssh,#{SSHCONN}, svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 3000000 -name twoTigarVdisk  ,cmdExitCode=0,
+ssh,#{SSHCONN}, svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullAllocatedVdisk_9_115_245_70   ,cmdExitCode=0,
+ssh,#{SSHCONN}, svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Source,cmdExitCode=0,
+ssh,#{SSHCONN}, svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Target,cmdExitCode=0,
+ssh,#{SSHCONN}, svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name noCacheVdisk -cache none   ,cmdExitCode=0,
+ssh,#{SSHCONN},  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Master    ,cmdExitCode=0,
+ssh,#{SSHCONN},  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Aux ,cmdExitCode=0,
+ssh,#{SSHCONN},  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Aux ,cmdExitCode=0,
+ssh,#{SSHCONN},  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fc_Aux  ,cmdExitCode=0,
+ssh_dd,#{SSHCONN},  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_#{CVSDD_vdiskId},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv

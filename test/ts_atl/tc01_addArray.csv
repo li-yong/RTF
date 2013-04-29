@@ -1,0 +1,18 @@
+Action,Object,Data,assert,ddcsvfile
+ssh_dd,#{SSHCONN},chdrive -use candidate  #{CVSDD_driveId},RTFnotVerify,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
+,,,,
+,,,,
+ssh,#{SSHCONN}, svctask mkmdiskgrp  -ext 512 ,cmdExitCode=0,
+ssh,#{SSHCONN}, svctask  mkarray -level raid10 -drive 0:1:2:3 -strip 256 -name mdisk_rd10 mdiskgrp0,cmdExitCode=0,
+ssh,#{SSHCONN}, svctask  mkarray -level raid5 -drive 4:5:6:7 -strip 256 -name mdisk_rd5 mdiskgrp0,cmdExitCode=0,
+ssh,#{SSHCONN}, svctask  mkarray -level raid0 -drive 8:9 -strip 256 -name mdisk_rd0 mdiskgrp0,cmdExitCode=0,
+ssh,#{SSHCONN}, svctask  mkarray -level raid0 -drive 10 -strip 256 -name mdisk_imageVd mdiskgrp0,cmdExitCode=0,
+,, ,,
+ssh,#{SSHCONN},  svctask  mkarray -level raid0 -drive 11  -strip 256 -name  emptyMdisk mdiskgrp0,cmdExitCode=0,
+,,,,
+ssh,#{SSHCONN},  svctask mkarray  -level raid0 -drive 48:49:50 -strip 256 -name TwoT_Mdisk  mdiskgrp0  ,cmdExitCode=0,
+,,,,
+ssh,#{SSHCONN},  svctask  mkarray -level raid0 -drive 111:112 -strip 256 -name fak_mdisk_0 poolName0320,cmdExitCode=0,
+ssh,#{SSHCONN},  svctask  mkarray -level raid0 -drive 141:142:143 -strip 256 -name fak_mdisk_1 poolName0320,cmdExitCode=0,
+,,,,
+ssh_dd,#{SSHCONN},svctask  mkarray -level raid0 -drive #{CVSDD_driveId2} mdiskgrp0,cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv

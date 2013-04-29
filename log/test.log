@@ -43387,3 +43387,763 @@ veryverbose, MSG, 2013-04-29 12:34:58:
 	===cmd output end===
 verbose, MSG, 2013-04-29 12:34:58:	[pass]
 basic, WARN, 2013-04-29 12:34:58:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 12:43:10:ts_atl
+veryverbose, MSG, 2013-04-29 12:43:10:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 12:43:10:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 12:43:10:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  1'
+veryverbose, MSG, 2013-04-29 12:43:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:11:	 Virtual Disk to Host map, id [0], successfully created
+veryverbose, MSG, 2013-04-29 12:43:11:	 0
+veryverbose, MSG, 2013-04-29 12:43:11:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:43:11:	[pass]
+verbose, MSG, 2013-04-29 12:43:11:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  2'
+veryverbose, MSG, 2013-04-29 12:43:12:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:12:	 Virtual Disk to Host map, id [1], successfully created
+veryverbose, MSG, 2013-04-29 12:43:12:	 0
+veryverbose, MSG, 2013-04-29 12:43:12:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:43:12:	[pass]
+verbose, MSG, 2013-04-29 12:43:12:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  3'
+veryverbose, MSG, 2013-04-29 12:43:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:13:	 Virtual Disk to Host map, id [2], successfully created
+veryverbose, MSG, 2013-04-29 12:43:13:	 0
+veryverbose, MSG, 2013-04-29 12:43:13:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:43:13:	[pass]
+verbose, MSG, 2013-04-29 12:43:13:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  4'
+veryverbose, MSG, 2013-04-29 12:43:15:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:15:	 Virtual Disk to Host map, id [3], successfully created
+veryverbose, MSG, 2013-04-29 12:43:15:	 0
+veryverbose, MSG, 2013-04-29 12:43:15:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:43:15:	[pass]
+verbose, MSG, 2013-04-29 12:43:15:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  5'
+veryverbose, MSG, 2013-04-29 12:43:16:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:16:	 Virtual Disk to Host map, id [4], successfully created
+veryverbose, MSG, 2013-04-29 12:43:16:	 0
+veryverbose, MSG, 2013-04-29 12:43:16:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:43:16:	[pass]
+verbose, MSG, 2013-04-29 12:43:16:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  6'
+veryverbose, MSG, 2013-04-29 12:43:17:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:17:	 Virtual Disk to Host map, id [5], successfully created
+veryverbose, MSG, 2013-04-29 12:43:17:	 0
+veryverbose, MSG, 2013-04-29 12:43:17:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:43:17:	[pass]
+verbose, MSG, 2013-04-29 12:43:17:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  7'
+veryverbose, MSG, 2013-04-29 12:43:18:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:18:	 Virtual Disk to Host map, id [6], successfully created
+veryverbose, MSG, 2013-04-29 12:43:18:	 0
+veryverbose, MSG, 2013-04-29 12:43:18:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:43:18:	[pass]
+verbose, MSG, 2013-04-29 12:43:18:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  1'
+veryverbose, MSG, 2013-04-29 12:43:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:20:	 Virtual Disk to Host map, id [0], successfully created
+veryverbose, MSG, 2013-04-29 12:43:20:	 0
+veryverbose, MSG, 2013-04-29 12:43:20:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:43:20:	[pass]
+verbose, MSG, 2013-04-29 12:43:20:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  2'
+veryverbose, MSG, 2013-04-29 12:43:21:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:21:	 Virtual Disk to Host map, id [1], successfully created
+veryverbose, MSG, 2013-04-29 12:43:21:	 0
+veryverbose, MSG, 2013-04-29 12:43:21:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:43:21:	[pass]
+verbose, MSG, 2013-04-29 12:43:21:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  3'
+veryverbose, MSG, 2013-04-29 12:43:22:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:22:	 Virtual Disk to Host map, id [2], successfully created
+veryverbose, MSG, 2013-04-29 12:43:22:	 0
+veryverbose, MSG, 2013-04-29 12:43:22:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:43:22:	[pass]
+verbose, MSG, 2013-04-29 12:43:22:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  4'
+veryverbose, MSG, 2013-04-29 12:43:24:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:24:	 Virtual Disk to Host map, id [3], successfully created
+veryverbose, MSG, 2013-04-29 12:43:24:	 0
+veryverbose, MSG, 2013-04-29 12:43:24:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:43:24:	[pass]
+verbose, MSG, 2013-04-29 12:43:24:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  5'
+veryverbose, MSG, 2013-04-29 12:43:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:26:	 Virtual Disk to Host map, id [4], successfully created
+veryverbose, MSG, 2013-04-29 12:43:26:	 0
+veryverbose, MSG, 2013-04-29 12:43:26:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:43:26:	[pass]
+verbose, MSG, 2013-04-29 12:43:26:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  6'
+veryverbose, MSG, 2013-04-29 12:43:27:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:27:	 Virtual Disk to Host map, id [5], successfully created
+veryverbose, MSG, 2013-04-29 12:43:27:	 0
+veryverbose, MSG, 2013-04-29 12:43:27:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:43:27:	[pass]
+verbose, MSG, 2013-04-29 12:43:27:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  7'
+veryverbose, MSG, 2013-04-29 12:43:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:28:	 Virtual Disk to Host map, id [6], successfully created
+veryverbose, MSG, 2013-04-29 12:43:28:	 0
+veryverbose, MSG, 2013-04-29 12:43:28:
+	===cmd output end===
+verbose, MSG, 2013-04-29 12:43:28:	[pass]
+verbose, MSG, 2013-04-29 12:43:28:	ssh admin@9.115.244.169 'chdrive -use candidate  1'
+veryverbose, MSG, 2013-04-29 12:43:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:29:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 12:43:29:	 1
+veryverbose, MSG, 2013-04-29 12:43:29:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:43:29:	[fail]
+verbose, MSG, 2013-04-29 12:43:29:	ssh admin@9.115.244.169 'chdrive -use candidate  2'
+veryverbose, MSG, 2013-04-29 12:43:31:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:31:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 12:43:31:	 1
+veryverbose, MSG, 2013-04-29 12:43:31:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:43:31:	[fail]
+verbose, MSG, 2013-04-29 12:43:31:	ssh admin@9.115.244.169 'chdrive -use candidate  3'
+veryverbose, MSG, 2013-04-29 12:43:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:32:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 12:43:32:	 1
+veryverbose, MSG, 2013-04-29 12:43:32:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:43:32:	[fail]
+verbose, MSG, 2013-04-29 12:43:32:	ssh admin@9.115.244.169 'chdrive -use candidate  4'
+veryverbose, MSG, 2013-04-29 12:43:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:33:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 12:43:33:	 1
+veryverbose, MSG, 2013-04-29 12:43:33:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:43:33:	[fail]
+verbose, MSG, 2013-04-29 12:43:33:	ssh admin@9.115.244.169 'chdrive -use candidate  5'
+veryverbose, MSG, 2013-04-29 12:43:34:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:34:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 12:43:34:	 1
+veryverbose, MSG, 2013-04-29 12:43:34:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:43:34:	[fail]
+verbose, MSG, 2013-04-29 12:43:34:	ssh admin@9.115.244.169 'chdrive -use candidate  6'
+veryverbose, MSG, 2013-04-29 12:43:36:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 12:43:36:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 12:43:36:	 1
+veryverbose, MSG, 2013-04-29 12:43:36:
+	===cmd output end===
+verbose, WARN, 2013-04-29 12:43:36:	[fail]
+verbose, MSG, 2013-04-29 12:43:36:	ssh admin@9.115.244.169 'chdrive -use candidate  7'
+basic, MSG, 2013-04-29 13:14:45:ts_atl
+veryverbose, MSG, 2013-04-29 13:14:45:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 13:14:45:
+
+=== tc02_mkVdisk  start===
+verbose, MSG, 2013-04-29 13:14:45:	ssh admin@9.115.244.169 'svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 13:14:47:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:14:47:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:14:47:	 1
+veryverbose, MSG, 2013-04-29 13:14:47:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:14:47:	[fail]
+verbose, MSG, 2013-04-29 13:14:47:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullyAllocatedVdisk_9_115_245_69'
+veryverbose, MSG, 2013-04-29 13:14:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:14:48:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:14:48:	 1
+veryverbose, MSG, 2013-04-29 13:14:48:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:14:48:	[fail]
+verbose, MSG, 2013-04-29 13:14:48:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name spaceEfficientVdisk   -rsize 20% -autoexpand -grainsize 32 '
+veryverbose, MSG, 2013-04-29 13:14:49:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:14:49:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:14:49:	 1
+veryverbose, MSG, 2013-04-29 13:14:49:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:14:49:	[fail]
+verbose, MSG, 2013-04-29 13:14:49:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 3000000 -name twoTigarVdisk  '
+veryverbose, MSG, 2013-04-29 13:14:50:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:14:50:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:14:50:	 1
+veryverbose, MSG, 2013-04-29 13:14:50:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:14:50:	[fail]
+verbose, MSG, 2013-04-29 13:14:50:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullAllocatedVdisk_9_115_245_70   '
+veryverbose, MSG, 2013-04-29 13:14:52:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:14:52:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:14:52:	 1
+veryverbose, MSG, 2013-04-29 13:14:52:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:14:52:	[fail]
+verbose, MSG, 2013-04-29 13:14:52:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Source'
+veryverbose, MSG, 2013-04-29 13:14:53:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:14:53:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:14:53:	 1
+veryverbose, MSG, 2013-04-29 13:14:53:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:14:53:	[fail]
+verbose, MSG, 2013-04-29 13:14:53:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Target'
+veryverbose, MSG, 2013-04-29 13:14:55:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:14:55:	 CMMVC6035E The action failed as the object al1
+veryverbose, MSG, 2013-04-29 13:14:55:	 ready exists.
+veryverbose, MSG, 2013-04-29 13:14:55:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:14:55:	[fail]
+verbose, MSG, 2013-04-29 13:14:55:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name noCacheVdisk -cache none   '
+veryverbose, MSG, 2013-04-29 13:14:57:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:14:57:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:14:57:	 1
+veryverbose, MSG, 2013-04-29 13:14:57:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:14:57:	[fail]
+verbose, MSG, 2013-04-29 13:14:57:	ssh admin@9.115.244.169 ' '
+veryverbose, MSG, 2013-04-29 13:14:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:14:58:	 rbash: -c: line 0: syntax error near unexpected token `;'
+veryverbose, MSG, 2013-04-29 13:14:58:	 rbash: -c: line 0: ` ;echo $? '
+veryverbose, MSG, 2013-04-29 13:14:58:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:14:58:	[fail]
+verbose, MSG, 2013-04-29 13:14:58:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Master    '
+veryverbose, MSG, 2013-04-29 13:14:59:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:14:59:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:14:59:	 1
+veryverbose, MSG, 2013-04-29 13:14:59:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:14:59:	[fail]
+verbose, MSG, 2013-04-29 13:14:59:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Aux '
+veryverbose, MSG, 2013-04-29 13:15:00:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:15:00:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:15:00:	 1
+veryverbose, MSG, 2013-04-29 13:15:00:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:15:00:	[fail]
+verbose, MSG, 2013-04-29 13:15:00:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fc_Master    '
+veryverbose, MSG, 2013-04-29 13:15:02:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:15:02:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:15:02:	 1
+veryverbose, MSG, 2013-04-29 13:15:02:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:15:02:	[fail]
+verbose, MSG, 2013-04-29 13:15:02:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fc_Aux  '
+veryverbose, MSG, 2013-04-29 13:15:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:15:03:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:15:03:	 1
+veryverbose, MSG, 2013-04-29 13:15:03:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:15:03:	[fail]
+verbose, MSG, 2013-04-29 13:15:03:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_1'
+veryverbose, MSG, 2013-04-29 13:15:04:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:15:04:	 Virtual Disk, id [32], successfully created
+veryverbose, MSG, 2013-04-29 13:15:04:	 0
+veryverbose, MSG, 2013-04-29 13:15:04:
+	===cmd output end===
+verbose, MSG, 2013-04-29 13:15:04:	[pass]
+verbose, MSG, 2013-04-29 13:15:04:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_2'
+veryverbose, MSG, 2013-04-29 13:15:05:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:15:05:	 Virtual Disk, id [33], successfully created
+veryverbose, MSG, 2013-04-29 13:15:05:	 0
+veryverbose, MSG, 2013-04-29 13:15:05:
+	===cmd output end===
+verbose, MSG, 2013-04-29 13:15:05:	[pass]
+verbose, MSG, 2013-04-29 13:15:05:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_3'
+veryverbose, MSG, 2013-04-29 13:15:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:15:07:	 Virtual Disk, id [34], successfully created
+veryverbose, MSG, 2013-04-29 13:15:07:	 0
+veryverbose, MSG, 2013-04-29 13:15:07:
+	===cmd output end===
+verbose, MSG, 2013-04-29 13:15:07:	[pass]
+verbose, MSG, 2013-04-29 13:15:07:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_4'
+veryverbose, MSG, 2013-04-29 13:15:08:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:15:08:	 Virtual Disk, id [35], successfully created
+veryverbose, MSG, 2013-04-29 13:15:08:	 0
+veryverbose, MSG, 2013-04-29 13:15:08:
+	===cmd output end===
+verbose, MSG, 2013-04-29 13:15:08:	[pass]
+verbose, MSG, 2013-04-29 13:15:08:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_5'
+veryverbose, MSG, 2013-04-29 13:15:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:15:09:	 Virtual Disk, id [36], successfully created
+veryverbose, MSG, 2013-04-29 13:15:09:	 0
+veryverbose, MSG, 2013-04-29 13:15:09:
+	===cmd output end===
+verbose, MSG, 2013-04-29 13:15:09:	[pass]
+verbose, MSG, 2013-04-29 13:15:09:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_6'
+veryverbose, MSG, 2013-04-29 13:15:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:15:10:	 Virtual Disk, id [37], successfully created
+veryverbose, MSG, 2013-04-29 13:15:10:	 0
+veryverbose, MSG, 2013-04-29 13:15:10:
+	===cmd output end===
+verbose, MSG, 2013-04-29 13:15:10:	[pass]
+verbose, MSG, 2013-04-29 13:15:10:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_7'
+veryverbose, MSG, 2013-04-29 13:15:12:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:15:12:	 Virtual Disk, id [38], successfully created
+veryverbose, MSG, 2013-04-29 13:15:12:	 0
+veryverbose, MSG, 2013-04-29 13:15:12:
+	===cmd output end===
+verbose, MSG, 2013-04-29 13:15:12:	[pass]
+basic, WARN, 2013-04-29 13:15:12:=== tc02_mkVdisk , FAILED ===
+basic, MSG, 2013-04-29 13:17:10:ts_atl
+veryverbose, MSG, 2013-04-29 13:17:10:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 13:17:10:
+
+=== tc02_mkVdisk  start===
+verbose, MSG, 2013-04-29 13:17:10:	ssh admin@9.115.244.169 'svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 13:17:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:11:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:11:	 1
+veryverbose, MSG, 2013-04-29 13:17:11:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:11:	[fail]
+verbose, MSG, 2013-04-29 13:17:11:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullyAllocatedVdisk_9_115_245_69'
+veryverbose, MSG, 2013-04-29 13:17:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:13:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:13:	 1
+veryverbose, MSG, 2013-04-29 13:17:13:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:13:	[fail]
+verbose, MSG, 2013-04-29 13:17:13:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name spaceEfficientVdisk   -rsize 20% -autoexpand -grainsize 32 '
+veryverbose, MSG, 2013-04-29 13:17:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:14:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:14:	 1
+veryverbose, MSG, 2013-04-29 13:17:14:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:14:	[fail]
+verbose, MSG, 2013-04-29 13:17:14:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 3000000 -name twoTigarVdisk  '
+veryverbose, MSG, 2013-04-29 13:17:16:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:16:	 CMMVC6035E The action failed as the object alrea1
+veryverbose, MSG, 2013-04-29 13:17:16:	 dy exists.
+veryverbose, MSG, 2013-04-29 13:17:16:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:16:	[fail]
+verbose, MSG, 2013-04-29 13:17:16:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullAllocatedVdisk_9_115_245_70   '
+veryverbose, MSG, 2013-04-29 13:17:17:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:17:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:17:	 1
+veryverbose, MSG, 2013-04-29 13:17:17:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:17:	[fail]
+verbose, MSG, 2013-04-29 13:17:17:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Source'
+veryverbose, MSG, 2013-04-29 13:17:18:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:18:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:18:	 1
+veryverbose, MSG, 2013-04-29 13:17:18:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:18:	[fail]
+verbose, MSG, 2013-04-29 13:17:18:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Target'
+veryverbose, MSG, 2013-04-29 13:17:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:20:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:20:	 1
+veryverbose, MSG, 2013-04-29 13:17:20:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:20:	[fail]
+verbose, MSG, 2013-04-29 13:17:20:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name noCacheVdisk -cache none   '
+veryverbose, MSG, 2013-04-29 13:17:21:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:21:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:21:	 1
+veryverbose, MSG, 2013-04-29 13:17:21:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:21:	[fail]
+verbose, MSG, 2013-04-29 13:17:21:	ssh admin@9.115.244.169 ' '
+veryverbose, MSG, 2013-04-29 13:17:22:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:22:	 rbash: -c: line 0: syntax error near unexpected token `;'
+veryverbose, MSG, 2013-04-29 13:17:22:	 rbash: -c: line 0: ` ;echo $? '
+veryverbose, MSG, 2013-04-29 13:17:22:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:22:	[fail]
+verbose, MSG, 2013-04-29 13:17:22:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Master    '
+veryverbose, MSG, 2013-04-29 13:17:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:23:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:23:	 1
+veryverbose, MSG, 2013-04-29 13:17:23:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:23:	[fail]
+verbose, MSG, 2013-04-29 13:17:23:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Aux '
+veryverbose, MSG, 2013-04-29 13:17:25:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:25:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:25:	 1
+veryverbose, MSG, 2013-04-29 13:17:25:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:25:	[fail]
+verbose, MSG, 2013-04-29 13:17:25:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Aux '
+veryverbose, MSG, 2013-04-29 13:17:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:26:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:26:	 1
+veryverbose, MSG, 2013-04-29 13:17:26:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:26:	[fail]
+verbose, MSG, 2013-04-29 13:17:26:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fc_Aux  '
+veryverbose, MSG, 2013-04-29 13:17:27:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:27:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:27:	 1
+veryverbose, MSG, 2013-04-29 13:17:27:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:27:	[fail]
+verbose, MSG, 2013-04-29 13:17:27:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_1'
+veryverbose, MSG, 2013-04-29 13:17:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:28:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:28:	 1
+veryverbose, MSG, 2013-04-29 13:17:28:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:28:	[fail]
+verbose, MSG, 2013-04-29 13:17:28:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_2'
+veryverbose, MSG, 2013-04-29 13:17:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:29:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:29:	 1
+veryverbose, MSG, 2013-04-29 13:17:29:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:29:	[fail]
+verbose, MSG, 2013-04-29 13:17:29:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_3'
+veryverbose, MSG, 2013-04-29 13:17:31:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:31:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:31:	 1
+veryverbose, MSG, 2013-04-29 13:17:31:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:31:	[fail]
+verbose, MSG, 2013-04-29 13:17:31:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_4'
+veryverbose, MSG, 2013-04-29 13:17:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:32:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:32:	 1
+veryverbose, MSG, 2013-04-29 13:17:32:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:32:	[fail]
+verbose, MSG, 2013-04-29 13:17:32:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_5'
+veryverbose, MSG, 2013-04-29 13:17:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:33:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:33:	 1
+veryverbose, MSG, 2013-04-29 13:17:33:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:33:	[fail]
+verbose, MSG, 2013-04-29 13:17:33:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_6'
+veryverbose, MSG, 2013-04-29 13:17:34:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:34:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:34:	 1
+veryverbose, MSG, 2013-04-29 13:17:34:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:34:	[fail]
+verbose, MSG, 2013-04-29 13:17:34:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_7'
+veryverbose, MSG, 2013-04-29 13:17:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:17:35:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:17:35:	 1
+veryverbose, MSG, 2013-04-29 13:17:35:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:17:35:	[fail]
+basic, WARN, 2013-04-29 13:17:35:=== tc02_mkVdisk , FAILED ===
+basic, MSG, 2013-04-29 13:20:37:ts_atl
+veryverbose, MSG, 2013-04-29 13:20:37:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 13:20:37:
+
+=== tc03_mkHost  start===
+verbose, MSG, 2013-04-29 13:20:37:	ssh admin@9.115.244.169 'svctask  mkhost -name lnx9_115_245_64 -hbawwpn 21000024FF2DC5C6:21000024FF2DC5C7  -iogrp 0'
+veryverbose, MSG, 2013-04-29 13:20:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:38:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 13:20:38:	 1
+veryverbose, MSG, 2013-04-29 13:20:38:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:38:	[fail]
+verbose, MSG, 2013-04-29 13:20:38:	ssh admin@9.115.244.169 'svctask  mkhost -name win9_115_245_65 -hbawwpn 21000024FF2DC496  -iogrp 0'
+veryverbose, MSG, 2013-04-29 13:20:39:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:39:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 13:20:39:	 1
+veryverbose, MSG, 2013-04-29 13:20:39:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:39:	[fail]
+verbose, MSG, 2013-04-29 13:20:39:	ssh admin@9.115.244.169 'svctask  mkhost -name lnx9_115_245_63 -hbawwpn 21000024FF2DC423  -iogrp 0'
+veryverbose, MSG, 2013-04-29 13:20:40:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:40:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 13:20:40:	 1
+veryverbose, MSG, 2013-04-29 13:20:40:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:40:	[fail]
+verbose, MSG, 2013-04-29 13:20:40:	ssh admin@9.115.244.169 'svctask  mkhost -name  lnx_iscsi_9_115_245_69  -iscsiname iqn.1994-05.com.redhat:d0919cbc230'
+veryverbose, MSG, 2013-04-29 13:20:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:42:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:20:42:	 1
+veryverbose, MSG, 2013-04-29 13:20:42:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:42:	[fail]
+verbose, MSG, 2013-04-29 13:20:42:	ssh admin@9.115.244.169 'svctask  mkhost -name  lnx_iscsi_9_115_245_70  -iscsiname iqn.2013-03.com.suse:01:99c01e8e555'
+veryverbose, MSG, 2013-04-29 13:20:44:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:44:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 13:20:44:	 1
+veryverbose, MSG, 2013-04-29 13:20:44:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:44:	[fail]
+verbose, MSG, 2013-04-29 13:20:44:	ssh admin@9.115.244.169 'svctask  mkhost -name  win_iscsi_9_115_245_62  -iscsiname iqn.1991-05.com.microsoft:win-nl9hte62q8e'
+veryverbose, MSG, 2013-04-29 13:20:45:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:45:	 CMMVC6035E The action failed as the object alrea1
+veryverbose, MSG, 2013-04-29 13:20:45:	 dy exists.
+veryverbose, MSG, 2013-04-29 13:20:45:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:45:	[fail]
+verbose, MSG, 2013-04-29 13:20:45:	ssh admin@9.115.244.169 ' svctask  mkhost -name h188_p1 -hbawwpn 50050768030426fc'
+veryverbose, MSG, 2013-04-29 13:20:47:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:47:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 13:20:47:	 1
+veryverbose, MSG, 2013-04-29 13:20:47:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:47:	[fail]
+verbose, MSG, 2013-04-29 13:20:47:	ssh admin@9.115.244.169 ' svctask  mkhost -name h188_p2 -hbawwpn 50050768030826fc'
+veryverbose, MSG, 2013-04-29 13:20:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:48:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 13:20:48:	 1
+veryverbose, MSG, 2013-04-29 13:20:48:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:48:	[fail]
+verbose, MSG, 2013-04-29 13:20:48:	ssh admin@9.115.244.169 ' svctask  mkhost -name h189_p1 -hbawwpn 50050768030426FD'
+veryverbose, MSG, 2013-04-29 13:20:49:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:49:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 13:20:49:	 1
+veryverbose, MSG, 2013-04-29 13:20:49:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:49:	[fail]
+verbose, MSG, 2013-04-29 13:20:49:	ssh admin@9.115.244.169 ' svctask  mkhost -name h189_p2 -hbawwpn 50050768030826FD'
+veryverbose, MSG, 2013-04-29 13:20:50:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:50:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 13:20:50:	 1
+veryverbose, MSG, 2013-04-29 13:20:50:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:50:	[fail]
+verbose, MSG, 2013-04-29 13:20:50:	ssh admin@9.115.244.169 ' svctask  mkhost -name h191_p1 -hbawwpn 500507680304270A'
+veryverbose, MSG, 2013-04-29 13:20:52:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:52:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 13:20:52:	 1
+veryverbose, MSG, 2013-04-29 13:20:52:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:52:	[fail]
+verbose, MSG, 2013-04-29 13:20:52:	ssh admin@9.115.244.169 ' svctask  mkhost -name h191_p2 -hbawwpn 500507680308270A'
+veryverbose, MSG, 2013-04-29 13:20:53:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:53:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 13:20:53:	 1
+veryverbose, MSG, 2013-04-29 13:20:53:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:53:	[fail]
+verbose, MSG, 2013-04-29 13:20:53:	ssh admin@9.115.244.169 ' svctask  mkhost -name h192_p1 -hbawwpn 500507680304270B'
+veryverbose, MSG, 2013-04-29 13:20:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:54:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 13:20:54:	 1
+veryverbose, MSG, 2013-04-29 13:20:54:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:54:	[fail]
+verbose, MSG, 2013-04-29 13:20:54:	ssh admin@9.115.244.169 ' svctask  mkhost -name h192_p2 -hbawwpn 500507680308270B'
+veryverbose, MSG, 2013-04-29 13:20:55:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:55:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 13:20:55:	 1
+veryverbose, MSG, 2013-04-29 13:20:55:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:55:	[fail]
+verbose, MSG, 2013-04-29 13:20:55:	ssh admin@9.115.244.169 '  svctask mkvdiskhostmap -force -host h188_p2  fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 13:20:56:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:56:	 CMMVC5754E The specified object does not exist, or the name supplied does not meet the naming rules.
+veryverbose, MSG, 2013-04-29 13:20:56:	 1
+veryverbose, MSG, 2013-04-29 13:20:57:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:57:	[fail]
+verbose, MSG, 2013-04-29 13:20:57:	ssh admin@9.115.244.169 '  svctask mkvdiskhostmap -force -host h189_p2  fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 13:20:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:58:	 CMMVC5754E The specified object does not exist, or the name supplied does not meet the naming rules.
+veryverbose, MSG, 2013-04-29 13:20:58:	 1
+veryverbose, MSG, 2013-04-29 13:20:58:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:58:	[fail]
+verbose, MSG, 2013-04-29 13:20:58:	ssh admin@9.115.244.169 '  svctask mkvdiskhostmap -force -host h191_p2  fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 13:20:59:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:20:59:	 CMMVC5754E The specified object does not exist, or the name supplied does not meet the naming rules.
+veryverbose, MSG, 2013-04-29 13:20:59:	 1
+veryverbose, MSG, 2013-04-29 13:20:59:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:20:59:	[fail]
+verbose, MSG, 2013-04-29 13:20:59:	ssh admin@9.115.244.169 '  svctask mkvdiskhostmap -force -host h192_p2  fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 13:21:00:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:21:00:	 CMMVC5754E The specified object does not exist, or the name supplied does not meet the naming rules.
+veryverbose, MSG, 2013-04-29 13:21:00:	 1
+veryverbose, MSG, 2013-04-29 13:21:00:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:21:00:	[fail]
+verbose, MSG, 2013-04-29 13:21:00:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  1'
+veryverbose, MSG, 2013-04-29 13:21:01:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:21:01:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 13:21:01:	 1
+veryverbose, MSG, 2013-04-29 13:21:01:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:21:01:	[fail]
+verbose, MSG, 2013-04-29 13:21:01:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  2'
+veryverbose, MSG, 2013-04-29 13:21:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:21:03:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 13:21:03:	 1
+veryverbose, MSG, 2013-04-29 13:21:03:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:21:03:	[fail]
+verbose, MSG, 2013-04-29 13:21:03:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  3'
+veryverbose, MSG, 2013-04-29 13:21:04:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:21:04:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 13:21:04:	 1
+veryverbose, MSG, 2013-04-29 13:21:04:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:21:04:	[fail]
+verbose, MSG, 2013-04-29 13:21:04:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  4'
+veryverbose, MSG, 2013-04-29 13:21:05:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:21:05:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 13:21:05:	 1
+veryverbose, MSG, 2013-04-29 13:21:05:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:21:05:	[fail]
+verbose, MSG, 2013-04-29 13:21:05:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  5'
+veryverbose, MSG, 2013-04-29 13:21:06:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:21:06:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 13:21:06:	 1
+veryverbose, MSG, 2013-04-29 13:21:06:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:21:06:	[fail]
+verbose, MSG, 2013-04-29 13:21:06:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  6'
+veryverbose, MSG, 2013-04-29 13:21:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:21:07:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 13:21:07:	 1
+veryverbose, MSG, 2013-04-29 13:21:07:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:21:07:	[fail]
+verbose, MSG, 2013-04-29 13:21:07:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  7'
+veryverbose, MSG, 2013-04-29 13:21:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:21:09:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 13:21:09:	 1
+veryverbose, MSG, 2013-04-29 13:21:09:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:21:09:	[fail]
+verbose, MSG, 2013-04-29 13:21:09:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  1'
+veryverbose, MSG, 2013-04-29 13:21:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:21:10:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 13:21:10:	 1
+veryverbose, MSG, 2013-04-29 13:21:10:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:21:10:	[fail]
+verbose, MSG, 2013-04-29 13:21:10:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  2'
+veryverbose, MSG, 2013-04-29 13:21:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:21:11:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 13:21:11:	 1
+veryverbose, MSG, 2013-04-29 13:21:11:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:21:11:	[fail]
+verbose, MSG, 2013-04-29 13:21:11:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  3'
+veryverbose, MSG, 2013-04-29 13:21:12:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:21:12:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 13:21:12:	 1
+veryverbose, MSG, 2013-04-29 13:21:13:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:21:13:	[fail]
+verbose, MSG, 2013-04-29 13:21:13:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  4'
+veryverbose, MSG, 2013-04-29 13:21:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:21:14:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 13:21:14:	 1
+veryverbose, MSG, 2013-04-29 13:21:14:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:21:14:	[fail]
+verbose, MSG, 2013-04-29 13:21:14:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  5'
+veryverbose, MSG, 2013-04-29 13:21:15:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:21:15:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 13:21:15:	 1
+veryverbose, MSG, 2013-04-29 13:21:15:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:21:15:	[fail]
+verbose, MSG, 2013-04-29 13:21:15:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  6'
+veryverbose, MSG, 2013-04-29 13:21:16:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:21:16:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 13:21:16:	 1
+veryverbose, MSG, 2013-04-29 13:21:16:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:21:16:	[fail]
+verbose, MSG, 2013-04-29 13:21:16:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  7'
+veryverbose, MSG, 2013-04-29 13:21:18:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 13:21:18:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 13:21:18:	 1
+veryverbose, MSG, 2013-04-29 13:21:18:
+	===cmd output end===
+verbose, WARN, 2013-04-29 13:21:18:	[fail]
+basic, WARN, 2013-04-29 13:21:18:=== tc03_mkHost , FAILED ===
