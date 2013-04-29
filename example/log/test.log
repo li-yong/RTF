@@ -35389,3 +35389,23 @@ veryverbose, MSG, 2011-03-21 21:59:14:
 	===cmd output end===
 verbose, MSG, 2011-03-21 21:59:14:	[not_verify]
 basic, WARN, 2011-03-21 21:59:14:=== tc01_createns , FAILED ===
+basic, WARN, 2013-04-29 09:22:08:testSuite ts_atl not exist.
+verbose, MSG, 2013-04-29 09:22:08:	cd /mnt/hgfs/jbso/RTF/example/test; ls -d ts_*/  
+veryverbose, MSG, 2013-04-29 09:22:08:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 09:22:08:	 ls: ts_*/: No such file or directory
+veryverbose, MSG, 2013-04-29 09:22:08:	 2
+veryverbose, MSG, 2013-04-29 09:22:08:
+	===cmd output end===
+basic, MSG, 2013-04-29 09:22:08:
+availble testsuite:
+basic, WARN, 2013-04-29 09:22:49:testSuite ts_atl not exist.
+verbose, MSG, 2013-04-29 09:22:49:	cd /mnt/hgfs/jbso/RTF/example/test; ls -d ts_*/  
+veryverbose, MSG, 2013-04-29 09:22:49:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 09:22:49:	 ls: ts_*/: No such file or directory
+veryverbose, MSG, 2013-04-29 09:22:49:	 2
+veryverbose, MSG, 2013-04-29 09:22:49:
+	===cmd output end===
+basic, MSG, 2013-04-29 09:22:49:
+availble testsuite:

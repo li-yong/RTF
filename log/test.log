@@ -38445,3 +38445,505 @@ veryverbose, MSG, 2011-06-17 13:32:13:ENV[LOGLEVEL]:verbose , ENV[UTFROOT]: /roo
 verbose, MSG, 2011-06-17 13:32:13:
 
 === conf1  start===
+veryverbose, MSG, 2013-04-29 08:48:50:ENV[LOGLEVEL]:verbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 08:48:50:
+
+=== conf1  start===
+veryverbose, MSG, 2013-04-29 08:52:48:ENV[LOGLEVEL]:verbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 08:52:48:
+
+=== conf1  start===
+veryverbose, MSG, 2013-04-29 08:53:19:ENV[LOGLEVEL]:verbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 08:53:19:
+
+=== conf1  start===
+veryverbose, MSG, 2013-04-29 08:54:14:ENV[LOGLEVEL]:verbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 08:54:14:
+
+=== conf1  start===
+verbose, MSG, 2013-04-29 08:54:14:	crontab -l | grep -v sendmail.rb > /tmp/tmp.uttom19542
+verbose, MSG, 2013-04-29 08:54:14:	[Done]
+verbose, MSG, 2013-04-29 08:54:14:	crontab /tmp/tmp.uttom19542
+verbose, MSG, 2013-04-29 08:54:14:	[Done]
+verbose, MSG, 2013-04-29 08:57:35:	cd /mnt/hgfs/jbso/RTF/test; ls -d ts_*/  
+verbose, MSG, 2013-04-29 08:57:35:	[Done]
+basic, MSG, 2013-04-29 08:57:35:
+availble testsuite:
+verbose, MSG, 2013-04-29 08:59:50:	cd /mnt/hgfs/jbso/RTF/test; ls -d ts_*/  
+verbose, MSG, 2013-04-29 08:59:50:	[Done]
+basic, MSG, 2013-04-29 08:59:50:
+availble testsuite:
+verbose, MSG, 2013-04-29 09:19:09:	cd /mnt/hgfs/jbso/RTF/test; ls -d ts_*/  
+veryverbose, MSG, 2013-04-29 09:19:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 09:19:09:	 ts_atl/
+veryverbose, MSG, 2013-04-29 09:19:09:	 ts_ns/
+veryverbose, MSG, 2013-04-29 09:19:09:	 ts_rcfs/
+veryverbose, MSG, 2013-04-29 09:19:09:	 0
+veryverbose, MSG, 2013-04-29 09:19:09:
+	===cmd output end===
+basic, MSG, 2013-04-29 09:19:09:
+availble testsuite:
+verbose, MSG, 2013-04-29 09:19:13:	cd /mnt/hgfs/jbso/RTF/test; ls -d ts_*/  
+veryverbose, MSG, 2013-04-29 09:19:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 09:19:13:	 ts_atl/
+veryverbose, MSG, 2013-04-29 09:19:13:	 ts_ns/
+veryverbose, MSG, 2013-04-29 09:19:13:	 ts_rcfs/
+veryverbose, MSG, 2013-04-29 09:19:13:	 0
+veryverbose, MSG, 2013-04-29 09:19:13:
+	===cmd output end===
+basic, MSG, 2013-04-29 09:19:13:
+testcase in testsuite 'ts_atl':
+verbose, MSG, 2013-04-29 09:19:13:	cd /mnt/hgfs/jbso/RTF/test/ts_atl; ls tc*_*  
+veryverbose, MSG, 2013-04-29 09:19:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc00_addHost.csv
+veryverbose, MSG, 2013-04-29 09:19:13:	 0
+veryverbose, MSG, 2013-04-29 09:19:13:
+	===cmd output end===
+basic, MSG, 2013-04-29 09:19:13:
+testcase in testsuite 'ts_ns':
+verbose, MSG, 2013-04-29 09:19:13:	cd /mnt/hgfs/jbso/RTF/test/ts_ns; ls tc*_*  
+veryverbose, MSG, 2013-04-29 09:19:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc00_test
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc00_test~
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc01_createns
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc02_iozone
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc03_pynfsJunction
+veryverbose, MSG, 2013-04-29 09:19:13:	 0
+veryverbose, MSG, 2013-04-29 09:19:13:
+	===cmd output end===
+basic, MSG, 2013-04-29 09:19:13:
+testcase in testsuite 'ts_rcfs':
+verbose, MSG, 2013-04-29 09:19:13:	cd /mnt/hgfs/jbso/RTF/test/ts_rcfs; ls tc*_*  
+veryverbose, MSG, 2013-04-29 09:19:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc01_mount
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc02_create
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc03_mkdir
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc04_getattr
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc05_remove
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc06_lookup
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc07_rename
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc09_open
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc100_null
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc10_setattr
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc11_access
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc13_getfh
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc14_getfsinfo
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc15_readdir
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc16_close
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc17_getsd
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc18_setsd
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc19_addmode
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc20_read
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc21_write
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc98_rename
+veryverbose, MSG, 2013-04-29 09:19:13:	 tc99_rmdir
+veryverbose, MSG, 2013-04-29 09:19:13:	 0
+veryverbose, MSG, 2013-04-29 09:19:13:
+	===cmd output end===
+verbose, MSG, 2013-04-29 09:19:50:	cd /mnt/hgfs/jbso/RTF/test/ts_atl; ls tc*_*  
+veryverbose, MSG, 2013-04-29 09:19:50:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 09:19:50:	 tc00_addHost.csv
+veryverbose, MSG, 2013-04-29 09:19:50:	 0
+veryverbose, MSG, 2013-04-29 09:19:50:
+	===cmd output end===
+basic, MSG, 2013-04-29 09:19:50:ts_atl
+veryverbose, MSG, 2013-04-29 09:19:50:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 09:19:50:
+
+=== tc00_addHost  start===
+basic, WARN, 2013-04-29 09:20:11:testcase /mnt/hgfs/jbso/RTF/test/ts_atl/tc00 not exist
+basic, MSG, 2013-04-29 09:20:11:
+testcase in testsuite 'ts_atl':
+verbose, MSG, 2013-04-29 09:20:11:	cd /mnt/hgfs/jbso/RTF/test/ts_atl; ls tc*_*  
+veryverbose, MSG, 2013-04-29 09:20:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 09:20:11:	 tc00_addHost.csv
+veryverbose, MSG, 2013-04-29 09:20:11:	 0
+veryverbose, MSG, 2013-04-29 09:20:11:
+	===cmd output end===
+basic, WARN, 2013-04-29 09:20:18:testcase /mnt/hgfs/jbso/RTF/test/ts_atl/tc00_addHost not exist
+basic, MSG, 2013-04-29 09:20:18:
+testcase in testsuite 'ts_atl':
+verbose, MSG, 2013-04-29 09:20:18:	cd /mnt/hgfs/jbso/RTF/test/ts_atl; ls tc*_*  
+veryverbose, MSG, 2013-04-29 09:20:18:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 09:20:18:	 tc00_addHost.csv
+veryverbose, MSG, 2013-04-29 09:20:18:	 0
+veryverbose, MSG, 2013-04-29 09:20:18:
+	===cmd output end===
+basic, MSG, 2013-04-29 09:20:54:ts_atl
+veryverbose, MSG, 2013-04-29 09:20:54:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 09:20:54:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 09:24:22:ts_atl
+veryverbose, MSG, 2013-04-29 09:24:22:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 09:24:22:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 09:26:57:ts_atl
+basic, MSG, 2013-04-29 09:27:48:ts_atl
+basic, MSG, 2013-04-29 09:29:26:ts_atl
+veryverbose, MSG, 2013-04-29 09:29:26:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 09:29:26:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 09:30:38:ts_atl
+basic, MSG, 2013-04-29 09:31:05:ts_atl
+veryverbose, MSG, 2013-04-29 09:34:38:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 09:34:39:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 09:35:42:ts_atl
+veryverbose, MSG, 2013-04-29 09:35:43:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 09:35:43:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 09:36:27:ts_atl
+veryverbose, MSG, 2013-04-29 09:36:33:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 09:36:33:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 09:36:39:ts_atl
+veryverbose, MSG, 2013-04-29 09:36:39:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 09:36:39:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 09:37:00:ts_atl
+veryverbose, MSG, 2013-04-29 09:37:03:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 09:37:03:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 09:38:05:ts_atl
+veryverbose, MSG, 2013-04-29 09:38:18:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 09:38:18:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 09:46:43:ts_atl
+veryverbose, MSG, 2013-04-29 09:46:43:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 09:46:43:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 09:48:14:ts_atl
+veryverbose, MSG, 2013-04-29 09:48:14:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 09:48:14:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 09:50:27:ts_atl
+veryverbose, MSG, 2013-04-29 09:50:27:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 09:50:27:
+
+=== tc00_addHost  start===
+veryverbose, WARN, 2013-04-29 09:51:58:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 09:51:58:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+basic, MSG, 2013-04-29 09:52:55:ts_atl
+veryverbose, MSG, 2013-04-29 09:52:55:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 09:52:55:
+
+=== tc00_addHost  start===
+veryverbose, WARN, 2013-04-29 09:55:45:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 09:55:46:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+basic, MSG, 2013-04-29 09:57:37:ts_atl
+veryverbose, MSG, 2013-04-29 09:57:37:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 09:57:37:
+
+=== tc00_addHost  start===
+veryverbose, WARN, 2013-04-29 09:57:37:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 09:57:37:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 09:57:37:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 09:57:37:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 09:57:37:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 09:57:37:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 09:57:37:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 09:57:37:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 09:57:37:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 09:57:37:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 09:57:37:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 09:57:37:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 09:57:37:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 09:57:37:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 09:57:37:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 09:57:37:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 09:57:37:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 09:57:37:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 09:57:37:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 09:57:37:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+basic, MSG, 2013-04-29 09:58:22:ts_atl
+veryverbose, MSG, 2013-04-29 09:58:22:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 09:58:22:
+
+=== tc00_addHost  start===
+veryverbose, WARN, 2013-04-29 09:59:31:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 09:59:31:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 10:01:32:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:01:32:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 10:01:45:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:01:45:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 10:01:58:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:01:58:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+basic, MSG, 2013-04-29 10:03:22:ts_atl
+veryverbose, MSG, 2013-04-29 10:03:22:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:03:22:
+
+=== tc00_addHost  start===
+veryverbose, WARN, 2013-04-29 10:03:26:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:03:26:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 10:03:26:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:03:26:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 10:03:26:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:03:26:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 10:03:26:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:03:26:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+verbose, MSG, 2013-04-29 10:03:26:	date
+veryverbose, MSG, 2013-04-29 10:03:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:03:26:	 Mon Apr 29 10:03:26 CST 2013
+veryverbose, MSG, 2013-04-29 10:03:26:	 0
+veryverbose, MSG, 2013-04-29 10:03:26:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:03:26:	[pass]
+verbose, MSG, 2013-04-29 10:03:26:	date
+veryverbose, MSG, 2013-04-29 10:03:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:03:26:	 Mon Apr 29 10:03:26 CST 2013
+veryverbose, MSG, 2013-04-29 10:03:26:	 0
+veryverbose, MSG, 2013-04-29 10:03:26:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:03:26:	[not_verify]
+verbose, MSG, 2013-04-29 10:03:26:	date
+veryverbose, MSG, 2013-04-29 10:03:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:03:26:	 Mon Apr 29 10:03:26 CST 2013
+veryverbose, MSG, 2013-04-29 10:03:26:	 0
+veryverbose, MSG, 2013-04-29 10:03:26:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:03:26:	[pass]
+verbose, MSG, 2013-04-29 10:03:26:	mkdir /root
+veryverbose, MSG, 2013-04-29 10:03:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:03:27:	 mkdir: cannot create directory `/root': File exists
+veryverbose, MSG, 2013-04-29 10:03:27:	 1
+veryverbose, MSG, 2013-04-29 10:03:27:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:03:27:	[pass]
+basic, MSG, 2013-04-29 10:03:27:=== tc00_addHost , PASSED ===
+basic, MSG, 2013-04-29 10:03:34:ts_atl
+veryverbose, MSG, 2013-04-29 10:03:34:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:03:34:
+
+=== tc00_addHost  start===
+veryverbose, WARN, 2013-04-29 10:03:34:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:03:34:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 10:03:34:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:03:34:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 10:03:34:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:03:34:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 10:03:35:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:03:35:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+verbose, MSG, 2013-04-29 10:03:35:	date
+veryverbose, MSG, 2013-04-29 10:03:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:03:35:	 Mon Apr 29 10:03:35 CST 2013
+veryverbose, MSG, 2013-04-29 10:03:35:	 0
+veryverbose, MSG, 2013-04-29 10:03:35:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:03:35:	[pass]
+verbose, MSG, 2013-04-29 10:03:35:	date
+veryverbose, MSG, 2013-04-29 10:03:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:03:35:	 Mon Apr 29 10:03:35 CST 2013
+veryverbose, MSG, 2013-04-29 10:03:35:	 0
+veryverbose, MSG, 2013-04-29 10:03:35:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:03:35:	[not_verify]
+verbose, MSG, 2013-04-29 10:03:35:	date
+veryverbose, MSG, 2013-04-29 10:03:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:03:35:	 Mon Apr 29 10:03:35 CST 2013
+veryverbose, MSG, 2013-04-29 10:03:35:	 0
+veryverbose, MSG, 2013-04-29 10:03:35:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:03:35:	[pass]
+verbose, MSG, 2013-04-29 10:03:35:	mkdir /root
+veryverbose, MSG, 2013-04-29 10:03:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:03:35:	 mkdir: cannot create directory `/root': File exists
+veryverbose, MSG, 2013-04-29 10:03:35:	 1
+veryverbose, MSG, 2013-04-29 10:03:35:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:03:35:	[pass]
+basic, MSG, 2013-04-29 10:03:35:=== tc00_addHost , PASSED ===
+basic, MSG, 2013-04-29 10:04:13:ts_atl
+veryverbose, MSG, 2013-04-29 10:04:13:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:04:13:
+
+=== tc00_addHost  start===
+veryverbose, WARN, 2013-04-29 10:04:13:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:04:13:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 10:04:13:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:04:13:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 10:04:13:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:04:13:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 10:04:13:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:04:13:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+verbose, MSG, 2013-04-29 10:04:13:	date
+veryverbose, MSG, 2013-04-29 10:04:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:04:13:	 Mon Apr 29 10:04:13 CST 2013
+veryverbose, MSG, 2013-04-29 10:04:13:	 0
+veryverbose, MSG, 2013-04-29 10:04:13:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:04:13:	[pass]
+verbose, MSG, 2013-04-29 10:04:13:	date
+veryverbose, MSG, 2013-04-29 10:04:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:04:13:	 Mon Apr 29 10:04:13 CST 2013
+veryverbose, MSG, 2013-04-29 10:04:13:	 0
+veryverbose, MSG, 2013-04-29 10:04:13:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:04:13:	[not_verify]
+verbose, MSG, 2013-04-29 10:04:13:	date
+veryverbose, MSG, 2013-04-29 10:04:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:04:13:	 Mon Apr 29 10:04:13 CST 2013
+veryverbose, MSG, 2013-04-29 10:04:13:	 0
+veryverbose, MSG, 2013-04-29 10:04:13:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:04:13:	[pass]
+verbose, MSG, 2013-04-29 10:04:13:	mkdir /root
+veryverbose, MSG, 2013-04-29 10:04:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:04:13:	 mkdir: cannot create directory `/root': File exists
+veryverbose, MSG, 2013-04-29 10:04:13:	 1
+veryverbose, MSG, 2013-04-29 10:04:13:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:04:13:	[pass]
+basic, MSG, 2013-04-29 10:04:13:=== tc00_addHost , PASSED ===
+basic, MSG, 2013-04-29 10:04:23:ts_atl
+veryverbose, MSG, 2013-04-29 10:04:23:ENV[LOGLEVEL]:verbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:04:23:
+
+=== tc00_addHost  start===
+veryverbose, WARN, 2013-04-29 10:04:23:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:04:23:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 10:04:23:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:04:23:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 10:04:23:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:04:23:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+veryverbose, WARN, 2013-04-29 10:04:23:[LOCALHOST] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:04:23:LOCALHOST not defined in _global.conf,consider revise test case conf file.
+verbose, MSG, 2013-04-29 10:04:23:	date
+veryverbose, MSG, 2013-04-29 10:04:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:04:23:	 Mon Apr 29 10:04:23 CST 2013
+veryverbose, MSG, 2013-04-29 10:04:23:	 0
+veryverbose, MSG, 2013-04-29 10:04:23:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:04:23:	[pass]
+verbose, MSG, 2013-04-29 10:04:23:	date
+veryverbose, MSG, 2013-04-29 10:04:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:04:23:	 Mon Apr 29 10:04:23 CST 2013
+veryverbose, MSG, 2013-04-29 10:04:23:	 0
+veryverbose, MSG, 2013-04-29 10:04:23:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:04:23:	[not_verify]
+verbose, MSG, 2013-04-29 10:04:23:	date
+veryverbose, MSG, 2013-04-29 10:04:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:04:23:	 Mon Apr 29 10:04:23 CST 2013
+veryverbose, MSG, 2013-04-29 10:04:23:	 0
+veryverbose, MSG, 2013-04-29 10:04:23:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:04:23:	[pass]
+verbose, MSG, 2013-04-29 10:04:23:	mkdir /root
+veryverbose, MSG, 2013-04-29 10:04:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:04:23:	 mkdir: cannot create directory `/root': File exists
+veryverbose, MSG, 2013-04-29 10:04:23:	 1
+veryverbose, MSG, 2013-04-29 10:04:23:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:04:23:	[pass]
+basic, MSG, 2013-04-29 10:04:23:=== tc00_addHost , PASSED ===
+basic, MSG, 2013-04-29 10:05:29:ts_atl
+veryverbose, MSG, 2013-04-29 10:05:29:ENV[LOGLEVEL]:verbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:05:29:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:05:29:	date
+veryverbose, MSG, 2013-04-29 10:05:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:05:29:	 Mon Apr 29 10:05:29 CST 2013
+veryverbose, MSG, 2013-04-29 10:05:29:	 0
+veryverbose, MSG, 2013-04-29 10:05:29:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:05:29:	[pass]
+verbose, MSG, 2013-04-29 10:05:29:	date
+veryverbose, MSG, 2013-04-29 10:05:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:05:29:	 Mon Apr 29 10:05:29 CST 2013
+veryverbose, MSG, 2013-04-29 10:05:29:	 0
+veryverbose, MSG, 2013-04-29 10:05:29:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:05:29:	[not_verify]
+verbose, MSG, 2013-04-29 10:05:29:	date
+veryverbose, MSG, 2013-04-29 10:05:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:05:29:	 Mon Apr 29 10:05:29 CST 2013
+veryverbose, MSG, 2013-04-29 10:05:29:	 0
+veryverbose, MSG, 2013-04-29 10:05:29:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:05:29:	[pass]
+verbose, MSG, 2013-04-29 10:05:29:	mkdir /root
+veryverbose, MSG, 2013-04-29 10:05:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:05:29:	 mkdir: cannot create directory `/root': File exists
+veryverbose, MSG, 2013-04-29 10:05:29:	 1
+veryverbose, MSG, 2013-04-29 10:05:29:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:05:29:	[pass]
+basic, MSG, 2013-04-29 10:05:29:=== tc00_addHost , PASSED ===
+basic, MSG, 2013-04-29 10:05:46:ts_atl
+veryverbose, MSG, 2013-04-29 10:05:46:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:05:46:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:05:46:	date
+veryverbose, MSG, 2013-04-29 10:05:46:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:05:46:	 Mon Apr 29 10:05:46 CST 2013
+veryverbose, MSG, 2013-04-29 10:05:46:	 0
+veryverbose, MSG, 2013-04-29 10:05:46:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:05:46:	[pass]
+verbose, MSG, 2013-04-29 10:05:46:	date
+veryverbose, MSG, 2013-04-29 10:05:46:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:05:46:	 Mon Apr 29 10:05:46 CST 2013
+veryverbose, MSG, 2013-04-29 10:05:46:	 0
+veryverbose, MSG, 2013-04-29 10:05:46:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:05:46:	[not_verify]
+verbose, MSG, 2013-04-29 10:05:46:	date
+veryverbose, MSG, 2013-04-29 10:05:46:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:05:46:	 Mon Apr 29 10:05:46 CST 2013
+veryverbose, MSG, 2013-04-29 10:05:46:	 0
+veryverbose, MSG, 2013-04-29 10:05:46:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:05:46:	[pass]
+verbose, MSG, 2013-04-29 10:05:46:	mkdir /root
+veryverbose, MSG, 2013-04-29 10:05:46:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:05:46:	 mkdir: cannot create directory `/root': File exists
+veryverbose, MSG, 2013-04-29 10:05:46:	 1
+veryverbose, MSG, 2013-04-29 10:05:46:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:05:46:	[pass]
+basic, MSG, 2013-04-29 10:05:46:=== tc00_addHost , PASSED ===

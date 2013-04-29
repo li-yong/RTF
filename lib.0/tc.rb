@@ -3,6 +3,13 @@ module TC
   require "log"
   load "parseconf.rb"
 
+
+  def TC.cleanCron()    
+     tmpFile=`mktemp`
+     UTF.cmdlocal("crontab -l | grep -v sendmail.rb > #{tmpFile}")
+     UTF.cmdlocal("crontab #{tmpFile}")
+  end
+
   
   def TC.run(tcfile)
     
@@ -18,23 +25,11 @@ module TC
     #puts hashCase
     self.loadGlobal()
     
-    if ENV["pcapenable"]=="yes"
     
-    sadeip=ENV["ANIP"]
-    sadeNic=ENV["DART_AN_NIC"]
-    sadePcapDir=ENV["DART_AN_PCAPDIR"]
-    sadeExp=ENV["DART_AN_EXPORT"]
-    localMntP=ENV["LOCAL_MNTPOINT"]
-    localLogDir=ENV["LOGDIR"]
-    pcapName="#{tcname}.pcap"
-    
-    srcF="#{localMntP}/#{pcapName}"
-    dstF="#{localLogDir}/#{pcapName}"
-    
-    tcStartPcapStat=UTF.startPcap(sadeip,sadeNic,sadePcapDir,pcapName)
-    end #if ENV["pcapenable"]=="yes"
+    mailsrv=ENV["MAILSRV"]
 
 
+     self.cleanCron()
 
    # tcid=tcname.split("_")[0]
     confile=tcfile #"#{ENV["UTFROOT"]}/test/#{tsname}/conf/#{tcname}.conf"
@@ -42,9 +37,10 @@ module TC
     #p tcStepArr ; exit
     tcOverallStat=true
     tcOverallOutput=""
-    
+
     tcStepArr.each{ |tcCMD|
       tmpHash=UTF.runOneLineCMD(tcCMD)
+  
       thisStepStat=tmpHash["stat"]
       thisStepOutput=tmpHash["output"]
       tcOverallOutput=tcOverallOutput+thisStepOutput
@@ -55,17 +51,6 @@ module TC
       } #tcStepArr.each{ |tcCMD|
  
  
-  if ENV["pcapenable"]=="yes"
-    tcStopPcapStat=UTF.stopPcap(sadeip,sadeNic)
-    
-    tcMntStat=UTF.mountSade(sadeip,sadeExp,localMntP)
-    
-    tcCPStat=UTF.cpFile(srcF,dstF)
-
-    tcUmntStat=UTF.umountSade(localMntP)
- 
-    tcOverallStat= (tcOverallStat and tcStartPcapStat and tcStopPcapStat and tcMntStat and tcCPStat and tcUmntStat)
-  end #if ENV["pcapenable"]=="yes"
  
   if tcOverallStat
     LOG.msg("basic","=== #{tcname} , PASSED ===","green","puts")

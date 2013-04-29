@@ -121,68 +121,15 @@ def Parseconf.parseConf(confile)
   
     rtnarr=[]   
    (1..(tcConfArr.length-1)).each{|i|
-      action=tcConfArr[i][0] #rsh
-      object=tcConfArr[i][1] #ANIP
-      cmd=tcConfArr[i][2]   #ls -l
-      verify=tcConfArr[i][3] #veify 
+      emailTo=tcConfArr[i][0]  
+      subject=tcConfArr[i][1]  
+      contentFile=tcConfArr[i][2]    
+      cronString=tcConfArr[i][3]  
       
-      #object=self.envaluateSingleVar(object) #ANIP format in conf
-      object=self.translateOneCMD(object)  ##{ANIP} format in conf
-      cmd=self.translateOneCMD(cmd)
-      verify=self.translateOneCMD(verify)
 
-
-      
-  if ["rsh","ssh","lcmd","saveGlobal"].include?(action)   #no data driven requied in conf 
-     rtnarr << [action,object,cmd,verify]
-  end  #if ["rsh","ssh"].include?(action) 
+     rtnarr << [emailTo,subject,contentFile,cronString]
+ 
   
-  if ["lcmd_dd","rsh_dd","ssh_dd"].include?(action)  #conf required data driven
-    action=action
-    object=object
-    csvfile=tcConfArr[i][4]
-    cmd=cmd
-    verifyOri=verify
-    verify=verifyOri.sub(/^has\(/,"").sub(/\)$/,"") if (verifyOri =~ /^has\(/) == 0
-    verify=verifyOri.sub(/^!has\(/,"").sub(/\)$/,"") if (verifyOri =~ /^!has\(/) == 0
-
-    parr=cmd.scan(/CVSDD_\w*/)
-    #p parr;
-    
-    verify=(verify.scan(/CVSDD_\w*/))[0] if verify.include?("CSVDD")#only support ONE verify dd keyword in one step, using multi-step if need multi-keyword. verify like: CSVDD_par1
-    #p verify; exit 
-    
-       verifyIndexInCmd=parr.index(verify) ; 
-    
-    parr.each_index{|inx| parr[inx]=parr[inx].sub("CVSDD_","")}  #parr like: ["par1", "par2"]
-    #p parr ; #exit
-    combinArr=UTF.csv2Arr(csvfile,parr)
-    combinArr.each{|x| #x is like "4_rtfSeparater_c"
-
-      newArr=[]
-      newArr=x.split("_rtfSeparater_") #newArr like ["4", "c"]
-      #p cmd #cmd like:  "mkdir -p /root/TE/del/CVSDD_par1/CVSDD_par2/"
-      # p newArr; exit #newArr like ["1", "a"]
-      onecmd=UTF.replaceUnit(cmd,newArr)
-      
-      verify=newArr[verifyIndexInCmd] if !verifyIndexInCmd.nil?  #in testcase, if verify has csv column, then replace it with this combination.
-
-
-      verifyOri="has(#{verify})" if (verifyOri =~ /^has\(/) == 0
-      verifyOri="!has(#{verify})"  if (verifyOri =~ /^!has\(/) == 0
-
-     # p verify; #exit
-     
-      #verify=UTF.replaceUnit(verify)
-      #p action+","+object+","+onecmd+","+verifyOri
-      rtnarr << [action,object,onecmd,verifyOri]
-      }
-        
-  end   #if ["local_dd"] include?(action)
-  
-     
-    
-    
    }
    
 

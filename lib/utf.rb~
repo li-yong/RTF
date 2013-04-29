@@ -129,7 +129,7 @@ def UTF.rsh2sade(ip,cmd)
 
  # `rsh  #{ip} \'#{cmd};echo $?\'  > #{file} 2>&1`
   `rsh  #{ip} \'#{cmd}\'  > #{file} 2>&1`
-   #`echo 0 >> #{file}` #sade not support two cmd in one line.
+   `echo 0 >> #{file}` #sade not support two cmd in one line.
   fileNum=File.read(file).count("\n")
    fileNumOut=(fileNum.to_i - 1).to_s
   output=`head -#{fileNumOut} #{file}`
@@ -144,33 +144,6 @@ def UTF.rsh2sade(ip,cmd)
 
   return [output,rshCmdexitCode] 
 end #def UTF.rsh2sade(ip,cmd)
-
-
-
-def UTF.ssh2sade(ip,cmd)
-  cmd2p="ssh #{ip} \'#{cmd}\'"
-  cmd=cmd.gsub(";",'\;'); 
-  file="/tmp/testout.del"
-  LOG.msg("verbose","\t#{cmd2p}","green", "print")
-
- # `rsh  #{ip} \'#{cmd};echo $?\'  > #{file} 2>&1`
-  `ssh  #{ip} \'#{cmd}\'  > #{file} 2>&1`
-   #`echo 0 >> #{file}` #sade not support two cmd in one line.
-  fileNum=File.read(file).count("\n")
-   fileNumOut=(fileNum.to_i - 1).to_s
-  output=`head -#{fileNumOut} #{file}`
-  cmdStat=`tail -1 #{file}`
-  
-  sshCmdexitCode=cmdStat
- 
-  LOG.msg("veryverbose","\n\t===cmd output start===")
-  File.readlines("/tmp/testout.del").each{|line| line.chomp!; LOG.msg("veryverbose","\t #{line}","white") }
-  LOG.msg("veryverbose","\n\t===cmd output end===")
-  
-
-  return [output,sshCmdexitCode] 
-end #def UTF.ssh2sade(ip,cmd)
-
 
 
 def UTF.csv2Arr(csvfile,headerArr)
@@ -285,7 +258,7 @@ def UTF.removeFileComments(inputF,outputF)
   noCommentFile = File.new(outputF, "w+")
   
  File.open(inputF).each {|line|
-    if (line =~ /^\s*#/).nil? and  !(line =~ /^\s*$/)  and !(line =~/^,/)#the line NOT start with # and  NOT blank line  , and no line start with ','          
+    if (line =~ /^\s*#/).nil? and  !(line =~ /^\s*$/) #the line NOT start with # and  NOT blank line            
       noCommentFile.puts(line)
      # puts "puts line #{line}"
     end   
@@ -320,9 +293,7 @@ def  UTF.runOneLineCMD(tcCMD)
   when "lcmd_dd"
     consoleOutPut,cmdExitCode=self.cmdlocal(cmd) 
   when "rsh_dd"
-    consoleOutPut,cmdExitCode=self.rsh2sade(srv,cmd)
-  when "ssh_dd"
-    consoleOutPut,cmdExitCode=self.ssh2sade(srv,cmd)      
+    consoleOutPut,cmdExitCode=self.rsh2sade(srv,cmd)     
   end #case action
    
   

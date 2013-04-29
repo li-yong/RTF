@@ -101,8 +101,8 @@ end #UTF.showExample()
 
 
 def UTF.cmdlocal(cmd)
-  
-  LOG.msg("verbose","\t#{cmd}","green", "print")
+  cmdChomp=cmd.chomp();
+  LOG.msg("verbose","\t#{cmdChomp}","green", "print")
   file="/tmp/testout.del"
   `#{cmd} > #{file} 2>&1; echo $?  >> #{file} `
     
@@ -111,10 +111,9 @@ def UTF.cmdlocal(cmd)
  output=`head -#{fileNumOut} #{file}`
  cmdStat=`tail -1 #{file}`
  
-   
-  LOG.msg("veryverbose","\n\t===cmd output start===")
-  File.readlines("/tmp/testout.del").each{|line| line.chomp!; LOG.msg("veryverbose","\t #{line}","white") }
-  LOG.msg("veryverbose","\n\t===cmd output end===")
+ cmdStat ? LOG.msg("verbose","\t[Done]") : LOG.warn("verbose","\t[fail]")
+  
+  
   
    
   return [output,cmdStat]
@@ -129,6 +128,7 @@ def UTF.rsh2sade(ip,cmd)
 
  # `rsh  #{ip} \'#{cmd};echo $?\'  > #{file} 2>&1`
   `rsh  #{ip} \'#{cmd}\'  > #{file} 2>&1`
+  `rsh  #{ip} \'echo $?\'  >> #{file} 2>&1`
    #`echo 0 >> #{file}` #sade not support two cmd in one line.
   fileNum=File.read(file).count("\n")
    fileNumOut=(fileNum.to_i - 1).to_s
@@ -153,8 +153,9 @@ def UTF.ssh2sade(ip,cmd)
   file="/tmp/testout.del"
   LOG.msg("verbose","\t#{cmd2p}","green", "print")
 
- # `rsh  #{ip} \'#{cmd};echo $?\'  > #{file} 2>&1`
-  `ssh  #{ip} \'#{cmd}\'  > #{file} 2>&1`
+  `ssh  #{ip} \'#{cmd};echo $?\'  > #{file} 2>&1`
+  #`ssh  #{ip} \'#{cmd}\'  > #{file} 2>&1`
+  #`ssh  #{ip} \'echo $?\'  >> #{file} 2>&1`
    #`echo 0 >> #{file}` #sade not support two cmd in one line.
   fileNum=File.read(file).count("\n")
    fileNumOut=(fileNum.to_i - 1).to_s
@@ -162,6 +163,7 @@ def UTF.ssh2sade(ip,cmd)
   cmdStat=`tail -1 #{file}`
   
   sshCmdexitCode=cmdStat
+  #puts "cmdStat is #{cmdStat}"
  
   LOG.msg("veryverbose","\n\t===cmd output start===")
   File.readlines("/tmp/testout.del").each{|line| line.chomp!; LOG.msg("veryverbose","\t #{line}","white") }
@@ -170,6 +172,9 @@ def UTF.ssh2sade(ip,cmd)
 
   return [output,sshCmdexitCode] 
 end #def UTF.ssh2sade(ip,cmd)
+
+
+
 
 
 
@@ -285,7 +290,7 @@ def UTF.removeFileComments(inputF,outputF)
   noCommentFile = File.new(outputF, "w+")
   
  File.open(inputF).each {|line|
-    if (line =~ /^\s*#/).nil? and  !(line =~ /^\s*$/)  and !(line =~/^,/)#the line NOT start with # and  NOT blank line  , and no line start with ','          
+    if (line =~ /^\s*#/).nil? and  !(line =~ /^\s*$/) #the line NOT start with # and  NOT blank line            
       noCommentFile.puts(line)
      # puts "puts line #{line}"
     end   
@@ -297,85 +302,39 @@ end #def UTF.removeFileComments(inputF,outputF)
  
 def  UTF.runOneLineCMD(tcCMD)
  
-  action=tcCMD[0]
-  srv=tcCMD[1]
-  cmd=tcCMD[2]
-  assert=tcCMD[3]
+  emailTo=tcCMD[0]
+  subject=tcCMD[1]
+  contentFile=tcCMD[2]
+  cronTime=tcCMD[3]
+
+  tmpFile=`mktemp`
 
 
+  #save current crontab to file
+  self.cmdlocal("crontab -l > #{tmpFile}")
 
-
+  #append new cron task
+  cronCmd= "#{cronTime} sendmail.rb #{emailTo} \"#{subject}\" < #{contentFile} "
+  self.cmdlocal("echo \'#{cronCmd}\'  >> #{tmpFile}")
   
+  #load cron
+  consoleOutPut,cmdExitCode=self.cmdlocal("crontab #{tmpFile}")   
 
-  case action
-  when "rsh"
-    consoleOutPut,cmdExitCode=self.rsh2sade(srv,cmd)
-  when "ssh"
-    consoleOutPut,cmdExitCode=self.ssh2sade(srv,cmd)
-  when "lcmd"
-    consoleOutPut,cmdExitCode=self.cmdlocal(cmd)   
-  when "saveGlobal"
-    str="self.grepConsoleSave2GlobalFile(#{cmd})"  #self.grepConsoleSave2GlobalFile("FHFSID",/fsid = \d*/)
-    consoleOutPut=eval(str)
-  when "lcmd_dd"
-    consoleOutPut,cmdExitCode=self.cmdlocal(cmd) 
-  when "rsh_dd"
-    consoleOutPut,cmdExitCode=self.rsh2sade(srv,cmd)
-  when "ssh_dd"
-    consoleOutPut,cmdExitCode=self.ssh2sade(srv,cmd)      
-  end #case action
-   
+  self.cmdlocal("rm -f #{tmpFile}")
   
   rtnHash={}
   rtnHash["output"]=consoleOutPut
   
-  
- if  (assert =~ /^cmdExitCode\s*=/)==0
-   assertType="assertCmdECEq"
-   assertData=assert.gsub(/\s/,"").split("=")[1]
-   #assertAction,assertValue
-elsif  (assert =~ /^cmdExitCode\s*!=/)==0 
-   assertType="assertCmdECNeq" 
-   assertData=assert.gsub(/\s/,"").split("=")[1]
-#["cmdExitCode!", "0"]
-elsif (assert =~ /^has\(/)==0
-   assertType="assertCmdOutputHas"   
-   assertData=assert.sub(/^has\(/,"").sub(/\)$/,"")
-elsif (assert =~ /^!has\(/)==0
-   assertType="assertCmdOutputNotHas"  
-   assertData=assert.sub(/^!has\(/,"").sub(/\)$/,"")
-elsif (assert == "RTFnotVerify")
-   assertType="RTFnotVerify"
-end 
+ #  assert="cmdExitCode=0" 
+ #  assertType="assertCmdECEq"
+  # assertData=assert.gsub(/\s/,"").split("=")[1]
 
-#print assertData
-  
-  case assertType      
-    when "assertCmdECEq"
-         cmdExitCode=cmdExitCode.gsub(/[\n]*$/, "")
-         cmdExitCode==assertData ? rtnHash["stat"]=true  :  rtnHash["stat"]=false  
-         rtnHash["stat"] ? LOG.msg("verbose","\t[pass]") : LOG.warn("verbose","\t[fail]")
-    when "assertCmdECNeq"
-         cmdExitCode=cmdExitCode.gsub(/[\n]*$/, "")
-         cmdExitCode!=assertData ? rtnHash["stat"]=true  :  rtnHash["stat"]=false  
-         rtnHash["stat"] ? LOG.msg("verbose","\t[pass]") : LOG.warn("verbose","\t[fail]")
 
-    when "assertCmdOutputHas"
-         (consoleOutPut.include?(assertData)) ?  rtnHash["stat"]=true  :  rtnHash["stat"]=false  
-         rtnHash["stat"] ? LOG.msg("verbose","\t[pass]") : LOG.warn("verbose","\t[fail]")
+#print assertData 
+     #    cmdExitCode=cmdExitCode.gsub(/[\n]*$/, "")
+         cmdExitCode ? rtnHash["stat"]=true  :  rtnHash["stat"]=false  
+        # rtnHash["stat"] ? LOG.msg("verbose","\t[Done]") : LOG.warn("verbose","\t[fail]")
 
-    when "assertCmdOutputNotHas"
-         !(consoleOutPut.include?(assertData)) ?  rtnHash["stat"]=true  :  rtnHash["stat"]=false  
-         rtnHash["stat"] ? LOG.msg("verbose","\t[pass]") : LOG.warn("verbose","\t[fail]")
-    when "RTFnotVerify"
-        rtnHash["stat"]= true
-        LOG.msg("verbose","\t[not_verify]",color="white")
-    else
-        rtnHash["stat"]= "unknown assert"
-        print assertType
-	LOG.warn("verbose","\t[unknow assert]")  
-  end
-  
 
   return rtnHash
      
