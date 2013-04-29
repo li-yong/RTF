@@ -44486,3 +44486,2139 @@ veryverbose, MSG, 2013-04-29 13:59:59:
 	===cmd output end===
 verbose, WARN, 2013-04-29 13:59:59:	[fail]
 basic, WARN, 2013-04-29 13:59:59:=== tc04_fcMap , FAILED ===
+verbose, MSG, 2013-04-29 14:01:13:	cd /mnt/hgfs/jbso/RTF/test/ts_atl; ls tc*_*  
+veryverbose, MSG, 2013-04-29 14:01:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:13:	 tc00_initSys.csv
+veryverbose, MSG, 2013-04-29 14:01:13:	 tc01_addArray.csv
+veryverbose, MSG, 2013-04-29 14:01:13:	 tc02_mkVdisk.csv
+veryverbose, MSG, 2013-04-29 14:01:13:	 tc03_mkHost_Map.csv
+veryverbose, MSG, 2013-04-29 14:01:13:	 tc04_fcMap.csv
+veryverbose, MSG, 2013-04-29 14:01:13:	 0
+veryverbose, MSG, 2013-04-29 14:01:13:
+	===cmd output end===
+basic, MSG, 2013-04-29 14:01:13:ts_atl
+veryverbose, MSG, 2013-04-29 14:01:13:ENV[LOGLEVEL]:verbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 14:01:13:
+
+=== tc00_initSys  start===
+verbose, MSG, 2013-04-29 14:01:13:	ssh admin@9.115.244.169 'sainfo -h'
+veryverbose, MSG, 2013-04-29 14:01:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:14:	 The following actions are available with this command : 
+veryverbose, MSG, 2013-04-29 14:01:14:	 	lscmdstatus
+veryverbose, MSG, 2013-04-29 14:01:14:	 	lsfiles
+veryverbose, MSG, 2013-04-29 14:01:14:	 	lshardware
+veryverbose, MSG, 2013-04-29 14:01:14:	 	lsservicenodes
+veryverbose, MSG, 2013-04-29 14:01:14:	 	lsservicerecommendation
+veryverbose, MSG, 2013-04-29 14:01:14:	 	lsservicestatus
+veryverbose, MSG, 2013-04-29 14:01:14:	 0
+veryverbose, MSG, 2013-04-29 14:01:14:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:14:	[pass]
+verbose, MSG, 2013-04-29 14:01:14:	ssh admin@9.115.244.169 'svctask chlicense -flash 10'
+veryverbose, MSG, 2013-04-29 14:01:15:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:15:	 0
+veryverbose, MSG, 2013-04-29 14:01:15:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:15:	[pass]
+verbose, MSG, 2013-04-29 14:01:15:	ssh admin@9.115.244.169 'svctask chlicense -easytier 10'
+veryverbose, MSG, 2013-04-29 14:01:17:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:17:	 0
+veryverbose, MSG, 2013-04-29 14:01:17:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:17:	[pass]
+verbose, MSG, 2013-04-29 14:01:17:	ssh admin@9.115.244.169 'svctask chlicense -virtualization 10'
+veryverbose, MSG, 2013-04-29 14:01:18:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:18:	 0
+veryverbose, MSG, 2013-04-29 14:01:18:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:18:	[pass]
+verbose, MSG, 2013-04-29 14:01:18:	ssh admin@9.115.244.169 'svctask chlicense -remote 10'
+veryverbose, MSG, 2013-04-29 14:01:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:20:	 0
+veryverbose, MSG, 2013-04-29 14:01:20:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:20:	[pass]
+verbose, MSG, 2013-04-29 14:01:20:	ssh admin@9.115.244.169 'svctask chsystem -ntpip 9.125.52.13'
+veryverbose, MSG, 2013-04-29 14:01:22:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:22:	 0
+veryverbose, MSG, 2013-04-29 14:01:22:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:22:	[pass]
+verbose, MSG, 2013-04-29 14:01:22:	ssh admin@9.115.244.169 'svctask settimezone -timezone 246'
+veryverbose, MSG, 2013-04-29 14:01:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:23:	 0
+veryverbose, MSG, 2013-04-29 14:01:23:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:23:	[pass]
+verbose, MSG, 2013-04-29 14:01:23:	ssh admin@9.115.244.169 'svctask chsystem -invemailinterval 7'
+veryverbose, MSG, 2013-04-29 14:01:24:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:24:	 0
+veryverbose, MSG, 2013-04-29 14:01:24:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:24:	[pass]
+verbose, MSG, 2013-04-29 14:01:24:	ssh admin@9.115.244.169 'svctask mkemailserver -ip 9.125.52.13 -port 25'
+veryverbose, MSG, 2013-04-29 14:01:25:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:25:	 Email Server id [2] successfully created
+veryverbose, MSG, 2013-04-29 14:01:25:	 0
+veryverbose, MSG, 2013-04-29 14:01:25:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:25:	[pass]
+verbose, MSG, 2013-04-29 14:01:25:	ssh admin@9.115.244.169 'svctask mkemailuser -address lyongsh@cn.ibm.com -error on -info off -inventory off -usertype local -warning on'
+veryverbose, MSG, 2013-04-29 14:01:27:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:27:	 CMMVC5758E Object name already exists.
+veryverbose, MSG, 2013-04-29 14:01:27:	 1
+veryverbose, MSG, 2013-04-29 14:01:27:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:01:27:	[fail]
+verbose, MSG, 2013-04-29 14:01:27:	ssh admin@9.115.244.169 'svctask mkemailuser -address callhome0@de.ibm.com -error on -info off -inventory on -usertype support -warning off'
+veryverbose, MSG, 2013-04-29 14:01:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:28:	 CMMVC5758E Object name already exists.
+veryverbose, MSG, 2013-04-29 14:01:28:	 1
+veryverbose, MSG, 2013-04-29 14:01:28:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:01:28:	[fail]
+verbose, MSG, 2013-04-29 14:01:28:	ssh admin@9.115.244.169 'svctask startemail'
+veryverbose, MSG, 2013-04-29 14:01:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:29:	 0
+veryverbose, MSG, 2013-04-29 14:01:29:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:29:	[pass]
+verbose, MSG, 2013-04-29 14:01:29:	ssh admin@9.115.244.169 'svctask chsystem -easysetup no'
+veryverbose, MSG, 2013-04-29 14:01:30:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:30:	 0
+veryverbose, MSG, 2013-04-29 14:01:30:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:30:	[pass]
+basic, WARN, 2013-04-29 14:01:30:=== tc00_initSys , FAILED ===
+veryverbose, MSG, 2013-04-29 14:01:30:ENV[LOGLEVEL]:verbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 14:01:30:
+
+=== tc01_addArray  start===
+verbose, MSG, 2013-04-29 14:01:30:	ssh admin@9.115.244.169 'chdrive -use candidate  1'
+veryverbose, MSG, 2013-04-29 14:01:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:32:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 14:01:32:	 1
+veryverbose, MSG, 2013-04-29 14:01:32:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:32:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:32:	ssh admin@9.115.244.169 'chdrive -use candidate  2'
+veryverbose, MSG, 2013-04-29 14:01:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:33:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 14:01:33:	 1
+veryverbose, MSG, 2013-04-29 14:01:33:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:33:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:33:	ssh admin@9.115.244.169 'chdrive -use candidate  3'
+veryverbose, MSG, 2013-04-29 14:01:34:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:34:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 14:01:34:	 1
+veryverbose, MSG, 2013-04-29 14:01:34:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:34:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:34:	ssh admin@9.115.244.169 'chdrive -use candidate  4'
+veryverbose, MSG, 2013-04-29 14:01:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:35:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 14:01:35:	 1
+veryverbose, MSG, 2013-04-29 14:01:35:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:35:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:35:	ssh admin@9.115.244.169 'chdrive -use candidate  5'
+veryverbose, MSG, 2013-04-29 14:01:37:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:37:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 14:01:37:	 1
+veryverbose, MSG, 2013-04-29 14:01:37:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:37:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:37:	ssh admin@9.115.244.169 'chdrive -use candidate  6'
+veryverbose, MSG, 2013-04-29 14:01:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:38:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 14:01:38:	 1
+veryverbose, MSG, 2013-04-29 14:01:38:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:38:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:38:	ssh admin@9.115.244.169 'chdrive -use candidate  7'
+veryverbose, MSG, 2013-04-29 14:01:39:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:39:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 14:01:39:	 1
+veryverbose, MSG, 2013-04-29 14:01:39:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:39:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:39:	ssh admin@9.115.244.169 'chdrive -use candidate  8'
+veryverbose, MSG, 2013-04-29 14:01:40:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:40:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 14:01:40:	 1
+veryverbose, MSG, 2013-04-29 14:01:40:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:40:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:40:	ssh admin@9.115.244.169 'chdrive -use candidate  9'
+veryverbose, MSG, 2013-04-29 14:01:41:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:42:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 14:01:42:	 1
+veryverbose, MSG, 2013-04-29 14:01:42:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:42:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:42:	ssh admin@9.115.244.169 'chdrive -use candidate  10'
+veryverbose, MSG, 2013-04-29 14:01:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:43:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 14:01:43:	 1
+veryverbose, MSG, 2013-04-29 14:01:43:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:43:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:43:	ssh admin@9.115.244.169 'chdrive -use candidate  11'
+veryverbose, MSG, 2013-04-29 14:01:44:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:44:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 14:01:44:	 1
+veryverbose, MSG, 2013-04-29 14:01:44:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:44:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:44:	ssh admin@9.115.244.169 'chdrive -use candidate  12'
+veryverbose, MSG, 2013-04-29 14:01:45:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:45:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 14:01:45:	 1
+veryverbose, MSG, 2013-04-29 14:01:45:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:45:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:45:	ssh admin@9.115.244.169 'chdrive -use candidate  13'
+veryverbose, MSG, 2013-04-29 14:01:46:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:46:	 CMMVC6537E The command cannot be initiated because the drive that you have specified has a Use property that is not supported for the task.
+veryverbose, MSG, 2013-04-29 14:01:46:	 1
+veryverbose, MSG, 2013-04-29 14:01:46:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:46:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:46:	ssh admin@9.115.244.169 'chdrive -use candidate  14'
+veryverbose, MSG, 2013-04-29 14:01:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:48:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:01:48:	 1
+veryverbose, MSG, 2013-04-29 14:01:48:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:48:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:48:	ssh admin@9.115.244.169 'chdrive -use candidate  15'
+veryverbose, MSG, 2013-04-29 14:01:49:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:49:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:01:49:	 1
+veryverbose, MSG, 2013-04-29 14:01:49:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:49:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:49:	ssh admin@9.115.244.169 'chdrive -use candidate  16'
+veryverbose, MSG, 2013-04-29 14:01:50:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:50:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:01:50:	 1
+veryverbose, MSG, 2013-04-29 14:01:50:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:50:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:50:	ssh admin@9.115.244.169 'chdrive -use candidate  17'
+veryverbose, MSG, 2013-04-29 14:01:51:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:51:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:01:51:	 1
+veryverbose, MSG, 2013-04-29 14:01:51:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:51:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:51:	ssh admin@9.115.244.169 'chdrive -use candidate  18'
+veryverbose, MSG, 2013-04-29 14:01:53:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:53:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:01:53:	 1
+veryverbose, MSG, 2013-04-29 14:01:53:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:53:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:53:	ssh admin@9.115.244.169 'chdrive -use candidate  19'
+veryverbose, MSG, 2013-04-29 14:01:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:54:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:01:54:	 1
+veryverbose, MSG, 2013-04-29 14:01:54:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:54:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:54:	ssh admin@9.115.244.169 'chdrive -use candidate  20'
+veryverbose, MSG, 2013-04-29 14:01:55:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:55:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:01:55:	 1
+veryverbose, MSG, 2013-04-29 14:01:55:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:55:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:55:	ssh admin@9.115.244.169 'chdrive -use candidate  21'
+veryverbose, MSG, 2013-04-29 14:01:56:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:56:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:01:56:	 1
+veryverbose, MSG, 2013-04-29 14:01:56:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:56:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:56:	ssh admin@9.115.244.169 'chdrive -use candidate  22'
+veryverbose, MSG, 2013-04-29 14:01:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:58:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:01:58:	 1
+veryverbose, MSG, 2013-04-29 14:01:58:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:58:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:58:	ssh admin@9.115.244.169 'chdrive -use candidate  23'
+veryverbose, MSG, 2013-04-29 14:01:59:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:01:59:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:01:59:	 1
+veryverbose, MSG, 2013-04-29 14:01:59:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:01:59:	[not_verify]
+verbose, MSG, 2013-04-29 14:01:59:	ssh admin@9.115.244.169 'chdrive -use candidate  24'
+veryverbose, MSG, 2013-04-29 14:02:00:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:00:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:00:	 1
+veryverbose, MSG, 2013-04-29 14:02:00:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:00:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:00:	ssh admin@9.115.244.169 'chdrive -use candidate  25'
+veryverbose, MSG, 2013-04-29 14:02:01:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:01:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:01:	 1
+veryverbose, MSG, 2013-04-29 14:02:01:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:01:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:01:	ssh admin@9.115.244.169 'chdrive -use candidate  26'
+veryverbose, MSG, 2013-04-29 14:02:02:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:02:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:02:	 1
+veryverbose, MSG, 2013-04-29 14:02:02:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:02:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:02:	ssh admin@9.115.244.169 'chdrive -use candidate  27'
+veryverbose, MSG, 2013-04-29 14:02:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:03:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:03:	 1
+veryverbose, MSG, 2013-04-29 14:02:04:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:04:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:04:	ssh admin@9.115.244.169 'chdrive -use candidate  28'
+veryverbose, MSG, 2013-04-29 14:02:05:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:05:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:05:	 1
+veryverbose, MSG, 2013-04-29 14:02:05:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:05:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:05:	ssh admin@9.115.244.169 'chdrive -use candidate  29'
+veryverbose, MSG, 2013-04-29 14:02:06:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:06:	 CMMVC5753E The specified object does not ex1
+veryverbose, MSG, 2013-04-29 14:02:06:	 ist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:06:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:06:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:06:	ssh admin@9.115.244.169 'chdrive -use candidate  30'
+veryverbose, MSG, 2013-04-29 14:02:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:07:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:07:	 1
+veryverbose, MSG, 2013-04-29 14:02:07:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:07:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:07:	ssh admin@9.115.244.169 'chdrive -use candidate  31'
+veryverbose, MSG, 2013-04-29 14:02:08:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:08:	 CMMVC5753E1
+veryverbose, MSG, 2013-04-29 14:02:08:	  The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:08:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:08:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:08:	ssh admin@9.115.244.169 'chdrive -use candidate  32'
+veryverbose, MSG, 2013-04-29 14:02:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:10:	 CMMVC5753E1
+veryverbose, MSG, 2013-04-29 14:02:10:	  The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:10:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:10:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:10:	ssh admin@9.115.244.169 'chdrive -use candidate  33'
+veryverbose, MSG, 2013-04-29 14:02:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:11:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:11:	 1
+veryverbose, MSG, 2013-04-29 14:02:11:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:11:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:11:	ssh admin@9.115.244.169 'chdrive -use candidate  34'
+veryverbose, MSG, 2013-04-29 14:02:12:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:12:	 1
+veryverbose, MSG, 2013-04-29 14:02:12:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:12:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:12:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:12:	ssh admin@9.115.244.169 'chdrive -use candidate  35'
+veryverbose, MSG, 2013-04-29 14:02:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:13:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:13:	 1
+veryverbose, MSG, 2013-04-29 14:02:13:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:13:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:13:	ssh admin@9.115.244.169 'chdrive -use candidate  36'
+veryverbose, MSG, 2013-04-29 14:02:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:14:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:14:	 1
+veryverbose, MSG, 2013-04-29 14:02:14:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:14:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:14:	ssh admin@9.115.244.169 'chdrive -use candidate  37'
+veryverbose, MSG, 2013-04-29 14:02:15:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:15:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:15:	 1
+veryverbose, MSG, 2013-04-29 14:02:15:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:16:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:16:	ssh admin@9.115.244.169 'chdrive -use candidate  38'
+veryverbose, MSG, 2013-04-29 14:02:17:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:17:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:17:	 1
+veryverbose, MSG, 2013-04-29 14:02:17:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:17:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:17:	ssh admin@9.115.244.169 'chdrive -use candidate  39'
+veryverbose, MSG, 2013-04-29 14:02:18:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:18:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:18:	 1
+veryverbose, MSG, 2013-04-29 14:02:18:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:18:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:18:	ssh admin@9.115.244.169 'chdrive -use candidate  40'
+veryverbose, MSG, 2013-04-29 14:02:19:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:19:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:19:	 1
+veryverbose, MSG, 2013-04-29 14:02:19:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:19:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:19:	ssh admin@9.115.244.169 'chdrive -use candidate  41'
+veryverbose, MSG, 2013-04-29 14:02:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:20:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:20:	 1
+veryverbose, MSG, 2013-04-29 14:02:20:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:20:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:20:	ssh admin@9.115.244.169 'chdrive -use candidate  42'
+veryverbose, MSG, 2013-04-29 14:02:21:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:21:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:21:	 1
+veryverbose, MSG, 2013-04-29 14:02:21:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:21:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:21:	ssh admin@9.115.244.169 'chdrive -use candidate  43'
+veryverbose, MSG, 2013-04-29 14:02:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:23:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:23:	 1
+veryverbose, MSG, 2013-04-29 14:02:23:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:23:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:23:	ssh admin@9.115.244.169 'chdrive -use candidate  44'
+veryverbose, MSG, 2013-04-29 14:02:24:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:24:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:24:	 1
+veryverbose, MSG, 2013-04-29 14:02:24:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:24:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:24:	ssh admin@9.115.244.169 'chdrive -use candidate  45'
+veryverbose, MSG, 2013-04-29 14:02:25:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:25:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:25:	 1
+veryverbose, MSG, 2013-04-29 14:02:25:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:25:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:25:	ssh admin@9.115.244.169 'chdrive -use candidate  46'
+veryverbose, MSG, 2013-04-29 14:02:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:26:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:26:	 1
+veryverbose, MSG, 2013-04-29 14:02:26:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:26:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:26:	ssh admin@9.115.244.169 'chdrive -use candidate  47'
+veryverbose, MSG, 2013-04-29 14:02:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:28:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:28:	 1
+veryverbose, MSG, 2013-04-29 14:02:28:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:28:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:28:	ssh admin@9.115.244.169 'chdrive -use candidate  48'
+veryverbose, MSG, 2013-04-29 14:02:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:29:	 CMMVC5753E The specified object doe1
+veryverbose, MSG, 2013-04-29 14:02:29:	 s not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:29:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:29:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:29:	ssh admin@9.115.244.169 'chdrive -use candidate  49'
+veryverbose, MSG, 2013-04-29 14:02:31:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:31:	 CMMVC5753E The specified object does n1
+veryverbose, MSG, 2013-04-29 14:02:31:	 ot exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:31:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:31:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:31:	ssh admin@9.115.244.169 'chdrive -use candidate  50'
+veryverbose, MSG, 2013-04-29 14:02:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:33:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:33:	 1
+veryverbose, MSG, 2013-04-29 14:02:33:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:33:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:33:	ssh admin@9.115.244.169 'chdrive -use candidate  51'
+veryverbose, MSG, 2013-04-29 14:02:34:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:34:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:34:	 1
+veryverbose, MSG, 2013-04-29 14:02:34:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:34:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:34:	ssh admin@9.115.244.169 'chdrive -use candidate  52'
+veryverbose, MSG, 2013-04-29 14:02:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:35:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:35:	 1
+veryverbose, MSG, 2013-04-29 14:02:35:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:35:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:35:	ssh admin@9.115.244.169 'chdrive -use candidate  53'
+veryverbose, MSG, 2013-04-29 14:02:36:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:36:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:36:	 1
+veryverbose, MSG, 2013-04-29 14:02:36:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:36:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:36:	ssh admin@9.115.244.169 'chdrive -use candidate  54'
+veryverbose, MSG, 2013-04-29 14:02:37:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:37:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:37:	 1
+veryverbose, MSG, 2013-04-29 14:02:37:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:37:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:37:	ssh admin@9.115.244.169 'chdrive -use candidate  55'
+veryverbose, MSG, 2013-04-29 14:02:39:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:39:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:39:	 1
+veryverbose, MSG, 2013-04-29 14:02:39:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:39:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:39:	ssh admin@9.115.244.169 'chdrive -use candidate  56'
+veryverbose, MSG, 2013-04-29 14:02:40:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:40:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:40:	 1
+veryverbose, MSG, 2013-04-29 14:02:40:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:40:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:40:	ssh admin@9.115.244.169 'chdrive -use candidate  57'
+veryverbose, MSG, 2013-04-29 14:02:41:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:41:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:41:	 1
+veryverbose, MSG, 2013-04-29 14:02:41:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:41:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:41:	ssh admin@9.115.244.169 'chdrive -use candidate  58'
+veryverbose, MSG, 2013-04-29 14:02:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:42:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:42:	 1
+veryverbose, MSG, 2013-04-29 14:02:42:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:42:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:42:	ssh admin@9.115.244.169 'chdrive -use candidate  59'
+veryverbose, MSG, 2013-04-29 14:02:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:43:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:43:	 1
+veryverbose, MSG, 2013-04-29 14:02:43:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:43:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:43:	ssh admin@9.115.244.169 'chdrive -use candidate  60'
+veryverbose, MSG, 2013-04-29 14:02:44:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:44:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:44:	 1
+veryverbose, MSG, 2013-04-29 14:02:44:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:44:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:45:	ssh admin@9.115.244.169 'chdrive -use candidate  61'
+veryverbose, MSG, 2013-04-29 14:02:46:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:46:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:46:	 1
+veryverbose, MSG, 2013-04-29 14:02:46:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:46:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:46:	ssh admin@9.115.244.169 'chdrive -use candidate  62'
+veryverbose, MSG, 2013-04-29 14:02:47:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:47:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:47:	 1
+veryverbose, MSG, 2013-04-29 14:02:47:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:47:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:47:	ssh admin@9.115.244.169 'chdrive -use candidate  63'
+veryverbose, MSG, 2013-04-29 14:02:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:48:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:48:	 1
+veryverbose, MSG, 2013-04-29 14:02:48:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:48:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:48:	ssh admin@9.115.244.169 'chdrive -use candidate  64'
+veryverbose, MSG, 2013-04-29 14:02:49:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:49:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:49:	 1
+veryverbose, MSG, 2013-04-29 14:02:49:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:49:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:49:	ssh admin@9.115.244.169 'chdrive -use candidate  65'
+veryverbose, MSG, 2013-04-29 14:02:50:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:50:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:50:	 1
+veryverbose, MSG, 2013-04-29 14:02:50:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:50:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:50:	ssh admin@9.115.244.169 'chdrive -use candidate  66'
+veryverbose, MSG, 2013-04-29 14:02:52:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:52:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:52:	 1
+veryverbose, MSG, 2013-04-29 14:02:52:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:52:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:52:	ssh admin@9.115.244.169 'chdrive -use candidate  67'
+veryverbose, MSG, 2013-04-29 14:02:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:54:	 1
+veryverbose, MSG, 2013-04-29 14:02:54:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:54:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:54:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:54:	ssh admin@9.115.244.169 'chdrive -use candidate  68'
+veryverbose, MSG, 2013-04-29 14:02:55:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:55:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:55:	 1
+veryverbose, MSG, 2013-04-29 14:02:55:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:55:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:55:	ssh admin@9.115.244.169 'chdrive -use candidate  69'
+veryverbose, MSG, 2013-04-29 14:02:56:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:56:	 1
+veryverbose, MSG, 2013-04-29 14:02:56:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:56:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:56:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:56:	ssh admin@9.115.244.169 'chdrive -use candidate  70'
+veryverbose, MSG, 2013-04-29 14:02:57:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:57:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:57:	 1
+veryverbose, MSG, 2013-04-29 14:02:57:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:57:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:57:	ssh admin@9.115.244.169 'chdrive -use candidate  71'
+veryverbose, MSG, 2013-04-29 14:02:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:02:58:	 CMMVC5753E1
+veryverbose, MSG, 2013-04-29 14:02:58:	  The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:02:58:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:02:58:	[not_verify]
+verbose, MSG, 2013-04-29 14:02:58:	ssh admin@9.115.244.169 'chdrive -use candidate  72'
+veryverbose, MSG, 2013-04-29 14:03:00:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:00:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:00:	 1
+veryverbose, MSG, 2013-04-29 14:03:00:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:00:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:00:	ssh admin@9.115.244.169 'chdrive -use candidate  73'
+veryverbose, MSG, 2013-04-29 14:03:01:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:01:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:01:	 1
+veryverbose, MSG, 2013-04-29 14:03:01:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:01:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:01:	ssh admin@9.115.244.169 'chdrive -use candidate  74'
+veryverbose, MSG, 2013-04-29 14:03:02:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:02:	 CMMVC5753E The specified object does 1
+veryverbose, MSG, 2013-04-29 14:03:02:	 not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:02:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:02:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:02:	ssh admin@9.115.244.169 'chdrive -use candidate  75'
+veryverbose, MSG, 2013-04-29 14:03:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:03:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:03:	 1
+veryverbose, MSG, 2013-04-29 14:03:03:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:03:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:03:	ssh admin@9.115.244.169 'chdrive -use candidate  76'
+veryverbose, MSG, 2013-04-29 14:03:04:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:04:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:04:	 1
+veryverbose, MSG, 2013-04-29 14:03:04:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:04:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:04:	ssh admin@9.115.244.169 'chdrive -use candidate  77'
+veryverbose, MSG, 2013-04-29 14:03:05:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:05:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:05:	 1
+veryverbose, MSG, 2013-04-29 14:03:05:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:05:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:05:	ssh admin@9.115.244.169 'chdrive -use candidate  78'
+veryverbose, MSG, 2013-04-29 14:03:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:07:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:07:	 1
+veryverbose, MSG, 2013-04-29 14:03:07:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:07:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:07:	ssh admin@9.115.244.169 'chdrive -use candidate  79'
+veryverbose, MSG, 2013-04-29 14:03:08:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:08:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:08:	 1
+veryverbose, MSG, 2013-04-29 14:03:08:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:08:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:08:	ssh admin@9.115.244.169 'chdrive -use candidate  80'
+veryverbose, MSG, 2013-04-29 14:03:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:09:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:09:	 1
+veryverbose, MSG, 2013-04-29 14:03:09:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:09:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:09:	ssh admin@9.115.244.169 'chdrive -use candidate  81'
+veryverbose, MSG, 2013-04-29 14:03:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:10:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:10:	 1
+veryverbose, MSG, 2013-04-29 14:03:10:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:10:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:10:	ssh admin@9.115.244.169 'chdrive -use candidate  82'
+veryverbose, MSG, 2013-04-29 14:03:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:11:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:11:	 1
+veryverbose, MSG, 2013-04-29 14:03:11:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:11:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:11:	ssh admin@9.115.244.169 'chdrive -use candidate  83'
+veryverbose, MSG, 2013-04-29 14:03:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:13:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:13:	 1
+veryverbose, MSG, 2013-04-29 14:03:13:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:13:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:13:	ssh admin@9.115.244.169 'chdrive -use candidate  84'
+veryverbose, MSG, 2013-04-29 14:03:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:14:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:14:	 1
+veryverbose, MSG, 2013-04-29 14:03:14:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:14:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:14:	ssh admin@9.115.244.169 'chdrive -use candidate  85'
+veryverbose, MSG, 2013-04-29 14:03:15:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:15:	 1
+veryverbose, MSG, 2013-04-29 14:03:15:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:15:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:15:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:15:	ssh admin@9.115.244.169 'chdrive -use candidate  86'
+veryverbose, MSG, 2013-04-29 14:03:16:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:16:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:16:	 1
+veryverbose, MSG, 2013-04-29 14:03:16:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:16:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:16:	ssh admin@9.115.244.169 'chdrive -use candidate  87'
+veryverbose, MSG, 2013-04-29 14:03:18:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:18:	 1
+veryverbose, MSG, 2013-04-29 14:03:18:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:18:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:18:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:18:	ssh admin@9.115.244.169 'chdrive -use candidate  88'
+veryverbose, MSG, 2013-04-29 14:03:19:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:19:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:19:	 1
+veryverbose, MSG, 2013-04-29 14:03:19:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:19:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:19:	ssh admin@9.115.244.169 'chdrive -use candidate  89'
+veryverbose, MSG, 2013-04-29 14:03:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:20:	 1
+veryverbose, MSG, 2013-04-29 14:03:20:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:20:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:20:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:20:	ssh admin@9.115.244.169 'chdrive -use candidate  90'
+veryverbose, MSG, 2013-04-29 14:03:21:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:21:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:21:	 1
+veryverbose, MSG, 2013-04-29 14:03:21:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:21:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:21:	ssh admin@9.115.244.169 'chdrive -use candidate  91'
+veryverbose, MSG, 2013-04-29 14:03:22:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:22:	 1
+veryverbose, MSG, 2013-04-29 14:03:22:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:22:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:22:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:22:	ssh admin@9.115.244.169 'chdrive -use candidate  92'
+veryverbose, MSG, 2013-04-29 14:03:24:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:24:	 CMMVC5753E The specified object does not1
+veryverbose, MSG, 2013-04-29 14:03:24:	  exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:24:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:24:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:24:	ssh admin@9.115.244.169 'chdrive -use candidate  93'
+veryverbose, MSG, 2013-04-29 14:03:25:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:25:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:25:	 1
+veryverbose, MSG, 2013-04-29 14:03:25:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:25:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:25:	ssh admin@9.115.244.169 'chdrive -use candidate  94'
+veryverbose, MSG, 2013-04-29 14:03:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:26:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:26:	 1
+veryverbose, MSG, 2013-04-29 14:03:26:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:26:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:26:	ssh admin@9.115.244.169 'chdrive -use candidate  95'
+veryverbose, MSG, 2013-04-29 14:03:27:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:27:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:27:	 1
+veryverbose, MSG, 2013-04-29 14:03:27:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:27:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:27:	ssh admin@9.115.244.169 'chdrive -use candidate  96'
+veryverbose, MSG, 2013-04-29 14:03:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:28:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:28:	 1
+veryverbose, MSG, 2013-04-29 14:03:28:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:28:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:28:	ssh admin@9.115.244.169 'chdrive -use candidate  97'
+veryverbose, MSG, 2013-04-29 14:03:30:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:30:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:30:	 1
+veryverbose, MSG, 2013-04-29 14:03:30:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:30:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:30:	ssh admin@9.115.244.169 'chdrive -use candidate  98'
+veryverbose, MSG, 2013-04-29 14:03:31:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:31:	 1
+veryverbose, MSG, 2013-04-29 14:03:31:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:31:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:31:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:31:	ssh admin@9.115.244.169 'chdrive -use candidate  99'
+veryverbose, MSG, 2013-04-29 14:03:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:32:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:32:	 1
+veryverbose, MSG, 2013-04-29 14:03:32:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:32:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:32:	ssh admin@9.115.244.169 'chdrive -use candidate  100'
+veryverbose, MSG, 2013-04-29 14:03:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:33:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:33:	 1
+veryverbose, MSG, 2013-04-29 14:03:33:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:33:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:33:	ssh admin@9.115.244.169 'chdrive -use candidate  101'
+veryverbose, MSG, 2013-04-29 14:03:34:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:34:	 CMMVC5753E The specified object does not exist or is not a s1
+veryverbose, MSG, 2013-04-29 14:03:34:	 uitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:34:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:34:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:34:	ssh admin@9.115.244.169 'chdrive -use candidate  102'
+veryverbose, MSG, 2013-04-29 14:03:36:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:36:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:36:	 1
+veryverbose, MSG, 2013-04-29 14:03:36:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:36:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:36:	ssh admin@9.115.244.169 'chdrive -use candidate  103'
+veryverbose, MSG, 2013-04-29 14:03:37:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:37:	 1
+veryverbose, MSG, 2013-04-29 14:03:37:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:37:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:37:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:37:	ssh admin@9.115.244.169 'chdrive -use candidate  104'
+veryverbose, MSG, 2013-04-29 14:03:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:38:	 CMMVC5753E The specified object does not ex1
+veryverbose, MSG, 2013-04-29 14:03:38:	 ist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:38:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:38:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:38:	ssh admin@9.115.244.169 'chdrive -use candidate  105'
+veryverbose, MSG, 2013-04-29 14:03:40:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:40:	 CMMVC5753E The specified object does not exi1
+veryverbose, MSG, 2013-04-29 14:03:40:	 st or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:40:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:40:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:40:	ssh admin@9.115.244.169 'chdrive -use candidate  106'
+veryverbose, MSG, 2013-04-29 14:03:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:42:	 CMMVC5753E The specified object does not exi1
+veryverbose, MSG, 2013-04-29 14:03:42:	 st or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:42:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:42:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:42:	ssh admin@9.115.244.169 'chdrive -use candidate  107'
+veryverbose, MSG, 2013-04-29 14:03:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:43:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:43:	 1
+veryverbose, MSG, 2013-04-29 14:03:43:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:43:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:43:	ssh admin@9.115.244.169 'chdrive -use candidate  108'
+veryverbose, MSG, 2013-04-29 14:03:44:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:44:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:44:	 1
+veryverbose, MSG, 2013-04-29 14:03:44:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:44:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:44:	ssh admin@9.115.244.169 'chdrive -use candidate  109'
+veryverbose, MSG, 2013-04-29 14:03:45:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:45:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:45:	 1
+veryverbose, MSG, 2013-04-29 14:03:45:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:45:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:45:	ssh admin@9.115.244.169 'chdrive -use candidate  110'
+veryverbose, MSG, 2013-04-29 14:03:47:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:47:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:47:	 1
+veryverbose, MSG, 2013-04-29 14:03:47:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:47:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:47:	ssh admin@9.115.244.169 'chdrive -use candidate  111'
+veryverbose, MSG, 2013-04-29 14:03:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:48:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:48:	 1
+veryverbose, MSG, 2013-04-29 14:03:48:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:48:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:48:	ssh admin@9.115.244.169 'chdrive -use candidate  112'
+veryverbose, MSG, 2013-04-29 14:03:49:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:49:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:49:	 1
+veryverbose, MSG, 2013-04-29 14:03:49:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:49:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:49:	ssh admin@9.115.244.169 'chdrive -use candidate  113'
+veryverbose, MSG, 2013-04-29 14:03:50:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:50:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:50:	 1
+veryverbose, MSG, 2013-04-29 14:03:50:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:50:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:50:	ssh admin@9.115.244.169 'chdrive -use candidate  114'
+veryverbose, MSG, 2013-04-29 14:03:51:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:51:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:51:	 1
+veryverbose, MSG, 2013-04-29 14:03:51:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:51:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:51:	ssh admin@9.115.244.169 'chdrive -use candidate  115'
+veryverbose, MSG, 2013-04-29 14:03:52:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:52:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:52:	 1
+veryverbose, MSG, 2013-04-29 14:03:52:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:52:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:52:	ssh admin@9.115.244.169 'chdrive -use candidate  116'
+veryverbose, MSG, 2013-04-29 14:03:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:54:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:54:	 1
+veryverbose, MSG, 2013-04-29 14:03:54:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:54:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:54:	ssh admin@9.115.244.169 'chdrive -use candidate  117'
+veryverbose, MSG, 2013-04-29 14:03:55:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:55:	 CMMVC5753E The specified object does not exis1
+veryverbose, MSG, 2013-04-29 14:03:55:	 t or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:55:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:55:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:55:	ssh admin@9.115.244.169 'chdrive -use candidate  118'
+veryverbose, MSG, 2013-04-29 14:03:56:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:56:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:56:	 1
+veryverbose, MSG, 2013-04-29 14:03:56:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:56:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:56:	ssh admin@9.115.244.169 'chdrive -use candidate  119'
+veryverbose, MSG, 2013-04-29 14:03:57:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:57:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:57:	 1
+veryverbose, MSG, 2013-04-29 14:03:57:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:57:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:57:	ssh admin@9.115.244.169 'chdrive -use candidate  120'
+veryverbose, MSG, 2013-04-29 14:03:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:03:58:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:03:58:	 1
+veryverbose, MSG, 2013-04-29 14:03:58:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:03:58:	[not_verify]
+verbose, MSG, 2013-04-29 14:03:58:	ssh admin@9.115.244.169 'chdrive -use candidate  121'
+veryverbose, MSG, 2013-04-29 14:04:00:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:00:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:00:	 1
+veryverbose, MSG, 2013-04-29 14:04:00:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:00:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:00:	ssh admin@9.115.244.169 'chdrive -use candidate  122'
+veryverbose, MSG, 2013-04-29 14:04:01:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:01:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:01:	 1
+veryverbose, MSG, 2013-04-29 14:04:01:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:01:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:01:	ssh admin@9.115.244.169 'chdrive -use candidate  123'
+veryverbose, MSG, 2013-04-29 14:04:02:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:02:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:02:	 1
+veryverbose, MSG, 2013-04-29 14:04:02:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:02:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:02:	ssh admin@9.115.244.169 'chdrive -use candidate  124'
+veryverbose, MSG, 2013-04-29 14:04:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:03:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:03:	 1
+veryverbose, MSG, 2013-04-29 14:04:03:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:03:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:03:	ssh admin@9.115.244.169 'chdrive -use candidate  125'
+veryverbose, MSG, 2013-04-29 14:04:04:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:04:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:04:	 1
+veryverbose, MSG, 2013-04-29 14:04:04:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:04:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:04:	ssh admin@9.115.244.169 'chdrive -use candidate  126'
+veryverbose, MSG, 2013-04-29 14:04:05:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:05:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:05:	 1
+veryverbose, MSG, 2013-04-29 14:04:05:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:05:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:06:	ssh admin@9.115.244.169 'chdrive -use candidate  127'
+veryverbose, MSG, 2013-04-29 14:04:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:07:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:07:	 1
+veryverbose, MSG, 2013-04-29 14:04:07:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:07:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:07:	ssh admin@9.115.244.169 'chdrive -use candidate  128'
+veryverbose, MSG, 2013-04-29 14:04:08:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:08:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:08:	 1
+veryverbose, MSG, 2013-04-29 14:04:08:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:08:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:08:	ssh admin@9.115.244.169 'chdrive -use candidate  129'
+veryverbose, MSG, 2013-04-29 14:04:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:09:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:09:	 1
+veryverbose, MSG, 2013-04-29 14:04:09:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:09:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:09:	ssh admin@9.115.244.169 'chdrive -use candidate  130'
+veryverbose, MSG, 2013-04-29 14:04:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:10:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:10:	 1
+veryverbose, MSG, 2013-04-29 14:04:10:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:10:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:10:	ssh admin@9.115.244.169 'chdrive -use candidate  131'
+veryverbose, MSG, 2013-04-29 14:04:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:11:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:11:	 1
+veryverbose, MSG, 2013-04-29 14:04:11:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:11:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:11:	ssh admin@9.115.244.169 'chdrive -use candidate  132'
+veryverbose, MSG, 2013-04-29 14:04:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:13:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:13:	 1
+veryverbose, MSG, 2013-04-29 14:04:13:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:13:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:13:	ssh admin@9.115.244.169 'chdrive -use candidate  133'
+veryverbose, MSG, 2013-04-29 14:04:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:14:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:14:	 1
+veryverbose, MSG, 2013-04-29 14:04:14:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:14:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:14:	ssh admin@9.115.244.169 'chdrive -use candidate  134'
+veryverbose, MSG, 2013-04-29 14:04:15:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:15:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:15:	 1
+veryverbose, MSG, 2013-04-29 14:04:15:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:15:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:15:	ssh admin@9.115.244.169 'chdrive -use candidate  135'
+veryverbose, MSG, 2013-04-29 14:04:16:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:16:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:16:	 1
+veryverbose, MSG, 2013-04-29 14:04:16:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:16:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:16:	ssh admin@9.115.244.169 'chdrive -use candidate  136'
+veryverbose, MSG, 2013-04-29 14:04:17:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:17:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:17:	 1
+veryverbose, MSG, 2013-04-29 14:04:17:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:17:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:17:	ssh admin@9.115.244.169 'chdrive -use candidate  137'
+veryverbose, MSG, 2013-04-29 14:04:18:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:18:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:18:	 1
+veryverbose, MSG, 2013-04-29 14:04:18:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:18:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:19:	ssh admin@9.115.244.169 'chdrive -use candidate  138'
+veryverbose, MSG, 2013-04-29 14:04:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:20:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:20:	 1
+veryverbose, MSG, 2013-04-29 14:04:20:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:20:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:20:	ssh admin@9.115.244.169 'chdrive -use candidate  139'
+veryverbose, MSG, 2013-04-29 14:04:21:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:21:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:21:	 1
+veryverbose, MSG, 2013-04-29 14:04:21:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:21:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:21:	ssh admin@9.115.244.169 'chdrive -use candidate  140'
+veryverbose, MSG, 2013-04-29 14:04:22:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:22:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:22:	 1
+veryverbose, MSG, 2013-04-29 14:04:22:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:22:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:22:	ssh admin@9.115.244.169 'chdrive -use candidate  141'
+veryverbose, MSG, 2013-04-29 14:04:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:23:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:23:	 1
+veryverbose, MSG, 2013-04-29 14:04:23:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:23:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:23:	ssh admin@9.115.244.169 'chdrive -use candidate  142'
+veryverbose, MSG, 2013-04-29 14:04:25:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:25:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:25:	 1
+veryverbose, MSG, 2013-04-29 14:04:25:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:25:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:25:	ssh admin@9.115.244.169 'chdrive -use candidate  143'
+veryverbose, MSG, 2013-04-29 14:04:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:26:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:26:	 1
+veryverbose, MSG, 2013-04-29 14:04:26:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:26:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:26:	ssh admin@9.115.244.169 'chdrive -use candidate  144'
+veryverbose, MSG, 2013-04-29 14:04:27:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:27:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:27:	 1
+veryverbose, MSG, 2013-04-29 14:04:27:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:27:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:27:	ssh admin@9.115.244.169 'chdrive -use candidate  145'
+veryverbose, MSG, 2013-04-29 14:04:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:28:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:28:	 1
+veryverbose, MSG, 2013-04-29 14:04:28:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:28:	[not_verify]
+verbose, MSG, 2013-04-29 14:04:28:	ssh admin@9.115.244.169 ' svctask mkmdiskgrp  -ext 512 '
+veryverbose, MSG, 2013-04-29 14:04:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:29:	 MDisk Group, id [2], successfully created
+veryverbose, MSG, 2013-04-29 14:04:29:	 0
+veryverbose, MSG, 2013-04-29 14:04:29:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:04:29:	[pass]
+verbose, MSG, 2013-04-29 14:04:29:	ssh admin@9.115.244.169 ' svctask  mkarray -level raid10 -drive 0:1:2:3 -strip 256 -name mdisk_rd10 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:31:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:31:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 14:04:31:	 1
+veryverbose, MSG, 2013-04-29 14:04:31:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:31:	[fail]
+verbose, MSG, 2013-04-29 14:04:31:	ssh admin@9.115.244.169 ' svctask  mkarray -level raid5 -drive 4:5:6:7 -strip 256 -name mdisk_rd5 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:32:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 14:04:32:	 1
+veryverbose, MSG, 2013-04-29 14:04:32:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:32:	[fail]
+verbose, MSG, 2013-04-29 14:04:32:	ssh admin@9.115.244.169 ' svctask  mkarray -level raid0 -drive 8:9 -strip 256 -name mdisk_rd0 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:33:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 14:04:33:	 1
+veryverbose, MSG, 2013-04-29 14:04:33:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:33:	[fail]
+verbose, MSG, 2013-04-29 14:04:33:	ssh admin@9.115.244.169 ' svctask  mkarray -level raid0 -drive 10 -strip 256 -name mdisk_imageVd mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:34:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:34:	 CMMVC6538E The command cannot be initiated because at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 14:04:34:	 1
+veryverbose, MSG, 2013-04-29 14:04:34:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:34:	[fail]
+verbose, MSG, 2013-04-29 14:04:34:	ssh admin@9.115.244.169 '  svctask  mkarray -level raid0 -drive 11  -strip 256 -name  emptyMdisk mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:35:	 CMMVC6538E The command cannot be initiated becaus1
+veryverbose, MSG, 2013-04-29 14:04:35:	 e at least one of the drives that you have specified has a Use property that is not Candidate.
+veryverbose, MSG, 2013-04-29 14:04:35:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:35:	[fail]
+verbose, MSG, 2013-04-29 14:04:36:	ssh admin@9.115.244.169 '  svctask mkarray  -level raid0 -drive 48:49:50 -strip 256 -name TwoT_Mdisk  mdiskgrp0  '
+veryverbose, MSG, 2013-04-29 14:04:37:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:37:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:04:37:	 1
+veryverbose, MSG, 2013-04-29 14:04:37:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:37:	[fail]
+verbose, MSG, 2013-04-29 14:04:37:	ssh admin@9.115.244.169 '  svctask  mkarray -level raid0 -drive 111:112 -strip 256 -name fak_mdisk_0 poolName0320'
+veryverbose, MSG, 2013-04-29 14:04:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:38:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:38:	 1
+veryverbose, MSG, 2013-04-29 14:04:38:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:38:	[fail]
+verbose, MSG, 2013-04-29 14:04:38:	ssh admin@9.115.244.169 '  svctask  mkarray -level raid0 -drive 141:142:143 -strip 256 -name fak_mdisk_1 poolName0320'
+veryverbose, MSG, 2013-04-29 14:04:39:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:39:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:04:39:	 1
+veryverbose, MSG, 2013-04-29 14:04:39:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:39:	[fail]
+verbose, MSG, 2013-04-29 14:04:39:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 93 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:40:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:40:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:04:40:	 1
+veryverbose, MSG, 2013-04-29 14:04:40:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:40:	[fail]
+verbose, MSG, 2013-04-29 14:04:40:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 112 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:42:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:04:42:	 1
+veryverbose, MSG, 2013-04-29 14:04:42:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:42:	[fail]
+verbose, MSG, 2013-04-29 14:04:42:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 115 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:43:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:04:43:	 1
+veryverbose, MSG, 2013-04-29 14:04:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:43:	[fail]
+verbose, MSG, 2013-04-29 14:04:43:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 116 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:44:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:44:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:04:44:	 1
+veryverbose, MSG, 2013-04-29 14:04:44:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:44:	[fail]
+verbose, MSG, 2013-04-29 14:04:44:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 117 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:45:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:45:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:04:45:	 1
+veryverbose, MSG, 2013-04-29 14:04:45:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:45:	[fail]
+verbose, MSG, 2013-04-29 14:04:45:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 118 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:46:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:46:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:04:46:	 1
+veryverbose, MSG, 2013-04-29 14:04:46:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:46:	[fail]
+verbose, MSG, 2013-04-29 14:04:46:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 119 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:48:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:04:48:	 1
+veryverbose, MSG, 2013-04-29 14:04:48:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:48:	[fail]
+verbose, MSG, 2013-04-29 14:04:48:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 120 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:50:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:50:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:04:50:	 1
+veryverbose, MSG, 2013-04-29 14:04:50:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:50:	[fail]
+verbose, MSG, 2013-04-29 14:04:50:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 121 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:51:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:51:	 CMMVC6534E The command cannot be initiated be1
+veryverbose, MSG, 2013-04-29 14:04:51:	 cause the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:04:51:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:51:	[fail]
+verbose, MSG, 2013-04-29 14:04:51:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 122 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:53:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:53:	 CMMVC6534E The command cannot be initiated beca1
+veryverbose, MSG, 2013-04-29 14:04:53:	 use the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:04:53:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:53:	[fail]
+verbose, MSG, 2013-04-29 14:04:53:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 123 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:54:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:04:54:	 1
+veryverbose, MSG, 2013-04-29 14:04:54:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:54:	[fail]
+verbose, MSG, 2013-04-29 14:04:54:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 124 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:55:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:55:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:04:55:	 1
+veryverbose, MSG, 2013-04-29 14:04:55:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:55:	[fail]
+verbose, MSG, 2013-04-29 14:04:55:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 125 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:57:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:57:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:04:57:	 1
+veryverbose, MSG, 2013-04-29 14:04:57:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:57:	[fail]
+verbose, MSG, 2013-04-29 14:04:57:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 126 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:58:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:04:58:	 1
+veryverbose, MSG, 2013-04-29 14:04:58:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:58:	[fail]
+verbose, MSG, 2013-04-29 14:04:58:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 127 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:04:59:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:04:59:	 CMMVC6534E The command cannot be initiated becau1
+veryverbose, MSG, 2013-04-29 14:04:59:	 se the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:04:59:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:04:59:	[fail]
+verbose, MSG, 2013-04-29 14:04:59:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 128 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:00:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:00:	 1
+veryverbose, MSG, 2013-04-29 14:05:00:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:00:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:00:	[fail]
+verbose, MSG, 2013-04-29 14:05:00:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 129 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:02:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:02:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:02:	 1
+veryverbose, MSG, 2013-04-29 14:05:02:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:02:	[fail]
+verbose, MSG, 2013-04-29 14:05:02:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 130 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:03:	 CMMVC6534E The command cannot be initiated becaus1
+veryverbose, MSG, 2013-04-29 14:05:03:	 e the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:03:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:03:	[fail]
+verbose, MSG, 2013-04-29 14:05:03:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 131 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:04:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:04:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:04:	 1
+veryverbose, MSG, 2013-04-29 14:05:04:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:04:	[fail]
+verbose, MSG, 2013-04-29 14:05:04:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 132 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:05:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:05:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:05:	 1
+veryverbose, MSG, 2013-04-29 14:05:05:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:05:	[fail]
+verbose, MSG, 2013-04-29 14:05:05:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 133 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:06:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:06:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:06:	 1
+veryverbose, MSG, 2013-04-29 14:05:06:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:06:	[fail]
+verbose, MSG, 2013-04-29 14:05:06:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 134 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:08:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:08:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:08:	 1
+veryverbose, MSG, 2013-04-29 14:05:08:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:08:	[fail]
+verbose, MSG, 2013-04-29 14:05:08:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 135 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:09:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:09:	 1
+veryverbose, MSG, 2013-04-29 14:05:09:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:09:	[fail]
+verbose, MSG, 2013-04-29 14:05:09:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 136 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:10:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:10:	 1
+veryverbose, MSG, 2013-04-29 14:05:10:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:10:	[fail]
+verbose, MSG, 2013-04-29 14:05:10:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 137 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:11:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:11:	 1
+veryverbose, MSG, 2013-04-29 14:05:11:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:11:	[fail]
+verbose, MSG, 2013-04-29 14:05:11:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 138 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:12:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:12:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:12:	 1
+veryverbose, MSG, 2013-04-29 14:05:13:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:13:	[fail]
+verbose, MSG, 2013-04-29 14:05:13:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 139 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:14:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:14:	 1
+veryverbose, MSG, 2013-04-29 14:05:14:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:14:	[fail]
+verbose, MSG, 2013-04-29 14:05:14:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 140 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:15:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:15:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:15:	 1
+veryverbose, MSG, 2013-04-29 14:05:15:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:15:	[fail]
+verbose, MSG, 2013-04-29 14:05:15:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 141 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:16:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:16:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:16:	 1
+veryverbose, MSG, 2013-04-29 14:05:16:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:16:	[fail]
+verbose, MSG, 2013-04-29 14:05:16:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 142 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:17:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:17:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:17:	 1
+veryverbose, MSG, 2013-04-29 14:05:17:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:17:	[fail]
+verbose, MSG, 2013-04-29 14:05:17:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 143 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:19:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:19:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:19:	 1
+veryverbose, MSG, 2013-04-29 14:05:19:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:19:	[fail]
+verbose, MSG, 2013-04-29 14:05:19:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 144 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:20:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:20:	 1
+veryverbose, MSG, 2013-04-29 14:05:20:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:20:	[fail]
+verbose, MSG, 2013-04-29 14:05:20:	ssh admin@9.115.244.169 'svctask  mkarray -level raid0 -drive 145 mdiskgrp0'
+veryverbose, MSG, 2013-04-29 14:05:21:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:21:	 CMMVC6534E The command cannot be initiated because the drive that you have specified does not exist.
+veryverbose, MSG, 2013-04-29 14:05:21:	 1
+veryverbose, MSG, 2013-04-29 14:05:21:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:21:	[fail]
+basic, WARN, 2013-04-29 14:05:21:=== tc01_addArray , FAILED ===
+veryverbose, MSG, 2013-04-29 14:05:21:ENV[LOGLEVEL]:verbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 14:05:21:
+
+=== tc02_mkVdisk  start===
+verbose, MSG, 2013-04-29 14:05:21:	ssh admin@9.115.244.169 'svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 14:05:22:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:22:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:22:	 1
+veryverbose, MSG, 2013-04-29 14:05:22:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:22:	[fail]
+verbose, MSG, 2013-04-29 14:05:22:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullyAllocatedVdisk_9_115_245_69'
+veryverbose, MSG, 2013-04-29 14:05:24:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:24:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:24:	 1
+veryverbose, MSG, 2013-04-29 14:05:24:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:24:	[fail]
+verbose, MSG, 2013-04-29 14:05:24:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name spaceEfficientVdisk   -rsize 20% -autoexpand -grainsize 32 '
+veryverbose, MSG, 2013-04-29 14:05:25:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:25:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:25:	 1
+veryverbose, MSG, 2013-04-29 14:05:25:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:25:	[fail]
+verbose, MSG, 2013-04-29 14:05:25:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 3000000 -name twoTigarVdisk  '
+veryverbose, MSG, 2013-04-29 14:05:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:26:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:26:	 1
+veryverbose, MSG, 2013-04-29 14:05:26:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:26:	[fail]
+verbose, MSG, 2013-04-29 14:05:26:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fullAllocatedVdisk_9_115_245_70   '
+veryverbose, MSG, 2013-04-29 14:05:27:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:27:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:27:	 1
+veryverbose, MSG, 2013-04-29 14:05:27:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:27:	[fail]
+verbose, MSG, 2013-04-29 14:05:27:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Source'
+veryverbose, MSG, 2013-04-29 14:05:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:28:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:28:	 1
+veryverbose, MSG, 2013-04-29 14:05:28:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:28:	[fail]
+verbose, MSG, 2013-04-29 14:05:28:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Target'
+veryverbose, MSG, 2013-04-29 14:05:30:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:30:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:30:	 1
+veryverbose, MSG, 2013-04-29 14:05:30:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:30:	[fail]
+verbose, MSG, 2013-04-29 14:05:30:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name noCacheVdisk -cache none   '
+veryverbose, MSG, 2013-04-29 14:05:31:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:31:	 CMMVC6035E The action failed as the object alread1
+veryverbose, MSG, 2013-04-29 14:05:31:	 y exists.
+veryverbose, MSG, 2013-04-29 14:05:31:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:31:	[fail]
+verbose, MSG, 2013-04-29 14:05:31:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Master    '
+veryverbose, MSG, 2013-04-29 14:05:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:32:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:32:	 1
+veryverbose, MSG, 2013-04-29 14:05:32:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:32:	[fail]
+verbose, MSG, 2013-04-29 14:05:32:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Aux '
+veryverbose, MSG, 2013-04-29 14:05:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:33:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:33:	 1
+veryverbose, MSG, 2013-04-29 14:05:33:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:33:	[fail]
+verbose, MSG, 2013-04-29 14:05:33:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Aux '
+veryverbose, MSG, 2013-04-29 14:05:34:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:34:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:34:	 1
+veryverbose, MSG, 2013-04-29 14:05:34:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:34:	[fail]
+verbose, MSG, 2013-04-29 14:05:34:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fc_Aux  '
+veryverbose, MSG, 2013-04-29 14:05:36:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:36:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:36:	 1
+veryverbose, MSG, 2013-04-29 14:05:36:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:36:	[fail]
+verbose, MSG, 2013-04-29 14:05:36:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_1'
+veryverbose, MSG, 2013-04-29 14:05:37:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:37:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:37:	 1
+veryverbose, MSG, 2013-04-29 14:05:37:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:37:	[fail]
+verbose, MSG, 2013-04-29 14:05:37:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_2'
+veryverbose, MSG, 2013-04-29 14:05:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:38:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:38:	 1
+veryverbose, MSG, 2013-04-29 14:05:38:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:38:	[fail]
+verbose, MSG, 2013-04-29 14:05:38:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_3'
+veryverbose, MSG, 2013-04-29 14:05:39:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:39:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:39:	 1
+veryverbose, MSG, 2013-04-29 14:05:39:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:39:	[fail]
+verbose, MSG, 2013-04-29 14:05:39:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_4'
+veryverbose, MSG, 2013-04-29 14:05:41:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:41:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:41:	 1
+veryverbose, MSG, 2013-04-29 14:05:41:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:41:	[fail]
+verbose, MSG, 2013-04-29 14:05:41:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_5'
+veryverbose, MSG, 2013-04-29 14:05:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:42:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:42:	 1
+veryverbose, MSG, 2013-04-29 14:05:42:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:42:	[fail]
+verbose, MSG, 2013-04-29 14:05:42:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_6'
+veryverbose, MSG, 2013-04-29 14:05:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:43:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:43:	 1
+veryverbose, MSG, 2013-04-29 14:05:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:43:	[fail]
+verbose, MSG, 2013-04-29 14:05:43:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name vdiskAuto_7'
+veryverbose, MSG, 2013-04-29 14:05:44:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:44:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:44:	 1
+veryverbose, MSG, 2013-04-29 14:05:44:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:44:	[fail]
+basic, WARN, 2013-04-29 14:05:44:=== tc02_mkVdisk , FAILED ===
+veryverbose, MSG, 2013-04-29 14:05:44:ENV[LOGLEVEL]:verbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 14:05:44:
+
+=== tc03_mkHost_Map  start===
+verbose, MSG, 2013-04-29 14:05:44:	ssh admin@9.115.244.169 'svctask  mkhost -name lnx9_115_245_64 -hbawwpn 21000024FF2DC5C6:21000024FF2DC5C7  -iogrp 0'
+veryverbose, MSG, 2013-04-29 14:05:45:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:45:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 14:05:45:	 1
+veryverbose, MSG, 2013-04-29 14:05:45:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:45:	[fail]
+verbose, MSG, 2013-04-29 14:05:45:	ssh admin@9.115.244.169 'svctask  mkhost -name win9_115_245_65 -hbawwpn 21000024FF2DC496  -iogrp 0'
+veryverbose, MSG, 2013-04-29 14:05:47:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:47:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 14:05:47:	 1
+veryverbose, MSG, 2013-04-29 14:05:47:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:47:	[fail]
+verbose, MSG, 2013-04-29 14:05:47:	ssh admin@9.115.244.169 'svctask  mkhost -name lnx9_115_245_63 -hbawwpn 21000024FF2DC423  -iogrp 0'
+veryverbose, MSG, 2013-04-29 14:05:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:48:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 14:05:48:	 1
+veryverbose, MSG, 2013-04-29 14:05:48:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:48:	[fail]
+verbose, MSG, 2013-04-29 14:05:48:	ssh admin@9.115.244.169 'svctask  mkhost -name  lnx_iscsi_9_115_245_69  -iscsiname iqn.1994-05.com.redhat:d0919cbc230'
+veryverbose, MSG, 2013-04-29 14:05:49:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:49:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:49:	 1
+veryverbose, MSG, 2013-04-29 14:05:49:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:49:	[fail]
+verbose, MSG, 2013-04-29 14:05:49:	ssh admin@9.115.244.169 'svctask  mkhost -name  lnx_iscsi_9_115_245_70  -iscsiname iqn.2013-03.com.suse:01:99c01e8e555'
+veryverbose, MSG, 2013-04-29 14:05:50:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:50:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:50:	 1
+veryverbose, MSG, 2013-04-29 14:05:50:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:50:	[fail]
+verbose, MSG, 2013-04-29 14:05:50:	ssh admin@9.115.244.169 'svctask  mkhost -name  win_iscsi_9_115_245_62  -iscsiname iqn.1991-05.com.microsoft:win-nl9hte62q8e'
+veryverbose, MSG, 2013-04-29 14:05:52:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:52:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:05:52:	 1
+veryverbose, MSG, 2013-04-29 14:05:52:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:52:	[fail]
+verbose, MSG, 2013-04-29 14:05:52:	ssh admin@9.115.244.169 ' svctask  mkhost -name h188_p1 -hbawwpn 50050768030426fc'
+veryverbose, MSG, 2013-04-29 14:05:53:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:53:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 14:05:53:	 1
+veryverbose, MSG, 2013-04-29 14:05:53:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:53:	[fail]
+verbose, MSG, 2013-04-29 14:05:53:	ssh admin@9.115.244.169 ' svctask  mkhost -name h188_p2 -hbawwpn 50050768030826fc'
+veryverbose, MSG, 2013-04-29 14:05:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:54:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 14:05:54:	 1
+veryverbose, MSG, 2013-04-29 14:05:54:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:54:	[fail]
+verbose, MSG, 2013-04-29 14:05:54:	ssh admin@9.115.244.169 ' svctask  mkhost -name h189_p1 -hbawwpn 50050768030426FD'
+veryverbose, MSG, 2013-04-29 14:05:55:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:55:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 14:05:55:	 1
+veryverbose, MSG, 2013-04-29 14:05:55:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:55:	[fail]
+verbose, MSG, 2013-04-29 14:05:55:	ssh admin@9.115.244.169 ' svctask  mkhost -name h189_p2 -hbawwpn 50050768030826FD'
+veryverbose, MSG, 2013-04-29 14:05:56:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:56:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 14:05:56:	 1
+veryverbose, MSG, 2013-04-29 14:05:56:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:56:	[fail]
+verbose, MSG, 2013-04-29 14:05:56:	ssh admin@9.115.244.169 ' svctask  mkhost -name h191_p1 -hbawwpn 500507680304270A'
+veryverbose, MSG, 2013-04-29 14:05:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:05:58:	 CMMVC5867E The action failed because the worldw1
+veryverbose, MSG, 2013-04-29 14:05:58:	 ide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 14:05:58:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:05:58:	[fail]
+verbose, MSG, 2013-04-29 14:05:58:	ssh admin@9.115.244.169 ' svctask  mkhost -name h191_p2 -hbawwpn 500507680308270A'
+veryverbose, MSG, 2013-04-29 14:06:00:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:00:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 14:06:00:	 1
+veryverbose, MSG, 2013-04-29 14:06:00:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:00:	[fail]
+verbose, MSG, 2013-04-29 14:06:00:	ssh admin@9.115.244.169 ' svctask  mkhost -name h192_p1 -hbawwpn 500507680304270B'
+veryverbose, MSG, 2013-04-29 14:06:01:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:01:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 14:06:01:	 1
+veryverbose, MSG, 2013-04-29 14:06:01:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:01:	[fail]
+verbose, MSG, 2013-04-29 14:06:01:	ssh admin@9.115.244.169 ' svctask  mkhost -name h192_p2 -hbawwpn 500507680308270B'
+veryverbose, MSG, 2013-04-29 14:06:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:03:	 CMMVC5867E The action failed because the worldwide port name is already assigned or is not valid.
+veryverbose, MSG, 2013-04-29 14:06:03:	 1
+veryverbose, MSG, 2013-04-29 14:06:03:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:03:	[fail]
+verbose, MSG, 2013-04-29 14:06:03:	ssh admin@9.115.244.169 '  svctask mkvdiskhostmap -force -host h188_p2  fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 14:06:04:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:04:	 CMMVC5754E The specified object does not exist, or the name supplied does not meet the naming rules.
+veryverbose, MSG, 2013-04-29 14:06:04:	 1
+veryverbose, MSG, 2013-04-29 14:06:04:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:04:	[fail]
+verbose, MSG, 2013-04-29 14:06:04:	ssh admin@9.115.244.169 '  svctask mkvdiskhostmap -force -host h189_p2  fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 14:06:05:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:05:	 CMMVC5754E The specified object does not exist, or the name supplied does not meet the naming rules.
+veryverbose, MSG, 2013-04-29 14:06:05:	 1
+veryverbose, MSG, 2013-04-29 14:06:05:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:05:	[fail]
+verbose, MSG, 2013-04-29 14:06:05:	ssh admin@9.115.244.169 '  svctask mkvdiskhostmap -force -host h191_p2  fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 14:06:06:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:06:	 CMMVC5754E The specified object does not exist, or the name supplied does not meet the naming rules.
+veryverbose, MSG, 2013-04-29 14:06:06:	 1
+veryverbose, MSG, 2013-04-29 14:06:06:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:06:	[fail]
+verbose, MSG, 2013-04-29 14:06:06:	ssh admin@9.115.244.169 '  svctask mkvdiskhostmap -force -host h192_p2  fullyAllocatedVdisk'
+veryverbose, MSG, 2013-04-29 14:06:08:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:08:	 CMMVC5754E The specified object does not exist, or the name supplied does not meet the naming rules.
+veryverbose, MSG, 2013-04-29 14:06:08:	 1
+veryverbose, MSG, 2013-04-29 14:06:08:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:08:	[fail]
+verbose, MSG, 2013-04-29 14:06:08:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  1'
+veryverbose, MSG, 2013-04-29 14:06:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:09:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 14:06:09:	 1
+veryverbose, MSG, 2013-04-29 14:06:09:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:09:	[fail]
+verbose, MSG, 2013-04-29 14:06:09:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  2'
+veryverbose, MSG, 2013-04-29 14:06:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:10:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 14:06:10:	 1
+veryverbose, MSG, 2013-04-29 14:06:10:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:10:	[fail]
+verbose, MSG, 2013-04-29 14:06:10:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  3'
+veryverbose, MSG, 2013-04-29 14:06:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:11:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 14:06:11:	 1
+veryverbose, MSG, 2013-04-29 14:06:11:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:11:	[fail]
+verbose, MSG, 2013-04-29 14:06:11:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  4'
+veryverbose, MSG, 2013-04-29 14:06:12:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:12:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 14:06:12:	 1
+veryverbose, MSG, 2013-04-29 14:06:12:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:12:	[fail]
+verbose, MSG, 2013-04-29 14:06:12:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  5'
+veryverbose, MSG, 2013-04-29 14:06:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:14:	 1
+veryverbose, MSG, 2013-04-29 14:06:14:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 14:06:14:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:14:	[fail]
+verbose, MSG, 2013-04-29 14:06:14:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  6'
+veryverbose, MSG, 2013-04-29 14:06:15:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:15:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 14:06:15:	 1
+veryverbose, MSG, 2013-04-29 14:06:15:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:15:	[fail]
+verbose, MSG, 2013-04-29 14:06:15:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 1  7'
+veryverbose, MSG, 2013-04-29 14:06:16:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:16:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 14:06:16:	 1
+veryverbose, MSG, 2013-04-29 14:06:16:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:16:	[fail]
+verbose, MSG, 2013-04-29 14:06:16:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  1'
+veryverbose, MSG, 2013-04-29 14:06:17:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:17:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 14:06:17:	 1
+veryverbose, MSG, 2013-04-29 14:06:17:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:17:	[fail]
+verbose, MSG, 2013-04-29 14:06:17:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  2'
+veryverbose, MSG, 2013-04-29 14:06:19:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:19:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 14:06:19:	 1
+veryverbose, MSG, 2013-04-29 14:06:19:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:19:	[fail]
+verbose, MSG, 2013-04-29 14:06:19:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  3'
+veryverbose, MSG, 2013-04-29 14:06:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:20:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 14:06:20:	 1
+veryverbose, MSG, 2013-04-29 14:06:20:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:20:	[fail]
+verbose, MSG, 2013-04-29 14:06:20:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  4'
+veryverbose, MSG, 2013-04-29 14:06:21:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:21:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 14:06:21:	 1
+veryverbose, MSG, 2013-04-29 14:06:21:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:21:	[fail]
+verbose, MSG, 2013-04-29 14:06:21:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  5'
+veryverbose, MSG, 2013-04-29 14:06:22:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:22:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 14:06:22:	 1
+veryverbose, MSG, 2013-04-29 14:06:22:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:22:	[fail]
+verbose, MSG, 2013-04-29 14:06:22:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  6'
+veryverbose, MSG, 2013-04-29 14:06:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:23:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 14:06:23:	 1
+veryverbose, MSG, 2013-04-29 14:06:23:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:23:	[fail]
+verbose, MSG, 2013-04-29 14:06:23:	ssh admin@9.115.244.169 'svctask mkvdiskhostmap -force -host 2  7'
+veryverbose, MSG, 2013-04-29 14:06:25:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:25:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 14:06:25:	 1
+veryverbose, MSG, 2013-04-29 14:06:25:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:25:	[fail]
+basic, WARN, 2013-04-29 14:06:25:=== tc03_mkHost_Map , FAILED ===
+veryverbose, MSG, 2013-04-29 14:06:25:ENV[LOGLEVEL]:verbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 14:06:25:
+
+=== tc04_fcMap  start===
+verbose, MSG, 2013-04-29 14:06:25:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Source'
+veryverbose, MSG, 2013-04-29 14:06:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:26:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:06:26:	 1
+veryverbose, MSG, 2013-04-29 14:06:26:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:26:	[fail]
+verbose, MSG, 2013-04-29 14:06:26:	ssh admin@9.115.244.169 ' svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 1024 -name DB_Target'
+veryverbose, MSG, 2013-04-29 14:06:27:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:27:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:06:27:	 1
+veryverbose, MSG, 2013-04-29 14:06:27:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:27:	[fail]
+verbose, MSG, 2013-04-29 14:06:27:	ssh admin@9.115.244.169 ' mkfcmap -source DB_Source -target DB_Target -name DB_Map1 -consistgrp FCCG1'
+veryverbose, MSG, 2013-04-29 14:06:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:28:	 CMMVC5754E The specified object does not exist, or the name supplied does not meet the naming rules.
+veryverbose, MSG, 2013-04-29 14:06:28:	 1
+veryverbose, MSG, 2013-04-29 14:06:28:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:28:	[fail]
+verbose, MSG, 2013-04-29 14:06:28:	ssh admin@9.115.244.169 ' prestartfcconsistgrp FCCG1'
+veryverbose, MSG, 2013-04-29 14:06:30:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:30:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:06:30:	 1
+veryverbose, MSG, 2013-04-29 14:06:30:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:30:	[fail]
+verbose, MSG, 2013-04-29 14:06:30:	ssh admin@9.115.244.169 ' startfcconsistgrp FCCG1'
+veryverbose, MSG, 2013-04-29 14:06:31:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:31:	 CMMVC5753E The specified object does not exist or is not a suitable candidate.
+veryverbose, MSG, 2013-04-29 14:06:31:	 1
+veryverbose, MSG, 2013-04-29 14:06:31:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:31:	[fail]
+verbose, MSG, 2013-04-29 14:06:31:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Master    '
+veryverbose, MSG, 2013-04-29 14:06:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:32:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:06:32:	 1
+veryverbose, MSG, 2013-04-29 14:06:32:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:32:	[fail]
+verbose, MSG, 2013-04-29 14:06:32:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name mm_Aux '
+veryverbose, MSG, 2013-04-29 14:06:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:33:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:06:33:	 1
+veryverbose, MSG, 2013-04-29 14:06:33:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:33:	[fail]
+verbose, MSG, 2013-04-29 14:06:33:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fc_Master    '
+veryverbose, MSG, 2013-04-29 14:06:34:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:34:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:06:34:	 1
+veryverbose, MSG, 2013-04-29 14:06:34:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:34:	[fail]
+verbose, MSG, 2013-04-29 14:06:34:	ssh admin@9.115.244.169 '  svctask mkvdisk -mdiskgrp 0 -iogrp 0 -size 600 -name fc_Aux  '
+veryverbose, MSG, 2013-04-29 14:06:36:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:36:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:06:36:	 1
+veryverbose, MSG, 2013-04-29 14:06:36:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:36:	[fail]
+verbose, MSG, 2013-04-29 14:06:36:	ssh admin@9.115.244.169 '  mkfcmap -source fc_Master -target fc_Aux -name fcMap1 '
+veryverbose, MSG, 2013-04-29 14:06:37:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:37:	 CMMVC6035E The action failed as the object already exists.
+veryverbose, MSG, 2013-04-29 14:06:37:	 1
+veryverbose, MSG, 2013-04-29 14:06:37:
+	===cmd output end===
+verbose, WARN, 2013-04-29 14:06:37:	[fail]
+verbose, MSG, 2013-04-29 14:06:37:	ssh admin@9.115.244.169 '  prestartfcmap fcMap1'
+veryverbose, MSG, 2013-04-29 14:06:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:38:	 0
+veryverbose, MSG, 2013-04-29 14:06:38:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:06:38:	[pass]
+verbose, MSG, 2013-04-29 14:06:38:	ssh admin@9.115.244.169 '  startfcmap fcMap1'
+veryverbose, MSG, 2013-04-29 14:06:39:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 14:06:39:	 0
+veryverbose, MSG, 2013-04-29 14:06:39:
+	===cmd output end===
+verbose, MSG, 2013-04-29 14:06:39:	[pass]
+basic, WARN, 2013-04-29 14:06:39:=== tc04_fcMap , FAILED ===
