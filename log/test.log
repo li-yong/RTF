@@ -38947,3 +38947,833 @@ veryverbose, MSG, 2013-04-29 10:05:46:
 	===cmd output end===
 verbose, MSG, 2013-04-29 10:05:46:	[pass]
 basic, MSG, 2013-04-29 10:05:46:=== tc00_addHost , PASSED ===
+basic, MSG, 2013-04-29 10:10:58:ts_atl
+veryverbose, MSG, 2013-04-29 10:10:58:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:10:58:
+
+=== tc00_addHost  start===
+veryverbose, WARN, 2013-04-29 10:10:58:[CLUSTER] not defined in _global.conf,consider revise test case conf file.
+verbose, WARN, 2013-04-29 10:10:58:CLUSTER not defined in _global.conf,consider revise test case conf file.
+verbose, MSG, 2013-04-29 10:10:58:	ssh CLUSTER 'sainfo -h'
+basic, MSG, 2013-04-29 10:11:49:ts_atl
+veryverbose, MSG, 2013-04-29 10:11:49:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:11:49:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:11:49:	ssh 9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:11:52:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:11:52:	 Warning: Permanently added '9.115.245.190' (RSA) to the list of known hosts.
+veryverbose, MSG, 2013-04-29 10:11:52:	 CMMVC7016E Authorization has failed because the private key is not valid for the user name that you have specified.
+veryverbose, MSG, 2013-04-29 10:11:52:	 
+veryverbose, MSG, 2013-04-29 10:11:52:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:11:52:	[fail]
+basic, WARN, 2013-04-29 10:11:52:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 10:14:58:ts_atl
+veryverbose, MSG, 2013-04-29 10:14:58:ENV[LOGLEVEL]:basic , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:14:58:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:14:58:	ssh superadmin:9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:15:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:15:11:	 ssh: superadmin:9.115.245.190: Name or service not known
+veryverbose, MSG, 2013-04-29 10:15:11:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:15:11:	[fail]
+basic, WARN, 2013-04-29 10:15:11:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 10:15:27:ts_atl
+veryverbose, MSG, 2013-04-29 10:15:27:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:15:27:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:15:27:	ssh superadmin:9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:15:37:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:15:37:	 ssh: superadmin:9.115.245.190: Name or service not known
+veryverbose, MSG, 2013-04-29 10:15:37:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:15:37:	[fail]
+basic, WARN, 2013-04-29 10:15:37:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 10:15:54:ts_atl
+veryverbose, MSG, 2013-04-29 10:15:54:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:15:54:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:15:54:	ssh superadmin\@9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:15:55:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:15:55:	 CMMVC7016E Authorization has failed because the private key is not valid for the user name that you have specified.
+veryverbose, MSG, 2013-04-29 10:15:55:	 
+veryverbose, MSG, 2013-04-29 10:15:55:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:15:55:	[fail]
+basic, WARN, 2013-04-29 10:15:55:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 10:16:09:ts_atl
+veryverbose, MSG, 2013-04-29 10:16:09:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:16:09:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:16:09:	ssh superadmin@9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:16:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:16:10:	 CMMVC7016E Authorization has failed because the private key is not valid for the user name that you have specified.
+veryverbose, MSG, 2013-04-29 10:16:10:	 
+veryverbose, MSG, 2013-04-29 10:16:10:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:16:10:	[fail]
+basic, WARN, 2013-04-29 10:16:10:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 10:17:32:ts_atl
+veryverbose, MSG, 2013-04-29 10:17:32:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:17:32:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:17:32:	ssh superadmin@9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:17:34:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:17:34:	 CMMVC7016E Authorization has failed because the private key is not valid for the user name that you have specified.
+veryverbose, MSG, 2013-04-29 10:17:34:	 
+veryverbose, MSG, 2013-04-29 10:17:34:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:17:34:	[fail]
+basic, WARN, 2013-04-29 10:17:34:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 10:20:39:ts_atl
+veryverbose, MSG, 2013-04-29 10:20:41:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:20:41:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:20:41:	ssh superadmin@9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:20:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:20:43:	 CMMVC7016E Authorization has failed because the private key is not valid for the user name that you have specified.
+veryverbose, MSG, 2013-04-29 10:20:43:	 
+veryverbose, MSG, 2013-04-29 10:20:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:20:43:	[fail]
+basic, WARN, 2013-04-29 10:20:43:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 10:20:55:ts_atl
+veryverbose, MSG, 2013-04-29 10:20:58:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:20:59:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:21:02:	ssh superadmin@9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:21:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:21:03:	 CMMVC7016E Authorization has failed because the private key is not valid for the user name that you have specified.
+veryverbose, MSG, 2013-04-29 10:21:03:	 
+veryverbose, MSG, 2013-04-29 10:21:03:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:21:03:	[fail]
+basic, WARN, 2013-04-29 10:21:24:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 10:21:26:ts_atl
+veryverbose, MSG, 2013-04-29 10:21:31:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:21:31:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 10:29:22:ts_atl
+veryverbose, MSG, 2013-04-29 10:29:22:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:29:22:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:33:05:	ssh superadmin@9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:33:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:33:07:	 CMMVC7016E Authorization has failed because the private key is not valid for the user name that you have specified.
+veryverbose, MSG, 2013-04-29 10:33:07:	 
+veryverbose, MSG, 2013-04-29 10:33:07:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:33:07:	[fail]
+basic, WARN, 2013-04-29 10:33:07:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 10:33:10:ts_atl
+veryverbose, MSG, 2013-04-29 10:33:10:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:33:10:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:33:19:	ssh superadmin@9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:33:21:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:33:21:	 CMMVC7016E Authorization has failed because the private key is not valid for the user name that you have specified.
+veryverbose, MSG, 2013-04-29 10:33:21:	 
+veryverbose, MSG, 2013-04-29 10:33:21:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:33:21:	[fail]
+basic, WARN, 2013-04-29 10:33:21:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 10:33:33:ts_atl
+veryverbose, MSG, 2013-04-29 10:33:33:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:33:33:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 10:35:28:ts_atl
+veryverbose, MSG, 2013-04-29 10:35:28:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:35:28:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 10:37:37:ts_atl
+veryverbose, MSG, 2013-04-29 10:37:37:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:37:37:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 10:37:48:ts_atl
+veryverbose, MSG, 2013-04-29 10:37:48:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:37:48:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 10:38:12:ts_atl
+veryverbose, MSG, 2013-04-29 10:38:12:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:38:12:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 10:38:42:ts_atl
+veryverbose, MSG, 2013-04-29 10:38:42:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:38:42:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:39:07:	ssh superadmin@9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:39:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:39:09:	 CMMVC7016E Authorization has failed because the private key is not valid for the user name that you have specified.
+veryverbose, MSG, 2013-04-29 10:39:09:	 
+veryverbose, MSG, 2013-04-29 10:39:09:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:39:09:	[fail]
+basic, WARN, 2013-04-29 10:39:09:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 10:39:12:ts_atl
+veryverbose, MSG, 2013-04-29 10:39:15:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:39:15:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:39:21:	ssh superadmin@9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:39:22:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:39:22:	 CMMVC7016E Authorization has failed because the private key is not valid for the user name that you have specified.
+veryverbose, MSG, 2013-04-29 10:39:22:	 
+veryverbose, MSG, 2013-04-29 10:39:22:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:39:22:	[fail]
+basic, WARN, 2013-04-29 10:39:22:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 10:39:37:ts_atl
+veryverbose, MSG, 2013-04-29 10:39:37:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:39:37:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:39:37:	ssh superadmin@9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:39:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:39:38:	 CMMVC7016E Authorization has failed because the private key is not valid for the user name that you have specified.
+veryverbose, MSG, 2013-04-29 10:39:38:	 
+veryverbose, MSG, 2013-04-29 10:39:38:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:39:38:	[fail]
+basic, WARN, 2013-04-29 10:39:38:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 10:40:21:ts_atl
+veryverbose, MSG, 2013-04-29 10:40:21:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:40:21:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:40:21:	ssh admin@9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:40:22:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:40:22:	 The following actions are available with this command : 
+veryverbose, MSG, 2013-04-29 10:40:22:	 	lscmdstatus
+veryverbose, MSG, 2013-04-29 10:40:22:	 	lsfiles
+veryverbose, MSG, 2013-04-29 10:40:22:	 	lshardware
+veryverbose, MSG, 2013-04-29 10:40:22:	 	lsservicenodes
+veryverbose, MSG, 2013-04-29 10:40:22:	 	lsservicerecommendation
+veryverbose, MSG, 2013-04-29 10:40:22:	 	lsservicestatus
+veryverbose, MSG, 2013-04-29 10:40:22:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:40:22:	[fail]
+basic, WARN, 2013-04-29 10:40:22:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 10:41:29:ts_atl
+veryverbose, MSG, 2013-04-29 10:41:29:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:41:29:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:41:29:	ssh admin@9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:41:31:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:41:31:	 The following actions are available with this command : 
+veryverbose, MSG, 2013-04-29 10:41:31:	 	lscmdstatus
+veryverbose, MSG, 2013-04-29 10:41:31:	 	lsfiles
+veryverbose, MSG, 2013-04-29 10:41:31:	 	lshardware
+veryverbose, MSG, 2013-04-29 10:41:31:	 	lsservicenodes
+veryverbose, MSG, 2013-04-29 10:41:31:	 	lsservicerecommendation
+veryverbose, MSG, 2013-04-29 10:41:31:	 	lsservicestatus
+veryverbose, MSG, 2013-04-29 10:41:31:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:41:31:	[fail]
+basic, WARN, 2013-04-29 10:41:31:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 10:42:01:ts_atl
+veryverbose, MSG, 2013-04-29 10:42:04:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:42:04:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:42:09:	ssh admin@9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:42:10:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:42:10:	 The following actions are available with this command : 
+veryverbose, MSG, 2013-04-29 10:42:10:	 	lscmdstatus
+veryverbose, MSG, 2013-04-29 10:42:10:	 	lsfiles
+veryverbose, MSG, 2013-04-29 10:42:10:	 	lshardware
+veryverbose, MSG, 2013-04-29 10:42:10:	 	lsservicenodes
+veryverbose, MSG, 2013-04-29 10:42:10:	 	lsservicerecommendation
+veryverbose, MSG, 2013-04-29 10:42:10:	 	lsservicestatus
+veryverbose, MSG, 2013-04-29 10:42:10:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:42:10:	[fail]
+basic, MSG, 2013-04-29 10:42:27:ts_atl
+veryverbose, MSG, 2013-04-29 10:42:32:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:42:32:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:42:40:	ssh admin@9.115.245.190 'sainfo -h'
+veryverbose, MSG, 2013-04-29 10:42:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:42:42:	 The following actions are available with this command : 
+veryverbose, MSG, 2013-04-29 10:42:42:	 	lscmdstatus
+veryverbose, MSG, 2013-04-29 10:42:42:	 	lsfiles
+veryverbose, MSG, 2013-04-29 10:42:42:	 	lshardware
+veryverbose, MSG, 2013-04-29 10:42:42:	 	lsservicenodes
+veryverbose, MSG, 2013-04-29 10:42:42:	 	lsservicerecommendation
+veryverbose, MSG, 2013-04-29 10:42:42:	 	lsservicestatus
+veryverbose, MSG, 2013-04-29 10:42:42:
+	===cmd output end===
+basic, MSG, 2013-04-29 10:45:36:ts_atl
+veryverbose, MSG, 2013-04-29 10:45:36:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:45:36:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:45:40:	ssh admin@9.115.245.190 'sainfo -h'
+basic, MSG, 2013-04-29 10:50:15:ts_atl
+veryverbose, MSG, 2013-04-29 10:50:15:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:50:15:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 10:50:26:ts_atl
+veryverbose, MSG, 2013-04-29 10:50:26:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:50:26:
+
+=== tc00_addHost  start===
+veryverbose, MSG, 2013-04-29 10:50:41:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:50:41:	 The following actions are available with this command : 
+veryverbose, MSG, 2013-04-29 10:50:41:	 	lscmdstatus
+veryverbose, MSG, 2013-04-29 10:50:41:	 	lsfiles
+veryverbose, MSG, 2013-04-29 10:50:41:	 	lshardware
+veryverbose, MSG, 2013-04-29 10:50:41:	 	lsservicenodes
+veryverbose, MSG, 2013-04-29 10:50:41:	 	lsservicerecommendation
+veryverbose, MSG, 2013-04-29 10:50:41:	 	lsservicestatus
+veryverbose, MSG, 2013-04-29 10:50:41:
+	===cmd output end===
+verbose, WARN, 2013-04-29 10:50:41:	[fail]
+basic, WARN, 2013-04-29 10:50:41:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 10:50:46:ts_atl
+veryverbose, MSG, 2013-04-29 10:50:46:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:50:46:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 10:51:41:ts_atl
+veryverbose, MSG, 2013-04-29 10:51:41:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:51:41:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 10:52:14:ts_atl
+veryverbose, MSG, 2013-04-29 10:52:14:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:52:14:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:52:23:	ssh admin@9.115.245.190 'sainfo -h'; echo $? 
+veryverbose, MSG, 2013-04-29 10:52:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:52:56:	 The following actions are available with this command : 
+veryverbose, MSG, 2013-04-29 10:52:57:	 	lscmdstatus
+veryverbose, MSG, 2013-04-29 10:52:58:	 	lsfiles
+veryverbose, MSG, 2013-04-29 10:52:58:	 	lshardware
+veryverbose, MSG, 2013-04-29 10:52:59:	 	lsservicenodes
+veryverbose, MSG, 2013-04-29 10:52:59:	 	lsservicerecommendation
+veryverbose, MSG, 2013-04-29 10:52:59:	 	lsservicestatus
+veryverbose, MSG, 2013-04-29 10:53:00:	 0
+veryverbose, MSG, 2013-04-29 10:53:00:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:53:04:	[pass]
+basic, MSG, 2013-04-29 10:53:07:=== tc00_addHost , PASSED ===
+basic, MSG, 2013-04-29 10:55:11:ts_atl
+veryverbose, MSG, 2013-04-29 10:55:11:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 10:55:11:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 10:55:11:	ssh admin@9.115.245.190 'sainfo -h'; echo $? 
+veryverbose, MSG, 2013-04-29 10:55:13:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 10:55:13:	 The following actions are available with this command : 
+veryverbose, MSG, 2013-04-29 10:55:13:	 	lscmdstatus
+veryverbose, MSG, 2013-04-29 10:55:13:	 	lsfiles
+veryverbose, MSG, 2013-04-29 10:55:13:	 	lshardware
+veryverbose, MSG, 2013-04-29 10:55:13:	 	lsservicenodes
+veryverbose, MSG, 2013-04-29 10:55:13:	 	lsservicerecommendation
+veryverbose, MSG, 2013-04-29 10:55:13:	 	lsservicestatus
+veryverbose, MSG, 2013-04-29 10:55:13:	 0
+veryverbose, MSG, 2013-04-29 10:55:13:
+	===cmd output end===
+verbose, MSG, 2013-04-29 10:55:13:	[pass]
+basic, MSG, 2013-04-29 10:55:13:=== tc00_addHost , PASSED ===
+basic, MSG, 2013-04-29 11:02:09:ts_atl
+veryverbose, MSG, 2013-04-29 11:02:09:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:02:09:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 11:06:27:ts_atl
+veryverbose, MSG, 2013-04-29 11:06:27:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:06:27:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 11:07:41:ts_atl
+veryverbose, MSG, 2013-04-29 11:07:41:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:07:41:
+
+=== tc00_addHost  start===
+basic, MSG, 2013-04-29 11:08:07:ts_atl
+veryverbose, MSG, 2013-04-29 11:08:07:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:08:07:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 11:08:07:	ssh admin@9.115.245.190 'sainfo -h'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:09:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:09:	 The following actions are available with this command : 
+veryverbose, MSG, 2013-04-29 11:08:09:	 	lscmdstatus
+veryverbose, MSG, 2013-04-29 11:08:09:	 	lsfiles
+veryverbose, MSG, 2013-04-29 11:08:09:	 	lshardware
+veryverbose, MSG, 2013-04-29 11:08:09:	 	lsservicenodes
+veryverbose, MSG, 2013-04-29 11:08:09:	 	lsservicerecommendation
+veryverbose, MSG, 2013-04-29 11:08:09:	 	lsservicestatus
+veryverbose, MSG, 2013-04-29 11:08:09:	 0
+veryverbose, MSG, 2013-04-29 11:08:09:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:09:	[pass]
+verbose, MSG, 2013-04-29 11:08:09:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 1 -host 1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:11:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:11:	 CMMVC5701E1
+veryverbose, MSG, 2013-04-29 11:08:11:	  No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:08:11:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:11:	[not_verify]
+verbose, MSG, 2013-04-29 11:08:11:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 1 -host 2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:12:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:12:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:08:12:	 1
+veryverbose, MSG, 2013-04-29 11:08:12:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:12:	[not_verify]
+verbose, MSG, 2013-04-29 11:08:12:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 1 -host 3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:14:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:14:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:08:14:	 1
+veryverbose, MSG, 2013-04-29 11:08:14:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:14:	[not_verify]
+verbose, MSG, 2013-04-29 11:08:14:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 1 -host 4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:15:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:15:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:08:15:	 1
+veryverbose, MSG, 2013-04-29 11:08:15:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:15:	[not_verify]
+verbose, MSG, 2013-04-29 11:08:15:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 2 -host 1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:17:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:17:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:08:17:	 1
+veryverbose, MSG, 2013-04-29 11:08:17:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:17:	[not_verify]
+verbose, MSG, 2013-04-29 11:08:17:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 2 -host 2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:18:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:18:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:08:18:	 1
+veryverbose, MSG, 2013-04-29 11:08:18:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:18:	[not_verify]
+verbose, MSG, 2013-04-29 11:08:18:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 2 -host 3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:20:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:20:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:08:20:	 1
+veryverbose, MSG, 2013-04-29 11:08:20:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:20:	[not_verify]
+verbose, MSG, 2013-04-29 11:08:20:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 2 -host 4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:21:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:21:	 1
+veryverbose, MSG, 2013-04-29 11:08:21:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:08:21:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:21:	[not_verify]
+verbose, MSG, 2013-04-29 11:08:21:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 3 -host 1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:22:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:22:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:08:22:	 1
+veryverbose, MSG, 2013-04-29 11:08:22:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:22:	[not_verify]
+verbose, MSG, 2013-04-29 11:08:22:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 3 -host 2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:24:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:24:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:08:24:	 1
+veryverbose, MSG, 2013-04-29 11:08:24:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:24:	[not_verify]
+verbose, MSG, 2013-04-29 11:08:24:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 3 -host 3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:25:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:25:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:08:25:	 1
+veryverbose, MSG, 2013-04-29 11:08:25:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:25:	[not_verify]
+verbose, MSG, 2013-04-29 11:08:25:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 3 -host 4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:27:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:27:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:08:27:	 1
+veryverbose, MSG, 2013-04-29 11:08:27:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:27:	[not_verify]
+verbose, MSG, 2013-04-29 11:08:27:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 4 -host 1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:28:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:08:28:	 1
+veryverbose, MSG, 2013-04-29 11:08:28:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:28:	[not_verify]
+verbose, MSG, 2013-04-29 11:08:28:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 4 -host 2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:29:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:08:29:	 1
+veryverbose, MSG, 2013-04-29 11:08:29:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:29:	[not_verify]
+verbose, MSG, 2013-04-29 11:08:29:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 4 -host 3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:31:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:31:	 1
+veryverbose, MSG, 2013-04-29 11:08:31:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:08:31:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:31:	[not_verify]
+verbose, MSG, 2013-04-29 11:08:31:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 4 -host 4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:08:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:08:32:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:08:32:	 1
+veryverbose, MSG, 2013-04-29 11:08:32:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:08:32:	[not_verify]
+basic, MSG, 2013-04-29 11:08:32:=== tc00_addHost , PASSED ===
+basic, MSG, 2013-04-29 11:09:22:ts_atl
+veryverbose, MSG, 2013-04-29 11:09:22:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:09:22:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 11:09:22:	ssh admin@9.115.245.190 'sainfo -h'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:23:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:23:	 The following actions are available with this command : 
+veryverbose, MSG, 2013-04-29 11:09:23:	 	lscmdstatus
+veryverbose, MSG, 2013-04-29 11:09:23:	 	lsfiles
+veryverbose, MSG, 2013-04-29 11:09:23:	 	lshardware
+veryverbose, MSG, 2013-04-29 11:09:23:	 	lsservicenodes
+veryverbose, MSG, 2013-04-29 11:09:23:	 	lsservicerecommendation
+veryverbose, MSG, 2013-04-29 11:09:23:	 	lsservicestatus
+veryverbose, MSG, 2013-04-29 11:09:23:	 0
+veryverbose, MSG, 2013-04-29 11:09:23:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:09:23:	[pass]
+verbose, MSG, 2013-04-29 11:09:23:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 1 -host 1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:25:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:25:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:09:25:	 1
+veryverbose, MSG, 2013-04-29 11:09:25:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:09:25:	[fail]
+verbose, MSG, 2013-04-29 11:09:25:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 1 -host 2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:26:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:26:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:09:26:	 1
+veryverbose, MSG, 2013-04-29 11:09:26:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:09:26:	[fail]
+verbose, MSG, 2013-04-29 11:09:26:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 1 -host 3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:28:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:28:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:09:28:	 1
+veryverbose, MSG, 2013-04-29 11:09:28:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:09:28:	[fail]
+verbose, MSG, 2013-04-29 11:09:28:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 1 -host 4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:29:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:29:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:09:29:	 1
+veryverbose, MSG, 2013-04-29 11:09:29:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:09:29:	[fail]
+verbose, MSG, 2013-04-29 11:09:29:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 2 -host 1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:30:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:30:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:09:30:	 1
+veryverbose, MSG, 2013-04-29 11:09:30:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:09:30:	[fail]
+verbose, MSG, 2013-04-29 11:09:30:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 2 -host 2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:32:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:32:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:09:32:	 1
+veryverbose, MSG, 2013-04-29 11:09:32:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:09:32:	[fail]
+verbose, MSG, 2013-04-29 11:09:32:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 2 -host 3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:33:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:33:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:09:33:	 1
+veryverbose, MSG, 2013-04-29 11:09:33:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:09:33:	[fail]
+verbose, MSG, 2013-04-29 11:09:33:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 2 -host 4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:35:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:35:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:09:35:	 1
+veryverbose, MSG, 2013-04-29 11:09:35:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:09:35:	[fail]
+verbose, MSG, 2013-04-29 11:09:35:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 3 -host 1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:36:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:36:	 1
+veryverbose, MSG, 2013-04-29 11:09:36:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:09:36:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:09:36:	[fail]
+verbose, MSG, 2013-04-29 11:09:36:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 3 -host 2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:38:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:38:	 CMMVC5701E1
+veryverbose, MSG, 2013-04-29 11:09:38:	  No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:09:38:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:09:38:	[fail]
+verbose, MSG, 2013-04-29 11:09:38:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 3 -host 3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:39:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:39:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:09:39:	 1
+veryverbose, MSG, 2013-04-29 11:09:39:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:09:39:	[fail]
+verbose, MSG, 2013-04-29 11:09:39:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 3 -host 4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:41:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:41:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:09:41:	 1
+veryverbose, MSG, 2013-04-29 11:09:41:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:09:41:	[fail]
+verbose, MSG, 2013-04-29 11:09:41:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 4 -host 1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:42:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:42:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:09:42:	 1
+veryverbose, MSG, 2013-04-29 11:09:42:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:09:42:	[fail]
+verbose, MSG, 2013-04-29 11:09:42:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 4 -host 2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:43:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:43:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:09:43:	 1
+veryverbose, MSG, 2013-04-29 11:09:43:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:09:43:	[fail]
+verbose, MSG, 2013-04-29 11:09:43:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 4 -host 3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:45:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:45:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:09:45:	 1
+veryverbose, MSG, 2013-04-29 11:09:45:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:09:45:	[fail]
+verbose, MSG, 2013-04-29 11:09:45:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force 4 -host 4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:09:46:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:09:46:	 CMMVC5701E No object ID was specified.
+veryverbose, MSG, 2013-04-29 11:09:46:	 1
+veryverbose, MSG, 2013-04-29 11:09:46:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:09:46:	[fail]
+basic, WARN, 2013-04-29 11:09:46:=== tc00_addHost , FAILED ===
+basic, MSG, 2013-04-29 11:10:44:ts_atl
+veryverbose, MSG, 2013-04-29 11:10:44:ENV[LOGLEVEL]:veryverbose , ENV[UTFROOT]: /mnt/hgfs/jbso/RTF
+verbose, MSG, 2013-04-29 11:10:44:
+
+=== tc00_addHost  start===
+verbose, MSG, 2013-04-29 11:10:44:	ssh admin@9.115.245.190 'sainfo -h'; echo $? 
+veryverbose, MSG, 2013-04-29 11:10:45:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:10:45:	 The following actions are available with this command : 
+veryverbose, MSG, 2013-04-29 11:10:45:	 	lscmdstatus
+veryverbose, MSG, 2013-04-29 11:10:45:	 	lsfiles
+veryverbose, MSG, 2013-04-29 11:10:45:	 	lshardware
+veryverbose, MSG, 2013-04-29 11:10:45:	 	lsservicenodes
+veryverbose, MSG, 2013-04-29 11:10:45:	 	lsservicerecommendation
+veryverbose, MSG, 2013-04-29 11:10:45:	 	lsservicestatus
+veryverbose, MSG, 2013-04-29 11:10:45:	 0
+veryverbose, MSG, 2013-04-29 11:10:45:
+	===cmd output end===
+verbose, MSG, 2013-04-29 11:10:45:	[pass]
+verbose, MSG, 2013-04-29 11:10:45:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 1  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:10:46:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:10:46:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:10:46:	 1
+veryverbose, MSG, 2013-04-29 11:10:46:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:10:46:	[fail]
+verbose, MSG, 2013-04-29 11:10:46:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 1  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:10:48:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:10:48:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:10:48:	 1
+veryverbose, MSG, 2013-04-29 11:10:48:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:10:48:	[fail]
+verbose, MSG, 2013-04-29 11:10:48:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 1  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:10:49:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:10:49:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:10:49:	 1
+veryverbose, MSG, 2013-04-29 11:10:49:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:10:49:	[fail]
+verbose, MSG, 2013-04-29 11:10:49:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 1  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:10:51:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:10:51:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:10:51:	 1
+veryverbose, MSG, 2013-04-29 11:10:51:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:10:51:	[fail]
+verbose, MSG, 2013-04-29 11:10:51:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 2  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:10:53:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:10:53:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 11:10:53:	 1
+veryverbose, MSG, 2013-04-29 11:10:53:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:10:53:	[fail]
+verbose, MSG, 2013-04-29 11:10:53:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 2  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:10:54:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:10:54:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:10:54:	 1
+veryverbose, MSG, 2013-04-29 11:10:54:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:10:54:	[fail]
+verbose, MSG, 2013-04-29 11:10:54:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 2  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:10:56:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:10:56:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:10:56:	 1
+veryverbose, MSG, 2013-04-29 11:10:56:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:10:56:	[fail]
+verbose, MSG, 2013-04-29 11:10:56:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 2  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:10:57:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:10:57:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:10:57:	 1
+veryverbose, MSG, 2013-04-29 11:10:57:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:10:57:	[fail]
+verbose, MSG, 2013-04-29 11:10:57:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 3  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:10:58:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:10:58:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:10:58:	 1
+veryverbose, MSG, 2013-04-29 11:10:58:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:10:58:	[fail]
+verbose, MSG, 2013-04-29 11:10:58:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 3  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:11:00:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:11:00:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:11:00:	 1
+veryverbose, MSG, 2013-04-29 11:11:00:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:11:00:	[fail]
+verbose, MSG, 2013-04-29 11:11:00:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 3  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:11:01:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:11:01:	 CMMVC5876E The VDisk-to-host mapping was not created be1
+veryverbose, MSG, 2013-04-29 11:11:01:	 cause the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:11:01:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:11:01:	[fail]
+verbose, MSG, 2013-04-29 11:11:01:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 3  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:11:03:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:11:03:	 CMMVC5878E The VDisk-to-host mapping was not created because this VDisk is already mapped to this host.
+veryverbose, MSG, 2013-04-29 11:11:03:	 1
+veryverbose, MSG, 2013-04-29 11:11:03:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:11:03:	[fail]
+verbose, MSG, 2013-04-29 11:11:03:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 4  1'; echo $? 
+veryverbose, MSG, 2013-04-29 11:11:04:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:11:04:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:11:04:	 1
+veryverbose, MSG, 2013-04-29 11:11:04:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:11:04:	[fail]
+verbose, MSG, 2013-04-29 11:11:04:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 4  2'; echo $? 
+veryverbose, MSG, 2013-04-29 11:11:05:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:11:05:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:11:05:	 1
+veryverbose, MSG, 2013-04-29 11:11:05:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:11:05:	[fail]
+verbose, MSG, 2013-04-29 11:11:05:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 4  3'; echo $? 
+veryverbose, MSG, 2013-04-29 11:11:07:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:11:07:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:11:07:	 1
+veryverbose, MSG, 2013-04-29 11:11:07:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:11:07:	[fail]
+verbose, MSG, 2013-04-29 11:11:07:	ssh admin@9.115.245.190 'svctask mkvdiskhostmap -force -host 4  4'; echo $? 
+veryverbose, MSG, 2013-04-29 11:11:08:
+	===cmd output start===
+veryverbose, MSG, 2013-04-29 11:11:09:	 CMMVC5876E The VDisk-to-host mapping was not created because the maximum number of mappings has been reached.
+veryverbose, MSG, 2013-04-29 11:11:09:	 1
+veryverbose, MSG, 2013-04-29 11:11:09:
+	===cmd output end===
+verbose, WARN, 2013-04-29 11:11:09:	[fail]
+basic, WARN, 2013-04-29 11:11:09:=== tc00_addHost , FAILED ===

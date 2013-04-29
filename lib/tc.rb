@@ -136,6 +136,7 @@ module TC
        # s=key.upcase+"=\""+hashCase[key]+"\"" 
        # eval(s)
         ENV[key]=hashCase[key]
+        ENV[key]=ENV[key].gsub(/\r|\n/,'')
         end
    
       }      

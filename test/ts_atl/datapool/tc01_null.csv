@@ -1,5 +1,5 @@
-par1,par2,par3
-1,a,x
-2,b,y
-3,c,z
-4,,
+hostId,vdiskId
+1,1
+2,2
+3,3
+4,4

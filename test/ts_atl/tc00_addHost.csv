@@ -6,11 +6,11 @@ Action,Object,Data,assert,ddcsvfile
 #lcmd_dd,#{LOCALHOST},mkdir /root/TE/del/#{CVSDD_par1}/#{CVSDD_par2}/,cmdExitCode=1,/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
 #lcmd_dd,#{LOCALHOST},mkdir /root/TE/del/#{CVSDD_par1}/#{CVSDD_par2}/,cmdExitCode=2,/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
 #lcmd_dd,#{LOCALHOST},mkdir /root/TE/del/#{CVSDD_par1}/#{CVSDD_par2}/,RTFnotVerify,/root/TE/test/ts_rcfs/conf/datapool/tc01_null.csv
-lcmd,#{LOCALHOST},date,cmdExitCode=0,
-lcmd,#{LOCALHOST},date,RTFnotVerify,
+ssh,#{SSHCONN},sainfo -h,cmdExitCode=0,
+ssh_dd,#{SSHCONN},svctask mkvdiskhostmap -force -host #{CVSDD_hostId}  #{CVSDD_vdiskId},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
 ,,,,
-lcmd,#{LOCALHOST},date,cmdExitCode=0,
-lcmd,#{LOCALHOST},mkdir /root,cmdExitCode!=0,
+#lcmd,#{LOCALHOST},date,cmdExitCode=0,
+#lcmd,#{LOCALHOST},mkdir /root,cmdExitCode!=0,
 #lcmd,#{LOCALHOST},date,has(2011),
 #lcmd,#{LOCALHOST},date,"has(2010""))",
 #lcmd,#{LOCALHOST},date,!has(2010),

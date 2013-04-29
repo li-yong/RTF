@@ -130,6 +130,8 @@ def Parseconf.parseConf(confile)
       object=self.translateOneCMD(object)  ##{ANIP} format in conf
       cmd=self.translateOneCMD(cmd)
       verify=self.translateOneCMD(verify)
+      
+
 
 
       
