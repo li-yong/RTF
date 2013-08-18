@@ -1,24 +1,33 @@
 Action,Object,Data,assert,ddcsvfile
 ,,,,
-ssh,#{SSHCONN},svctask  mkhost -name lnx9_115_245_64 -hbawwpn 21000024FF2DC5C6:21000024FF2DC5C7  -iogrp 0,cmdExitCode=0,
-ssh,#{SSHCONN},svctask  mkhost -name win9_115_245_65 -hbawwpn 21000024FF2DC496  -iogrp 0,cmdExitCode=0,
-ssh,#{SSHCONN},svctask  mkhost -name lnx9_115_245_63 -hbawwpn 21000024FF2DC423  -iogrp 0,cmdExitCode=0,
-ssh,#{SSHCONN},svctask  mkhost -name  lnx_iscsi_9_115_245_69  -iscsiname iqn.1994-05.com.redhat:d0919cbc230,cmdExitCode=0,
-ssh,#{SSHCONN},svctask  mkhost -name  lnx_iscsi_9_115_245_70  -iscsiname iqn.2013-03.com.suse:01:99c01e8e555,cmdExitCode=0,
-ssh,#{SSHCONN},svctask  mkhost -name  win_iscsi_9_115_245_62  -iscsiname iqn.1991-05.com.microsoft:win-nl9hte62q8e,cmdExitCode=0,
-,,,cmdExitCode=0,
-ssh,#{SSHCONN}, svctask  mkhost -name h188_p1 -hbawwpn 50050768030426fc,cmdExitCode=0,
-ssh,#{SSHCONN}, svctask  mkhost -name h188_p2 -hbawwpn 50050768030826fc,cmdExitCode=0,
-ssh,#{SSHCONN}, svctask  mkhost -name h189_p1 -hbawwpn 50050768030426FD,cmdExitCode=0,
-ssh,#{SSHCONN}, svctask  mkhost -name h189_p2 -hbawwpn 50050768030826FD,cmdExitCode=0,
-ssh,#{SSHCONN}, svctask  mkhost -name h191_p1 -hbawwpn 500507680304270A,cmdExitCode=0,
-ssh,#{SSHCONN}, svctask  mkhost -name h191_p2 -hbawwpn 500507680308270A,cmdExitCode=0,
-ssh,#{SSHCONN}, svctask  mkhost -name h192_p1 -hbawwpn 500507680304270B,cmdExitCode=0,
-ssh,#{SSHCONN}, svctask  mkhost -name h192_p2 -hbawwpn 500507680308270B,cmdExitCode=0,
+ssh,#{SSHCONN},svctask mkhost -name aix -fcwwpn 2101001B323EE18E,cmdExitCode=0,
+#ssh,#{SSHCONN},svctask  mkhost -name lnx9_115_245_63 -hbawwpn 21000024FF2DC423:21000024FF2DC422  -iogrp 0,cmdExitCode=0,
+#ssh,#{SSHCONN},svctask  mkhost -name  lnx_iscsi_9_115_245_69  -iscsiname iqn.1994-05.com.redhat:beec69f474e,cmdExitCode=0,
+#ssh,#{SSHCONN},svctask  mkhost -name  lnx_iscsi_9_115_245_70  -iscsiname iqn.2013-03.com.suse:01:99c01e8e555,cmdExitCode=0,
+#ssh,#{SSHCONN},svctask  mkhost -name  win_iscsi_9_115_244_223  -iscsiname iqn.1991-05.com.microsoft:win-nl9hte62q8e,cmdExitCode=0,
 ,,,,
-ssh,#{SSHCONN},  svctask mkvdiskhostmap -force -host h188_p2  fullyAllocatedVdisk,cmdExitCode=0,
-ssh,#{SSHCONN},  svctask mkvdiskhostmap -force -host h189_p2  fullyAllocatedVdisk,cmdExitCode=0,
-ssh,#{SSHCONN},  svctask mkvdiskhostmap -force -host h191_p2  fullyAllocatedVdisk,cmdExitCode=0,
-ssh,#{SSHCONN},  svctask mkvdiskhostmap -force -host h192_p2  fullyAllocatedVdisk,cmdExitCode=0,
-,,,cmdExitCode=0,
-ssh_dd,#{SSHCONN},svctask mkvdiskhostmap -force -host #{CVSDD_hostId}  #{CVSDD_vdiskId},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
+#ssh,#{SSHCONN},cfgportip -node node1 -ip  9.115.245.169 -mask 255.255.255.0 -gw  9.115.245.1 1,cmdExitCode=0,
+#ssh,#{SSHCONN},cfgportip -node node2 -ip  9.115.245.171 -mask 255.255.255.0 -gw  9.115.245.1 1,cmdExitCode=0,
+#ssh,#{SSHCONN},cfgportip -node node3 -ip  9.115.245.172 -mask 255.255.255.0 -gw  9.115.245.1 1,cmdExitCode=0,
+#ssh,#{SSHCONN},cfgportip -node node4 -ip  9.115.245.173 -mask 255.255.255.0 -gw  9.115.245.1 1,cmdExitCode=0,
+,,,,
+,,,,
+#ssh,#{SSHCONN},  svctask mkvdiskhostmap -force -host h188_p2  fullyAllocatedVdisk,cmdExitCode=0,
+#ssh,#{SSHCONN},  svctask mkvdiskhostmap -force -host h189_p2  fullyAllocatedVdisk,cmdExitCode=0,
+#ssh,#{SSHCONN},  svctask mkvdiskhostmap -force -host h191_p2  fullyAllocatedVdisk,cmdExitCode=0,
+#ssh,#{SSHCONN},  svctask mkvdiskhostmap -force -host h192_p2  fullyAllocatedVdisk,cmdExitCode=0,
+,,,,
+ssh_dd,#{SSHCONN},svctask mkvdiskhostmap  -host 0  #{CVSDD_host0Vd},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
+#ssh_dd,#{SSHCONN},svctask mkvdiskhostmap  -host 1  #{CVSDD_host1Vd},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
+#ssh_dd,#{SSHCONN},svctask mkvdiskhostmap  -host 2  #{CVSDD_host2Vd},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
+#ssh_dd,#{SSHCONN},svctask mkvdiskhostmap  -host 3  #{CVSDD_host3Vd},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
+#ssh_dd,#{SSHCONN},svctask mkvdiskhostmap  -host 4  #{CVSDD_host4Vd},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
+#ssh_dd,#{SSHCONN},svctask mkvdiskhostmap  -host 5  #{CVSDD_host5Vd},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
+,,,,
+#ssh_dd,#{SSHCONN},svctask mkvdiskhostmap -host #{CVSDD_hostId}  #{CVSDD_vdiskId},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
+#ssh_dd,#{SSHCONN},svctask mkvdiskhostmap -host 0  #{CVSDD_vdiskId},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
+#ssh_dd,#{SSHCONN},svctask mkvdiskhostmap -host 1  #{CVSDD_vdiskId},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
+#ssh_dd,#{SSHCONN},svctask mkvdiskhostmap -host 2  #{CVSDD_vdiskId},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
+#ssh_dd,#{SSHCONN},svctask mkvdiskhostmap -host 3  #{CVSDD_vdiskId},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
+#ssh_dd,#{SSHCONN},svctask mkvdiskhostmap -host 4  #{CVSDD_vdiskId},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
+#ssh_dd,#{SSHCONN},svctask mkvdiskhostmap -host 5  #{CVSDD_vdiskId},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv

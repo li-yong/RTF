@@ -154,7 +154,7 @@ def UTF.ssh2sade(ip,cmd)
   LOG.msg("verbose","\t#{cmd2p}","green", "print")
 
  # `rsh  #{ip} \'#{cmd};echo $?\'  > #{file} 2>&1`
-  `ssh  #{ip} \'#{cmd}\;echo $? '  > #{file} 2>&1`
+  `ssh -oStrictHostKeyChecking=no #{ip} \'#{cmd}\;echo $? '  > #{file} 2>&1`
    #`echo 0 >> #{file}` #sade not support two cmd in one line.
   fileNum=File.read(file).count("\n")
    fileNumOut=(fileNum.to_i - 1).to_s

@@ -1,0 +1,4 @@
+Action,Object,Data,assert,ddcsvfile
+#ssh_dd,#{SSHCONN},svctask applydrivesoftware -file atlantis_drive_130430.gpg -type firmware -drive #{CVSDD_driveId} -force,cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
+ssh_dd,#{SSHCONN},chenclosureslot -exclude yes -force -slot  #{CVSDD_slot}  #{CVSDD_enclosure} ,cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
+ssh_dd,#{SSHCONN}, chenclosureslot -exclude no -force -slot  #{CVSDD_slot}  #{CVSDD_enclosure},cmdExitCode=0,/mnt/hgfs/jbso/RTF/test/ts_atl/datapool/tc01_null.csv
